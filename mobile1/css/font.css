@@ -1,0 +1,95 @@
+
+@charset "utf-8";
+
+/*국문*/
+@font-face {
+    font-family : "NotoSansCJKkr-Thin";
+    src : local("NotoSansCJKkr-Thin"), url("./fonts/ko/NotoSansCJKkr-Thin.eot") format("embedded-opentype"), url("./fonts/ko/NotoSansCJKkr-Thin.woff") format("woff");
+}
+@font-face {
+    font-family : "NotoSansCJKkr-Light";
+    src : local("NotoSansCJKkr-Light"), url("./fonts/ko/NotoSansCJKkr-Light.eot") format("embedded-opentype"), url("./fonts/ko/NotoSansCJKkr-Thin.woff") format("woff");
+}
+@font-face {
+    font-family : "NotoSansCJKkr-Regular";
+    src : local("NotoSansCJKkr-Regular"), url("./fonts/ko/NotoSansCJKkr-Regular.eot") format("embedded-opentype"), url("./fonts/ko/NotoSansCJKkr-Regular.eot") format("woff");
+}
+@font-face {
+    font-family : "NotoSansCJKkr-Black";
+    src : local("NotoSansCJKkr-Black"), url("./fonts/ko/NotoSansCJKkr-Black.eot") format("embedded-opentype"), url("./fonts/ko/NotoSansCJKkr-Black.woff") format("woff");
+}
+@font-face {
+    font-family : "NotoSansCJKkr-Bold";
+    src : local("NotoSansCJKkr-Bold"), url("./fonts/ko/NotoSansCJKkr-Bold.eot") format("embedded-opentype"), url("./fonts/ko/NotoSansCJKkr-Bold.woff") format("woff");
+}
+
+
+/*영문*/
+@font-face {
+    font-family : "NotoSans-Regular";
+    src : local("NotoSans-Regular"), url("./fonts/en/NotoSans-Regular.eot") format("embedded-opentype"), url("./fonts/en/NotoSans-Regular.woff") format("woff");
+}
+@font-face {
+    font-family : "NotoSans-Bold";
+    src : local("NotoSans-Bold"), url("./fonts/en/NotoSans-Bold.eot") format("embedded-opentype"), url("./fonts/en/NotoSans-Bold.woff") format("woff");
+}
+@font-face {
+    font-family : "NotoSans-Italic";
+    src : local("NotoSans-Italic"), url("./fonts/en/NotoSans-Italic.eot") format("embedded-opentype"), url("./fonts/en/NotoSans-Italic.woff") format("woff");
+}
+@font-face {
+    font-family : "NotoSans-BoldItalic";
+    src : local("NotoSans-BoldItalic"), url("./fonts/en/NotoSans-BoldItalic.eot") format("embedded-opentype"), url("./fonts/en/NotoSans-Italic.woff") format("woff");
+}
+
+
+
+
+
+.ko_t {
+    font-family: "NotoSansCJKkr-Thin";
+}
+.ko_l {
+    font-family: "NotoSansCJKkr-Light";
+}
+.ko_r {
+    font-family: "NotoSansCJKkr-Regular";
+}
+.ko_b {
+    font-family: "NotoSansCJKkr-Bold";
+}
+.ko_bb {
+    font-family: "NotoSansCJKkr-Black";
+}
+
+
+
+.en_r {
+    font-family: "NotoSans-Regular";
+}
+.en_b {
+    font-family: "NotoSans-Bold";
+}
+.en_i {
+    font-family: "NotoSans-Italic";
+}
+.en_bi {
+    font-family: "NotoSans-BoldItalic";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

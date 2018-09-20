@@ -1,0 +1,2148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>통일부</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+<!--    컬러 css-->
+    <link rel="stylesheet" href="./css/font.css">
+<!--    폰트 css-->
+    <link rel="stylesheet" href="./css/color.css">
+    
+    <meta name="application-name" content="통일부">
+    <meta name="author" content="daae">
+    <meta name="keywords" content="통일부, 대한민국, 한국, 정부기관, 통일, 남북, 남북정상회담, 북한, 문재인, 김정은, 청와대, 정치, 북핵, 이산가족, 이산가족상봉, 6.25">
+    <meta name="description" content="mobile4">
+
+<!--    아이콘-->
+    <link rel="icon" href="./images/ico/symbol_jnN_icon.ico">
+    
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        ul, li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        img {
+            border: 0;
+        }
+        button {
+            border: 0;
+            background-color: transparent;
+        }
+        
+        body.rock {
+            overflow: hidden;
+        }
+    </style>
+    
+    <style>
+        .wrap {
+            width: 100%;
+            min-width: 320px;
+            height: 100%;
+            
+            position: relative;
+        }
+        .hd {
+            width: 100%;
+            height: 60px;
+            
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 300;
+            background-color: #fff;
+        }
+        .mainCon {
+            width: 100%;
+            height: auto;
+            margin-top: 60px;
+        }
+        .ft {
+            width: 100%;
+            height: 396px;
+        }
+        .page_inner {
+            width: 345px;
+            height: 100%;
+            margin: 0 auto;
+        }
+    </style>
+    
+    <style>
+        .hdLine {
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: #003964;
+        }
+        .hdWrap {
+            width: 345px;
+            height: 35px;
+            margin: 12px auto;
+            position: relative;
+        }
+        .logo {
+            width: 275px;
+            height: 35px;
+            float: left;
+            margin: 0 auto;
+        }
+        .logo a {
+            display: block;
+            width: 90px;
+            height: 35px;
+            background-image: url("./images/h_logo.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin-left: 110px;
+        }
+        
+        .navIcoSec {
+            width: 70px;
+            height: 30px;
+            float: right;
+            margin: 0;
+        }
+        .navIcoSec .navBtn {
+            width: 26px;
+            height: 30px;
+            float: left;
+            margin-right: 18px;
+        }
+        .navIcoSec .navBtn.icoMenu {
+            margin-right: 0;
+            outline: none;
+        }
+        .icoMenu .line {
+            display: block;
+            width: 26px;
+            height: 21px;
+            margin: 6px auto;
+        }
+        .icoMenu .m_line {
+            display: block;
+            width: 26px;
+            height: 3px;
+            background-color: #003964;
+            margin-top: 6px;
+        }
+        .icoMenu .m_line:nth-child(1) {
+            margin-top: 0;
+        }
+        .icoSearch .sIco {
+            display: block;
+            width: 26px;
+            height: 26px;
+            margin: 4px auto;
+            background-image: url("./images/ico_search.png");
+            background-size: 26px auto;
+            background-position: center center;
+        }
+        
+        
+/*        컬랙메뉴영역*/
+        .menuSec {
+            width: 345px;
+            height: 100%;
+            position: fixed;
+            right: -400px;
+            top: 0;
+            z-index: 400;
+            background-color: #fff;
+            box-shadow: -10px 0px 20px 15px rgba(0, 0, 0, 0.3);
+        }
+        .menuHd {
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            background-image: url("./images/symbol.png");
+            background-size: 46% auto;
+            background-repeat: no-repeat;
+            background-position: left 10px;
+        }
+        .menuSec_inner {
+            width: 315px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .menuSec_inner ul {
+            width: 30px;
+            height: 100%;
+            float: right;
+        }
+        .menuSec .menuHd .navBtn {
+            width: 30px;
+            height: 30px;
+            margin-top: 12px;
+            clear: both;
+        }
+        .navBtn.icoClose {
+            background-image: url("./images/ico_close_n.png");
+            background-size: 20px auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+            outline: none;
+        }
+        .menuSec .icoSearch .sIco {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background-image: url("./images/ico_search.png");
+            background-size: 24px auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        
+        .menuCon {
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+        }
+        .menuCon ul {
+            width: 315px;
+            height: 100%;
+            margin: 0 auto;
+            clear: both;
+        }
+        .mainMenu {
+            width: 100%;
+            height: 60px;
+            box-sizing: border-box;
+            clear: both;
+        }
+        .mainMenuFrame {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .mainMenuFrame span {
+            display: block;
+            float: left;
+        }
+        .menuIco {
+            width: 70px;
+            height: 100%;
+            background-size: 26px auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+            
+            transition: 0.5s;
+        }
+        
+        
+        
+        .mainMenu:nth-child(1) .menuIco:nth-child(1) {
+            background-image: url("./images/ico_news_g.png");
+        }
+        .mainMenu:nth-child(1) .menuIco:nth-child(1).on {
+            background-image: url("./images/ico_news_c.png");
+        }
+        
+        .mainMenu:nth-child(2) .menuIco:nth-child(1) {
+            background-image: url("./images/ico_policy_g.png");
+        }
+        .mainMenu:nth-child(2) .menuIco:nth-child(1).on {
+            background-image: url("./images/ico_policy_c.png");
+        }
+        
+        .mainMenu:nth-child(3) .menuIco:nth-child(1) {
+            background-image: url("./images/ico_major_g.png");
+        }
+        .mainMenu:nth-child(3) .menuIco:nth-child(1).on {
+            background-image: url("./images/ico_major_c.png");
+        }
+        
+        .mainMenu:nth-child(4) .menuIco:nth-child(1) {
+            background-image: url("./images/ico_info_g.png");
+        }
+        .mainMenu:nth-child(4) .menuIco:nth-child(1).on {
+            background-image: url("./images/ico_info_c.png");
+        }
+        
+        .mainMenu:nth-child(5) .menuIco:nth-child(1) {
+            background-image: url("./images/ico_complain_g.png");
+        }
+        .mainMenu:nth-child(5) .menuIco:nth-child(1).on {
+            background-image: url("./images/ico_complain_c.png");
+        }
+        
+        .mainMenu:nth-child(6) .menuIco:nth-child(1) {
+            background-image: url("./images/ico_intro_g.png");
+        }
+        .mainMenu:nth-child(6) .menuIco:nth-child(1).on {
+            background-image: url("./images/ico_intro_c.png");
+        }
+        
+        .mainMenu span.menuIco.right {
+            width: 16px;
+            height: 8px;
+            float: right;
+            padding-right: 20px;
+            padding-top: 52px;
+            background-size: 14px 8px;
+            background-image: url("./images/ico_collap_g.png");
+            
+            transform: rotate(180deg);
+            transition: 0.5s;
+        }
+        .mainMenu span.menuIco.right.on {
+            transform: rotate(0deg);
+            background-image: url("images/ico_collap_r.png");
+        }
+        
+        .mainMenuTxt {
+            width: 175px;
+            height: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 60px;
+            float: left;
+        }
+        
+        
+        .mainMenu .subMenu {
+            width: 245px;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        .mainMenu .subMenu.on {
+            height: auto;
+        }
+        .subMenu li {
+            width: 100%;
+            height: auto;
+        }
+        .subMenuFrame {
+            display: block;
+            width: 100%;
+            height: 40px;
+        }
+        .subMenuTxt {
+            display: block;
+            float: left;
+            width: 80%;
+            height: 100%;
+            color: #666;
+            font-size: 16px;
+            line-height: 40px;
+            transition: 0.5s;
+        }
+        
+        .subMenuTxt.on {
+            font-weight: bold;
+        }
+        
+        .subMenuIco {
+            display: block;
+            float: left;
+            width: 24px;
+            height: 100%;
+            float: right;
+            line-height: 40px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #999;
+        }
+        .mainMenuFrame:after {
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #999;
+            clear: both;
+        }
+        
+        .subMenu li ul.sub_detailMenu {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        .subMenu li ul.sub_detailMenu.on {
+            height: auto;
+        }
+        
+        .sub_detailMenu li {
+            width: 100%;
+            height: 40px;
+        }
+        .sub_detailMenu a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-indent: 18px;
+            line-height: 40px;
+            color: #999;
+        }
+        .subMenu li {
+            clear: both;
+            transition: 0.6s;
+        }
+        .subMenu li.inmenu {
+            height: auto;
+        }
+        .subMenu li .subMenuTxt.on {
+            font-weight: bold;
+        }
+    </style>    
+    
+    <style>
+        .page {
+            width: 100%;
+            height: auto;
+        }
+        .vsFrame {
+            width: 100%;
+            height: 398px;
+            position: relative;
+        }
+        .imgBox {
+            width: 500%;
+            height: 100%;
+        }
+        .vsImg {
+            display: block;
+            width: 20%;
+            height: 100%;
+            float: left;
+        }
+        .vsImg img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .vsNav {
+            height: 10px;
+            width: 100%;
+            position: absolute;
+            top: 359px;
+            left: 0;
+        }
+        .vsNav ul {
+            width: 120px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .vsNavBtn {
+            display: block;
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            margin: 0 5px 0 5px;
+            border: 1px solid #fff;
+            box-sizing: border-box;
+            background-color: transparent;
+            transition: 0.5s;
+        }
+        .vsNavBtn.on {
+            width: 30px;
+            background-color: #fff;
+        }
+    </style>
+    
+    <style>
+        .page.bestMenuCon {
+            width: 100%;
+            height: 140px;
+        }
+        .bestMenuCon .page_inner {
+            width: 100%;
+            height: 100px;
+            padding-top: 30px;
+            overflow: scroll;
+        }
+        .bMenuBox {
+            width: 200%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .bMenuBox li {
+            width: 12.3%;
+            height:80px;
+            float: left;
+            margin-left: 10px
+        }
+        .bestMenu {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .bestMenu span {
+            display: block;
+            text-align: center;
+        }
+        .bMenuIco {
+            width:100%;
+            height: 50px;
+            background-repeat: no-repeat;
+        }
+        .bMenuBox li:nth-child(1) .bMenuIco {
+            background-image: url("./images/ico_tabmenu1.gif");
+            background-size: 46px 49px;
+            background-position: center center;
+        }
+        .bMenuBox li:nth-child(2) .bMenuIco {
+            background-image: url("./images/ico_tabmenu2.gif");
+            background-size: 47px 48px;
+            background-position: center center;
+        }
+        .bMenuBox li:nth-child(3) .bMenuIco {
+            background-image: url("./images/ico_tabmenu3.gif");
+            background-size: 50px 48px;
+            background-position: center center;
+        }
+        .bMenuBox li:nth-child(4) .bMenuIco {
+            background-image: url("./images/ico_tabmenu4.gif");
+            background-size: 47px 46px;
+            background-position: center center;
+        }
+        .bMenuBox li:nth-child(5) .bMenuIco {
+            background-image: url("./images/ico_tabmenu5.gif");
+            background-size: 49px 46px;
+            background-position: center center;
+        }
+        .bMenuBox li:nth-child(6) .bMenuIco {
+            background-image: url("./images/ico_tabmenu6.png");
+            background-size: 50spx 45px;
+            background-position: center center;
+        }
+        
+        .bMenuTxt {
+            width: 100%;
+            height: 30px;
+            color: #333;
+            text-align: center;
+            font-size: 12px;
+            line-height: 30px;
+        }
+    </style>
+    
+    <style>
+        .page.mainNewsCon {
+            width: 100%;
+            height: auto;
+        }
+        .newSec.news1 {
+            width: 300px;
+            height: 170px;
+            float: left;
+            margin-left: -30px;
+            border-radius: 30px;
+            background-color: #003964;
+            box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+        }
+        .newBox {
+            width: 250px;
+            height: 170px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 50px;
+            padding-right: 15px;
+        }
+        .newsFrame {
+            width: 100%;
+            height: 100%;
+            overflow-y: hidden;
+            overflow-x: scroll;
+        }
+        .newsFrameBox {
+            width: 500%;
+            height: 100%;
+            
+        }
+        .news {
+            width: 20%;
+            height: 100%;
+            float: left;
+        }
+        .news ul {
+            width: 100%;
+            height: 100%;
+        }
+        .news ul p {
+            color: #fff;
+        }
+        .newsTit {
+            width: 100%;
+            height: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 30px;
+            padding-top: 4px;
+        }
+        .newCom {
+            width: 220px;
+            height: 150px;
+            padding-top: 50px;
+        }
+        .newCom p {
+            width: 220px;
+            height: 150px;
+            font-size: 12px;
+            line-height: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            
+        }
+    </style>
+    
+    <style>
+        .newSec.news2 {
+            width: 100%;
+            height: 350px;
+            padding-top: 30px;
+            clear: both;
+            position: relative;
+        }
+        .news2VsSec {
+            width: 100%;
+            height: 220px;
+        }
+        .news2VsFrame {
+            width: 400%;
+            height: 100%;
+        }
+        .news2Vs {
+            width: 25%;
+            height: 100%;
+            float: left;
+        }
+        .news2Vs video {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .news2ComSec {
+            width: 320px;
+            height: 200px;
+            border-radius: 30px;
+            background-color: #003964;
+            box-shadow: -5px 3px 3px 3px rgba(0, 0, 0, 0.3);
+            overflow:hidden;
+            
+            position: absolute;
+            bottom: 0;
+            right: -30px;
+        }
+        .news2ComFrame {
+            width: 400%;
+            height: 100%;
+        }
+        .news2Com {
+            width: 20%;
+            height: 120px;
+            float: left;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 3%;
+            padding-right: 2%;
+        }
+        .news2Tit {
+            width: 94%;
+            height: 64px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+            line-height: 33px;
+            word-break: keep-all;
+        }
+        .news2Com .more {
+            width: 94%;
+            height: 26px;
+            font-weight: bold;
+            color: #fff;
+            line-height: 100px;
+        }
+    </style>
+    
+    <style>
+        .newSec.news3 {
+            width: 100%;
+            height: 236px;
+            padding-top: 50px;
+            padding-bottom: 40px;
+        }
+        .newSec.news3 .page_inner {
+            width: 345px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .notiTitSec {
+            width: 100%;
+            height: 26px;
+            padding-top: 8px;
+            padding-bottom: 6px;
+        }
+        .notiTitle {
+            width: 80%;
+            height: 30px;
+            float: left;
+            font-size: 22px;
+            font-weight: bold;
+            text-indent: 34px;
+            background-image: url("./images/symbol.png");
+            background-size: 30px 30px;
+            background-position: left center;
+            background-repeat: no-repeat;
+        }
+        .notiTitSec .more {
+            display: block;
+            width: 20px;
+            height: 30px;
+            float: right;
+            font-size: 28px;
+            color: #888;
+            font-weight: bold;
+            margin-top: -6px;
+        }
+        .notiConSec {
+            padding-top: 10px;
+            width: 100%;
+            height: 184px;
+        }
+        .notiFrame {
+            display: block;
+            width: 100%;
+            height: 46px;
+        }
+        .notice {
+            display: block;
+            width: 100%;
+            height: 46px;
+            font-size: 16px;
+            color: #333;
+            line-height: 46px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            
+            border-bottom: 1px solid #888;
+        }
+    </style>
+    
+    <style>
+        .newSec.news4 {
+            width: 100%;
+            height: 149px;
+            padding-bottom: 40px;
+        }
+        .newSec.news4 .page_inner {
+            width: 350px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .news4Frame {
+            width: 350px;
+            height: 100%;
+            overflow: hidden;
+        }
+        .news4Box {
+            width: 1200%;
+            height: 100%;
+        }
+        .gBanner {
+            display: block;
+            width: 8.3%;
+            height: 100%;
+            float: left;
+/*
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+*/
+        }
+        .gBanner img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+/*
+        .gBanner:nth-child(1) {
+            background-image: url("./images/img_gbanner1.jpg");
+        }
+        .gBanner:nth-child(2) {
+            background-image: url("./images/img_gbanner2.jpg");
+        }
+        .gBanner:nth-child(3) {
+            background-image: url("./images/img_gbanner3.jpg");
+        }
+        .gBanner:nth-child(4) {
+            background-image: url("./images/img_gbanner4.jpg");
+        }
+        .gBanner:nth-child(5) {
+            background-image: url("./images/img_gbanner5.jpg");
+        }
+        .gBanner:nth-child(6) {
+            background-image: url("./images/img_gbanner6.jpg");
+        }
+        .gBanner:nth-child(7) {
+            background-image: url("./images/img_gbanner7.jpg");
+        }
+        .gBanner:nth-child(8) {
+            background-image: url("./images/img_gbanner8.jpg");
+        }
+        .gBanner:nth-child(9) {
+            background-image: url("./images/img_gbanner9.jpg");
+        }
+        .gBanner:nth-child(10) {
+            background-image: url("./images/img_gbanner10.png");
+        }
+        .gBanner:nth-child(11) {
+            background-image: url("./images/img_gbanner11.jpg");
+        }
+        .gBanner:nth-child(12) {
+            background-image: url("./images/img_gbanner12.png");
+        }
+        
+*/
+    </style>
+    
+    <style>
+        .ft {
+            width: 100%;
+            height: 366px;
+            background-color: #003964;
+            position: relative;
+/*            clear: both;*/
+        }
+        .ft .page_inner {
+            width: 345px;
+            height: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+        .ftLinkSec.ftL1 {
+            width: 100%;
+            height: 60px;
+            padding-bottom: 16px;
+        }
+        .ftLink1 {
+            display: block;
+            height: 30px;
+            float: left;
+            padding-right: 20px;     
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #c8c8c8;
+        }
+        
+        .copyrightSec {
+            width: 100%;
+            height: 240px;
+        }
+        .infoTxt {
+            width: 100%;
+            font-size: 12px;
+            line-height: 24px;
+            text-align: center;
+            color: #c8c8c8;
+            padding-bottom: 8px;
+            padding-top: 8px;
+        }
+        .copyright {
+            width: 100%;
+            font-size: 12px;
+            padding-top: 16px;
+            color: #c8c8c8;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+    
+    <style>
+        .linkSec {
+            width: 100%;
+            height: 150px;
+            padding-bottom: 40px;
+        }
+        .linkFrame {
+            width: 345px;
+            height: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .linkBtnSec {
+            width: 200px;
+            height: 50px;
+        }
+        .linkBtnSec .linkBtn {
+            width: 100px;
+            height: 50px;
+            float: left;
+            font-size: 14px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid #003964;
+            border-bottom: 0;
+        }
+        
+        .linkConFrame {
+            width: 100%;
+            height: 100px;
+            position: relative;
+        }
+        .linkCon {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .linkCon.snsLinkSec span {
+            display: block;
+            width: 315px;
+            height: 44px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: 28px auto;
+        }
+        .snsLinkSec .sns {
+            display: block;
+            float: left;
+            width: 44px;
+            height: 44px;
+            margin-left: 10px;
+            background-repeat: no-repeat;
+            background-size: 44px 44px;
+            background-position: center center;
+        }
+        .snsLinkSec .sns:nth-child(1) {
+            margin-left: 0;
+        }
+        .snsLinkSec .sns:nth-child(1) {
+            background-image: url("./images/ico_sns_face.jpg");
+        }
+        .snsLinkSec .sns:nth-child(2) {
+            background-image: url("./images/ico_sns_twitter.jpg");
+        }
+        .snsLinkSec .sns:nth-child(3) {
+            background-image: url("./images/ico_sns_blog.jpg");
+        }
+        .snsLinkSec .sns:nth-child(4) {
+            background-image: url("./images/ico_sns_youtube.jpg");
+        }
+        .snsLinkSec .sns:nth-child(5) {
+            background-image: url("./images/ico_sns_kakaostory.jpg");
+        }
+        .snsLinkSec .sns:nth-child(6) {
+            background-image: url("./images/ico_sns_insta.jpg");
+        }
+        
+        .linkCon.siteLinkSec {
+            display: none;
+        }
+        .linkCon.siteLinkSec > span {
+            display: block;
+            float: left;
+            width: 152.5px;
+            height: 44px;
+            margin-top: 28px;
+            margin-left: 10px;
+        }
+        .linkCon.siteLinkSec > span:nth-child(1) {
+            margin-left: 0;
+            padding-left: 15px;
+        }
+        .linkCon.siteLinkSec > span:nth-child(2) {
+            padding-right: 15px;
+        }
+        .linkCon.siteLinkSec .site {
+            display: block;
+            width: 44px;
+            height: 44px;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            background-size: 44px 44px;
+            background-position: center center;
+        }
+        .linkCon.siteLinkSec span:nth-child(1) .site {
+/*            float: right;*/
+            background-image: url("./images/img_siteLink1.png");
+        }
+        .linkCon.siteLinkSec span:nth-child(2) .site {
+/*            float: left;*/
+            background-image: url("./images/img_siteLink2.png");
+        }
+        .siteName {
+            display: block;
+            width: 100%;
+            height: 20px;
+            font-size: 14px;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+<!--    메뉴-->
+    <script>
+        $(document).ready(function() {
+           
+            $(".navBtn.icoMenu").click(function() {
+                
+                $(".menuSec")
+                    .animate({"right":"0px"},500);
+                
+                $("body")
+                    .addClass("rock");
+            });
+            
+            $(".navBtn.icoClose").click(function() {
+                
+                $(".menuSec")
+                    .animate({"right":"-500px"},500);
+                
+                $("body")
+                    .removeClass("rock");
+            })            
+            
+            $(".mainMenuFrame").click(function() {
+                
+                $(this)
+                    .find(".menuIco:nth-child(1)")
+                    .toggleClass("on");
+
+                $(this)
+                    .find(".menuIco.right")
+                    .toggleClass("on");
+                
+                $(this)
+                    .siblings(".subMenu")
+                    .toggleClass("on");
+            });
+            
+            $(".subMenu li").click(function() {
+
+                $(this)
+                    .find(".subMenuTxt")
+                    .toggleClass("on");
+            });
+            
+            $(".subMenu li.inmenu").click(function() {
+               
+                $(this)
+                    .children(".sub_detailMenu")
+                    .toggleClass("on");   
+                
+                $(this)
+                    .find(".subMenuIco")
+                    .text("-")  
+                    .css("font-size", "28px")
+                    .css("text-indent", "2px");
+            });
+            
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function() {
+           
+            var vsWd = parseInt($(".vsFrame").width());
+            var imgCnt = $(".vsImg").length;
+            var intv = setInterval(function(){rightAni();},3000);
+            
+            
+            
+            function rightAni(){
+                
+                $(".imgBox")
+                    .not(":animated")
+                    .animate({"margin-left":vsWd*-1+"px"}, 600, function() {
+                    $(".vsImg")
+                        .eq(0)
+                        .appendTo($(".imgBox"));
+                    $(".imgBox")
+                        .css("margin-left", "0px");
+                });
+                
+            }
+            
+            
+            var max = imgCnt*vsWd*-1;
+            
+            var imgVal;
+            
+            var btnVal;
+            
+            
+            $(".vsNavBtn").click(function() {
+               
+                btnVal = parseInt($(this).attr("page-value"));
+                
+                imgVal = parseInt($(".vsImg").eq(0).attr("page-value"));
+                
+                var sld = vsWd*(btnVal-1)*-1;
+                
+                if(sld>max) {
+                    clearInterval(intv);
+                    
+                    $(".imgBox")
+                        .animate({"margin-left" : sld+"px"}, 600);
+                    
+                    intv = setInterval(function() {rightAni();}, 3600);
+                }
+                
+                $(this)
+                    .siblings(".vsNavBtn")
+                    .removeClass("on");
+                
+                $(this)
+                    .addClass("on");                
+            });
+            
+            
+//            $(".vsNavBtn").click(function() {
+//               
+//                $(this)
+//                    .siblings("button")
+//                    .removeClass("on");
+//                $(this)
+//                    .addClass("on");
+//                
+//                $(".imgBox")
+//                    clearInterval(intv)
+//                
+//                var btnV = $(this).eq();
+//                var ml = btnV+1;
+//                
+//                $(".imgBox")
+//                    .animate({"margin-left":vsWd*-1*btnV+"px"}, 500);
+//                
+//                intv = setInterval(function() {
+//                    rightAni();
+//                }, 3000);
+//            });
+//            
+        });
+    </script>
+    
+<!--    gBanner 슬라이딩-->
+    <script>
+        $(document).ready(function() {
+           
+            var bnWd = parseInt($(".news4Frame").width());
+            var bnCnt = $(".gBanner").length;
+            
+            var intv = setInterval(function(){bn_rightAni();},3600);
+            
+            
+            
+            function bn_rightAni(){
+                
+                $(".news4Box")
+                    .not(":animated")
+                    .animate({"margin-left":bnWd*-1+"px"}, 600, function() {
+                    $(".gBanner")
+                        .eq(0)
+                        .appendTo($(".news4Box"));
+                    $(".news4Box")
+                        .css("margin-left", "0px");
+                });
+                
+            }
+            
+        });
+    </script>
+    
+<!--    snsLink 탭메뉴-->
+    <script>
+        $(document).ready(function() {
+           
+            $(".linkBtn.snsBtn").click(function() {
+               
+                $(".linkCon.snsLinkSec")
+                    .siblings(".linkCon.siteLinkSec")
+                    .css("display", "none");
+                
+                $(".linkCon.snsLinkSec")
+                    .css("display", "block");
+                
+            });
+            
+            $(".linkBtn.siteBtn").click(function() {
+               
+                $(".linkCon.siteLinkSec")
+                    .siblings(".linkCon.snsLinkSec")
+                    .css("display", "none");
+                
+                $(".linkCon.siteLinkSec")
+                    .css("display", "block");
+                
+            });
+            
+        });
+    </script>
+
+    
+</head>
+<body>
+    <div class="wrap">
+        
+        <header class="hd">
+            <span class="hdLine"></span>
+            <div class="hdWrap">
+                
+                <h1 class="logo">
+                    <a href=""></a>
+                </h1>
+                
+                <ul class="navIcoSec">
+                    <button class="navBtn icoSearch">
+                        <span class="sIco"></span>
+                    </button>
+                    <button class="navBtn icoMenu">
+                       <span class="line">
+                            <span class="m_line"></span>
+                            <span class="m_line"></span>
+                            <span class="m_line"></span>
+                        </span>
+                    </button>
+                </ul>
+                
+            </div>
+        </header>
+        
+        <div class="menuSec">
+                    <section class="menuHd">
+                        <div class="menuSec_inner">
+                           <ul>
+                                <button class="navBtn icoClose"></button>
+                                <button class="navBtn icoSearch">
+                                    <span class="sIco"></span>
+                                </button>
+                            </ul>
+                        </div>
+                    </section>
+                        
+                    <section class="menuCon">
+                    <ul>
+                        <li class="mainMenu">
+                            <div class="menuSec_inner">
+                                <span class="mainMenuFrame">
+                                    <span class="menuIco"></span>
+                                    <span class="mainMenuTxt">통일소식</span>
+                                    <span class="menuIco right"></span>
+                                </span>
+                                <ul class="subMenu">
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">생생뉴스</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">공지사항</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">보도자료</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">카드뉴스</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">동영상뉴스</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">대변인 브리핑</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">통일관련기사</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mainMenu">
+                            <div class="menuSec_inner">
+                                <span class="mainMenuFrame">
+                                    <span class="menuIco"></span>
+                                    <span class="mainMenuTxt">통일정책</span>
+                                    <span class="menuIco right"></span>
+                                </span>
+                                <ul class="subMenu">
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">통일방안</span>
+                                        </a>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">통일부 국정과제</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">비전 및 국정목표</a>
+                                            </li>
+                                            <li>
+                                                <a href="">국정과제 및 실천과제</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">한반도정책</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">한반도정책 소개</a>
+                                            </li>
+                                            <li>
+                                                <a href="">베를린 구상</a>
+                                            </li>
+                                            <li>
+                                                <a href="">국민정책참여</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">연도별 업무보고</span>
+                                        </a>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">법제</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">법령</a>
+                                            </li>
+                                            <li>
+                                                <a href="">행정규칙</a>
+                                            </li>
+                                            <li>
+                                                <a href="">입법 행정예고</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mainMenu">
+                            <div class="menuSec_inner">
+                                <span class="mainMenuFrame">
+                                    <span class="menuIco"></span>
+                                    <span class="mainMenuTxt">주요사업</span>
+                                    <span class="menuIco right"></span>
+                                </span>
+                                <ul class="subMenu">
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">남북교류협력</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">현황</a>
+                                            </li>
+                                            <li>
+                                                <a href="">교역 및 경험</a>
+                                            </li>
+                                            <li>
+                                                <a href="">인도적지원</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">북한이탈주민정책</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">현황</a>
+                                            </li>
+                                            <li>
+                                                <a href="">정착지원제도</a>
+                                            </li>
+                                            <li>
+                                                <a href="">정책자료실</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">남북협력기금</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">소개</a>
+                                            </li>
+                                            <li>
+                                                <a href="">신청절차 안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="">기금현황</a>
+                                            </li>
+                                            <li>
+                                                <a href="">기금자료실</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">개성공단</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">현황</a>
+                                            </li>
+                                            <li>
+                                                <a href="">주요소식</a>
+                                            </li>
+                                            <li>
+                                                <a href="">법령자료</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">북한인권기록센터</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">소개</a>
+                                            </li>
+                                            <li>
+                                                <a href="">주요활동</a>
+                                            </li>
+                                            <li>
+                                                <a href="">자료실</a>
+                                            </li>
+                                            <li>
+                                                <a href="">북한인권침해 신고상담전화</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">주요사업 통계</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mainMenu">
+                            <div class="menuSec_inner">
+                                <span class="mainMenuFrame">
+                                    <span class="menuIco"></span>
+                                    <span class="mainMenuTxt">정보공개</span>
+                                    <span class="menuIco right"></span>
+                                </span>
+                                <ul class="subMenu">
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">정보공개제도 안내</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">정책실명제</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">국회관련 정보공개</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">통일부 허가법인 현황</span>
+                                        </a>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">정보공개청구</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">정보목록 바로가가기</a>
+                                            </li>
+                                            <li>
+                                                <a href="">원문정보 바로가기</a>
+                                            </li>
+                                            <li>
+                                                <a href="">공공데이터개방</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">사전 정보공표</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">사전정보공표 목록</a>
+                                            </li>
+                                            <li>
+                                                <a href="">국가보조사업 현황공개</a>
+                                            </li>
+                                            <li>
+                                                <a href="">재정정보공개</a>
+                                            </li>
+                                            <li>
+                                                <a href="">감사결과공개</a>
+                                            </li>
+                                            <li>
+                                                <a href="">반부패 청렴 현황</a>
+                                            </li>
+                                            <li>
+                                                <a href="">공개자료실</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mainMenu">
+                            <div class="menuSec_inner">
+                                <span class="mainMenuFrame">
+                                    <span class="menuIco"></span>
+                                    <span class="mainMenuTxt">민원 참여</span>
+                                    <span class="menuIco right"></span>
+                                </span>
+                                <ul class="subMenu">
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">민원안내</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">행정서비스현장</a>
+                                            </li>
+                                            <li>
+                                                <a href="">기금절차 및 서식</a>
+                                            </li>
+                                            <li>
+                                                <a href="">공통민원안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="">민원 정책 Q&amp;A</a>
+                                            </li>
+                                            <li>
+                                                <a href="">협동조합 경영공식</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">민원신청</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">민원신청</a>
+                                            </li>
+                                            <li>
+                                                <a href="">나의민원</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">국민행복제안</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">제안안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="">제안신청</a>
+                                            </li>
+                                            <li>
+                                                <a href="">나의제안</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">정책참여</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">전자공청회</a>
+                                            </li>
+                                            <li>
+                                                <a href="">정책토론</a>
+                                            </li>
+                                            <li>
+                                                <a href="">설문조사</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">공익신고</span>
+                                        </a>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">규제개혁</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">규제정보 포털</a>
+                                            </li>
+                                            <li>
+                                                <a href="">규제개혁 신문고</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">예산낭비신고센터</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">예산낭비신고신청</a>
+                                            </li>
+                                            <li>
+                                                <a href="">예산절감제안신청</a>
+                                            </li>
+                                            <li>
+                                                <a href="">나의 신고제안보기</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">안전신문고</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mainMenu">
+                            <div class="menuSec_inner">
+                                <span class="mainMenuFrame">
+                                    <span class="menuIco"></span>
+                                    <span class="mainMenuTxt">통일부 소개</span>
+                                    <span class="menuIco right"></span>
+                                </span>
+                                <ul class="subMenu">
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">통일부</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">설립목적</a>
+                                            </li>
+                                            <li>
+                                                <a href="">연혁</a>
+                                            </li>
+                                            <li>
+                                                <a href="">주요업무</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">통일부 MI</span>
+                                        </a>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">열린장관실</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">장관소개</a>
+                                            </li>
+                                            <li>
+                                                <a href="">차관소개</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">조직과 기능</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="subMenuFrame">
+                                            <span class="subMenuTxt">찾아오시는길</span>
+                                        </a>
+                                    </li>
+                                    <li class="inmenu">
+                                        <a class="subMenuFrame">
+                                            <span class="subMenuTxt">이용안내</span>
+                                            <span class="subMenuIco">+</span>
+                                        </a>
+                                        <ul class="sub_detailMenu">
+                                            <li>
+                                                <a href="">실명인증</a>
+                                            </li>
+                                            <li>
+                                                <a href="">사이트맵</a>
+                                            </li>
+                                            <li>
+                                                <a href="">홈페이지 이용안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="">저작권보호 및 이용정책</a>
+                                            </li>
+                                            <li>
+                                                <a href="">이메일무단수집거부</a>
+                                            </li>
+                                            <li>
+                                                <a href="">RSS서비스</a>
+                                            </li>
+                                            <li>
+                                                <a href="">개인정보처리방침</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    </section>
+                </div>
+                
+        <section class="mainCon">
+           
+            <div class="page mainVsCon">
+                <ul class="vsFrame">
+                    <li class="imgBox">
+                        <a href="#" class="vsImg" page-value="1">
+                            <img src="./images/img_vs1.png" alt="메인배너1">
+                        </a>
+                        <a href="#" class="vsImg" page-value="2">
+                            <img src="./images/img_vs3.png" alt="메인배너2">
+                        </a>
+                        <a href="#" class="vsImg" page-value="3">
+                            <img src="./images/img_vs6.png" alt="메인배너3">
+                        </a>
+                        <a href="#" class="vsImg" page-value="4">
+                            <img src="./images/img_vs5.png" alt="메인배너4">
+                        </a>
+                        <a href="#" class="vsImg" page-value="5">
+                            <img src="./images/img_vs2.png" alt="메인배너5">
+                        </a>
+                    </li>
+                    <div class="vsNav">
+                        <ul>
+                            <button class="vsNavBtn" page-value="1"></button>
+                            <button class="vsNavBtn" page-value="2"></button>
+                            <button class="vsNavBtn" page-value="3"></button>
+                            <button class="vsNavBtn" page-value="4"></button>
+                            <button class="vsNavBtn" page-value="5"></button>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            
+            <div class="page bestMenuCon">
+                <div class="page_inner">
+                    <ul class="bMenuBox">
+                        <li>
+                            <a href="" class="bestMenu">
+                                <span class="bMenuIco"></span>
+                                <span class="bMenuTxt">주요정책자료</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="bestMenu">
+                                <span class="bMenuIco"></span>
+                                <span class="bMenuTxt">대변인 브리핑</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="bestMenu">
+                                <span class="bMenuIco"></span>
+                                <span class="bMenuTxt">베를린 구상</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="bestMenu">
+                                <span class="bMenuIco"></span>
+                                <span class="bMenuTxt">주요통계자료</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="bestMenu">
+                                <span class="bMenuIco"></span>
+                                <span class="bMenuTxt">국정과제</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="bestMenu">
+                                <span class="bMenuIco"></span>
+                                <span class="bMenuTxt">2018 업무보고</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="bMenuBtnBox">
+                        <button class="bMenuBtn"></button>
+                        <button class="bMenuBtn"></button>
+                    </ul>
+                </div>
+            </div>
+<!--
+            
+            
+            <div class="page vsVideoCon">
+                <div class="page_inner">
+                    <video src="" class="vsVideo"></video>
+                    <a href="" class="more"></a>
+                </div>
+            </div>
+-->
+            
+            
+            <div class="page mainNewsCon">
+               
+                <section class="newSec news1">
+                    <div class="newBox">
+                        <div class="newsFrame">
+                            <ul class="newsFrameBox">
+                                <li class="news">
+                                    <ul>
+                                        <p class="newsTit">2018 하반기 퇴직공무원<br> 정부포상 공개검증</p>
+                                        <div class="newCom">
+                                            <p>2018년 하반기 퇴직공무원(일반직) 정부포상 추천대상자의 공적을 붙임과 같이 공개하여 국민들의 의견을 수렴하고자 합니다. 의견이 있으신 경우 아래 담당자에게 연락하여 주시기 바랍니다. 공개검증 대상 : 2018년 하반기 퇴직공무원(일반직) 정부포상 추천 후보자 공개검증 기간 : 2018. 9. 7.(금) ~ 9. 21.(금) [15일간] 의견제출 방법 : 통일부 운영지원과 박준하 주무관 </p>
+                                        </div>
+                                        <a href="" class="more">더보기</a>
+                                    </ul>
+                                </li>
+                                <li class="news">
+                                    <ul>
+                                        <p class="newsTit">소통과 협력의 장, 인천 통일+센서</p>
+                                        <div class="newCom">
+                                            <p> 통일부는 대북․통일 정책에 대한 국민의 참여 공간을 넓히고, 지역사회 통일 관련 업무를 통합하여 제공함으로써 동반 상승 효과를 내기 위해 지역 통일⁺센터 설치를 추진해 왔습니다. 그 첫 번째 결실로 인천광역시에 통일⁺센터를 설치하고 9. 10.(월) 오전 10시 30분에 조명균 통일부 장관, 박남춘 인천광역시장 등이 참석한 가운데 인천광역시 소재 미추홀 타워에서 개소식을 진행할 예정입니다.</p>
+                                        </div>
+                                        <a href="" class="more">더보기</a>
+                                    </ul>
+                                </li>
+                                <li class="news">
+                                    <ul>
+                                        <p class="newsTit">통일부 행정7급(북한학 석사) 경력경쟁채용 공고</p>
+                                        <div class="newCom">
+                                            <p>통일부 행정7급(북한학 석사)경력경쟁채용 공고 통일부에서는 다음과 같이 행정7급(북한학 석사) 경력경쟁채용 시험을 실시하오니 유능한 인재의 많은 응모를 바랍니다. 2018년 9월 7일 통일부장관</p>
+                                        </div>
+                                        <a href="" class="more">더보기</a>
+                                    </ul>
+                                </li>
+                                <li class="news">
+                                    <ul>
+                                        <p class="newsTit">9월 10일 통일관련 주요기사(석간)</p>
+                                        <div class="newCom">
+                                            <p>2018-09-10</p>
+                                        </div>
+                                        <a href="" class="more">더보기</a>
+                                    </ul>
+                                </li>
+                                <li class="news">
+                                    <ul>
+                                        <p class="newsTit">9월 10일 통일관련 주요기사(석간)</p>
+                                        <div class="newCom">
+                                            <p>2018-09-10</p>
+                                        </div>
+                                        <a href="" class="more">더보기</a>
+                                    </ul>
+                                </li>
+                                
+                                <ul class="newsBtnBox">
+                                    <li>
+                                        <button class="newsBtn left"></button>
+                                    </li>
+                                    <li>
+                                        <button class="newsBtn right"></button>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="newSec news2">
+                    <div class="news2VsSec">
+                        <ul class="news2VsFrame">
+                            <li class="news2Vs">
+                                <video src="./images/video_news2_1.mp4" class="news2Vd"></video>
+                            </li>
+                            <li class="news2Vs">
+                                <video src="./images/video_news2_2.mp4" class="news2Vd"></video>
+                            </li>
+                            <li class="news2Vs">
+                                <video src="./images/video_news2_3.mp4" class="news2Vd"></video>
+                            </li>
+                            <li class="news2Vs">
+                                <video src="./images/video_news2_4.mp4" class="news2Vd"></video>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="news2ComSec">
+                        <ul class="news2ComFrame">
+                            <li class="news2Com">
+                                <p class="news2Tit">특사단 방북 결과 발표문</p>
+                                <a href="" class="more">더보기</a>
+                            </li>
+                            <li class="news2Com">
+                                <p class="news2Tit">특사단, 친서를 전달하고 돌아왔습니다.</p>
+                                <a href="" class="more">더보기</a>
+                            </li>
+                            <li class="news2Com">
+                                <p class="news2Tit">특사단, 평양에 잘 도착했습니다.</p>
+                                <a href="" class="more">더보기</a>
+                            </li>
+                            <li class="news2Com">
+                                <p class="news2Tit">대북 특사대표단 출발, 잘 다녀오겠습니다.</p>
+                                <a href="" class="more">더보기</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                
+                
+                <section class="newSec news3">
+                    <div class="page_inner">
+                        <div class="notiTitSec">
+                            <p class="notiTitle">공지사항</p>
+                            <a href="" class="more">+</a>
+                        </div>
+                        <div class="notiConSec">
+                            <span class="notiFrame">
+                                <a href="" class="notice">2018년 하반기 퇴직공무원 정부포상 공개검증</a>
+                            </span>
+                            <span class="notiFrame">
+                                <a href="" class="notice">통일부 행정7급(북한학석사)경력경쟁채용 공고</a>
+                            </span>
+                            <span class="notiFrame">
+                                <a href="" class="notice">북한이탈주민정착지원사무소 기간제 기전기사 및 미화원 선발 최종합격자 공고</a>
+                            </span>
+                            <span class="notiFrame">
+                                <a href="" class="notice">통일부(인도협력국)국립6.25전쟁납북자기념관 기간제근로자 및 일용직근로자 채용공고</a>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+                
+                
+                <section class="newSec news4">
+                    <div class="page_inner">         
+                        <div class="news4Frame">
+                            <ul class="news4Box">
+                                <a href="" class="gBanner">
+                                    <img src="./images/img_gbanner1.jpg" alt="gbanner1">
+                                </a>
+                                <a href="" class="gBanner">
+                                    <img src="./images/img_gbanner2.jpg" alt="gbanner2">
+                                </a>
+                                <a href="" class="gBanner">
+                                    <img src="./images/img_gbanner3.jpg" alt="gbanner3">
+                                </a>
+                                <a href="" class="gBanner">
+                                    <img src="./images/img_gbanner4.jpg" alt="gbanner4">
+                                </a>
+                                <a href="" class="gBanner">
+                                    <img src="./images/img_gbanner5.jpg" alt="gbanner5">
+                                </a>
+                                <a href="" class="gBanner">
+                                    <img src="./images/img_gbanner6.jpg" alt="gbanner6">
+                                </a>
+                                <a href="" class="gBanner">
+                                    <img src="./images/img_gbanner7.jpg" alt="gbanner7">
+                                </a>
+                                <a href="" class="gBanner">
+                                    <img src="./images/img_gbanner8.jpg" alt="gbanner8">
+                                </a>
+                                <a href="" class="gBanner">
+                                    <img src="./images/img_gbanner9.jpg" alt="gbanner9">
+                                </a>
+                                <a href="" class="gBanner">
+                                    <img src="./images/img_gbanner10.png" alt="gbanner10">
+                                </a>
+                                <a href="" class="gBanner">
+                                    <img src="./images/img_gbanner11.jpg" alt="gbanner11">
+                                </a>
+                                <a href="" class="gBanner">
+                                    <img src="./images/img_gbanner12.png" alt="gbanner12">
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+                        
+            <section class="linkSec">
+                <div class="linkFrame">
+                    <section class="linkBtnSec">
+                        <ul>
+                            <button class="linkBtn snsBtn">통일부 SNS</button>
+                            <button class="linkBtn siteBtn">관련 사이트</button>
+                        </ul>    
+                    </section>
+                    
+                    <section class="linkConFrame">
+                        <section class="linkCon snsLinkSec">
+                            <span>
+                                <a href="" class="sns"></a>
+                                <a href="" class="sns"></a>
+                                <a href="" class="sns"></a>
+                                <a href="" class="sns"></a>
+                                <a href="" class="sns"></a>
+                                <a href="" class="sns"></a>
+                            </span>
+                        </section>
+
+                        <section class="linkCon siteLinkSec">
+                            <span>
+                                <a href="" class="site"></a>
+                                <span class="siteName">열린장관실</span>
+                            </span>
+                            <span>
+                                <a href="" class="site"></a>
+                                <span class="siteName">2018 남북정상회담</span>
+                            </span>
+                        </section>
+                    </section>
+                </div>
+            </section>
+            
+<!--
+            <section class="gBannerSec">
+                <div class="page_inner">
+                    <div class="gBannerFrame">
+                        <ul>
+                            <li class="gBanner">
+                                <a href="" class="gBannerImg"></a>
+                            </li>
+                            <li class="gBanner">
+                                <a href="" class="gBannerImg"></a>
+                            </li>
+                            <li class="gBanner">
+                                <a href="" class="gBannerImg"></a>
+                            </li>
+                            <li class="gBanner">
+                                <a href="" class="gBannerImg"></a>
+                            </li>
+                            <li class="gBanner">
+                                <a href="" class="gBannerImg"></a>
+                            </li>
+                            <li class="gBanner">
+                                <a href="" class="gBannerImg"></a>
+                            </li>
+                            <li class="gBanner">
+                                <a href="" class="gBannerImg"></a>
+                            </li>
+                            <li class="gBanner">
+                                <a href="" class="gBannerImg"></a>
+                            </li>
+                            <li class="gBanner">
+                                <a href="" class="gBannerImg"></a>
+                            </li>
+                            <li class="gBanner">
+                                <a href="" class="gBannerImg"></a>
+                            </li>
+                            <li class="gBanner">
+                                <a href="" class="gBannerImg"></a>
+                            </li>
+                            <li class="gBanner">
+                                <a href="" class="gBannerImg"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+-->
+        </section>
+        
+        
+        <footer class="ft">
+            <div class="page_inner">
+                <section class="ftLinkSec ftL1">
+                    <a href="" class="ftLink1">개인정보 처리방침</a>
+                    <a href="" class="ftLink1">홈페이지 이용안내</a>
+                    <a href="" class="ftLink1">찾아오시는길</a>
+                    <a href="" class="ftLink1">저작권보호 및 이용정책</a>
+                    <a href="" class="ftLink1">사이트맵</a>
+                </section>
+                
+                <hr>
+                
+                <section class="copyrightSec">
+                    <h1>
+                        <a href="" class="ftLogo"></a>
+                    </h1>
+                    
+                    <ul>
+                        <p class="infoTxt">(03171) 서울특별시 종로구 세종대로 209(세종로) <br> 정부서울청사 6,7층</p>
+                        
+                        <p class="infoTxt">대표전화 :1577-1365(야간 02-2100-5799)</p>
+                        <p class="infoTxt">본 홈페이지에 게시된 이메일주소가 무단으로 수집되는 것을 거부하며, 이를 위반시 개인정보보호법에 저촉되오니 주의하시기 바랍니다.</p>
+                        <hr>
+                        <p class="copyright">Copyright ⓒ MINISTRY OF UNIFICATION. ALL RIGHTS RESERVED.</p>
+                    </ul>
+                    
+                    <ul class="ftLinkSec ftLink2">
+                        <li>
+                            <a href="" class="ftLink2"></a>
+                        </li>
+                        <li>
+                            <a href="" class="ftLink2"></a>
+                        </li>
+                        <li>
+                            <a href="" class="ftLink2"></a>
+                        </li>
+                    </ul>
+                </section>          
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>
