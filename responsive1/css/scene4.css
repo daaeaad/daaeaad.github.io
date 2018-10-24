@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/*메인 #scene4 영역 css*/
+
+#scene4 {
+    background-image: url("../images/img_bg_hire.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#scene4 .scene_inner {
+    position: relative;
+}
+#scene4 .sceneConSec {
+    height: 35rem;
+}
+#scene4 .conGrid {
+    width: 100%;
+    height: 10.4rem;
+    margin-bottom: 0.8rem;
+}
+#scene4 .conGrid:nth-child(1) {
+    height: 12.4rem;
+}
+#scene4 .conGrid li {
+    width: 49%;
+    height: 100%;
+    float: left;
+    margin-left: 2%;
+    background-color: #fff;
+}
+#scene4 .conGrid li:nth-child(1) {
+    margin-left: 0;
+}
+#scene4 .conGrid:nth-child(1) li {
+    width: 100%;
+    margin-left: 0;
+    background-image: url("../images/img_hire1.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+#scene4 .conGrid:nth-child(1) li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#scene4 .conTit, #scene4 .conTxt {
+    width: 100%;
+    padding-left: 2rem;
+    color: #000;
+}
+#scene4 .conTit {
+    font-size: 1.6rem;
+    line-height: 5.4rem;
+}
+#scene4 .conTxt {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+#scene4 .conGrid:nth-child(1) .conTit, #scene4 .conGrid:nth-child(1) .conTxt {
+    color: #fff;
+}
+
+
+
+
+
+/*******************************************/
+/* 미디어쿼리 데스크탑 */
+
+/*
+#scene4 .scene_inner {
+    position: relative;
+    padding-left: 23.125rem;
+    padding-right: 23.125rem;
+}
+*/
+
+/* 미디어쿼리 데스크탑 끝 */
+/*******************************************/
+
+
+
+
+

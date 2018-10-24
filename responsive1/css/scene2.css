@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/*#scene2 영역 css*/
+
+
+#scene2 {
+    background-image: url("../images/img_bg_vision.png");
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#scene2 .scene_inner {
+    position: relative;
+}
+#scene2 .sceneTit, #scene2 .sceneSubTit {
+    color: #fff;
+}
+#scene2 .sceneConSec {
+    height: auto;
+    margin: 6rem auto;
+    position: relative;
+}
+#scene2 .conFrame {
+    width: 100%;
+    height: 9rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+#scene2 .conFrame ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene2 .con {
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+}
+#scene2 .conFrame:nth-child(2) .con {
+    float: left;
+    margin-left: 13%;
+}
+#scene2 .icoSec {
+    display: block;
+    width: 100%;
+    height: 6.6rem;
+    position: relative;
+}
+#scene2 .icoLine {
+    display: block;
+    width: 6.6rem;
+    height: 6.6rem;
+    margin: 0 auto;
+    border-radius: 3.3rem;
+    border: 1px solid #fff;
+}
+#scene2 .icoLine img {
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: 20% auto;
+}
+#scene2 .conFrame:nth-child(2) .con:nth-child(2) .icoLine img {
+    margin: 17% auto;
+}
+#scene2 .icoTxt {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 4rem;
+}

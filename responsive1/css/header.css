@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+/********************************************/
+/****************  헤더영역  *****************/
+
+
+#hd {
+    width: 100%;
+    height: 4.6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    box-sizing: border-box;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 800;
+    transition: 0.4s;
+}
+#hd .scene_inner {
+    position: relative;
+}
+#hd .logo {
+    width: 11.6rem;
+    height: 1.7rem;
+    padding-top: 1.6rem;
+    float: left;
+}
+#hd .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#hd .logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+#hd .logo img:nth-child(2) {
+    opacity: 0;
+}
+
+#hd .menuBtnSec {
+    width: 3rem;
+    height: 100%;
+    float: right;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+}
+#hd .menuBtn {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#hd .menuBtn ul {
+    width: 2rem;
+    height: 1.4rem;
+    padding-top: 0.2rem;
+    padding-left: 0.6rem;
+}
+#hd .menuBtn .menuLine {
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    margin-top: 0.5rem;
+    background-color: #fff;
+}
+#hd .menuBtn .menuLine:nth-child(1) {
+    margin-top: 0;
+}
+
+
+/*****************************/
+/* 제이쿼리 적용부분 */
+/* #hd .addClass .scroll */
+
+#hd.scroll {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+#hd.scroll .logo img:nth-child(1) {
+    opacity: 0;
+}
+#hd.scroll .logo img:nth-child(2) {
+    opacity: 1;
+}
+#hd.scroll .menuBtnSec {
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+#hd.scroll .menuBtn .menuLine {
+    background-color: #000;
+}
+#hd.scroll #gnb .mainMenu > a {
+    color: #000;
+}
+
+/* 제이쿼리 적용부분 끝 */
+/*****************************/
+
+
+
+/******************************************/
+/* 헤더 메뉴바 데스크탑 */
+
+
+#hd #gnb {
+    width: calc(100% - 14.6rem);
+    height: 100%;
+    float: left;
+}
+#hd #gnb .gnb_inner {
+    width: 98rem;
+    height: 100%;
+    margin: 0 auto;
+}
+#hd #gnb ul {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+#hd #gnb .mainMenu {
+    width: 14rem;
+    height: auto;
+    float: left;
+}
+#hd #gnb .mainMenu > a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 4.6rem;
+    text-align: center;
+}
+#hd #gnb .mainMenu > a:after {
+    content: "";
+    display: block;
+    width: 0;
+    overflow: hidden;
+    height: 2px;
+    margin: 0 auto;
+    background: #d98d3d;
+    clear: both;
+    transition: 0.4s;
+}
+
+#hd #gnb .mainMenu:hover > a:after {
+    width: 100%;
+}
+
+#hd #gnb .subMenuSec {
+    width: 100%;
+    height: auto;
+}
+#hd #gnb .subMenu {
+    width: 100%;
+    height: auto;
+}
+#hd #gnb .subMenu a {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    color: #666;
+    line-height: 2.6rem;
+    text-align: center;
+}
+#hd #gnb .detailMenuSec {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+#hd #gnb .detailMenuSec:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #999;
+    position: absolute;
+    top: 0;
+    left: 2.6rem;
+}
+#hd #gnb .detailMenu {
+    width: 100%;
+    height: auto;
+}
+#hd #gnb .detailMenu a {
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 3rem;
+    text-indent: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+
+
+/*  미디어쿼리 데스크탑  */
+#hd #gnb.desktop {
+    display: none;
+}
+
+
+
+/*******************************************/
+/* 제이쿼리 */
+
+/* #hd - addClass menuBg_forDesktop */
+#hd.menuBg_forDesktop {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #888;
+    padding-bottom: 3rem;
+}
+#hd.menuBg_forDesktop .logo a img:nth-child(1) {
+    opacity: 0;
+}
+#hd.menuBg_forDesktop .logo a img:nth-child(2) {
+    opacity: 1;
+}
+#hd.menuBg_forDesktop #gnb .mainMenu > a {
+    color: #000;
+}
+#hd.menuBg_forDesktop .menuBtnSec {
+    border-left: #888;
+}
+#hd.menuBg_forDesktop .menuBtn .menuLine {
+    background-color: #000;
+}
+
+
+/* #hd .mainMenu - mouseenter slideDown */
+#hd #gnb .subMenuSec {
+    display: none;
+}
+#hd #gnb .detailMenuSec {
+    display: none;
+}
+
+/* 제이쿼리 끝 */
+/*******************************************/
+
+
+
+/* 헤더 메뉴바 데스크탑 끝 */
+/******************************************/
+
+
+
+/****************  헤더영역 끝  ***************/
+/********************************************/

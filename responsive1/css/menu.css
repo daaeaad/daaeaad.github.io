@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/********************************************/
+/****************  메뉴 영역  ****************/
+/***  (#scene0_1.menusection)  ***/
+
+
+#scene0_1 {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    
+    overflow-y: scroll;
+}
+#scene0_1 .menuHd {
+    width: 100%;
+    height: 4.6rem;
+    border-bottom: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    position: relative;
+} 
+#scene0_1 .menuHd .scene_inner {
+    position: relative;
+}
+#scene0_1 .menuHd .logo {
+    width: 11.6rem;
+    height: 1.7rem;
+    padding-top: 1.6rem;
+    float: left;
+}
+#scene0_1 .menuHd .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene0_1 .menuHd .logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#scene0_1 .menuBtnSec {
+    width: 3rem;
+    height: 100%;
+    float: right;
+    border-left: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+#scene0_1 .menuBtn {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene0_1 .menuBtn ul {
+    width: 100%;
+    height: 2rem;
+    padding-top: 0.2rem;    
+    padding-left: 0.6rem;
+    position: relative;
+}
+#scene0_1 .menuBtn .menuLine {
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #666;
+    position: absolute;
+    top: calc(100% - 1rem);
+}
+#scene0_1 .menuBtn .menuLine:nth-child(1) {
+    transform: rotate(45deg);
+}
+#scene0_1 .menuBtn .menuLine:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+#scene0_1 .menuSec {
+    width: 100%;
+    height: calc(100% - 4.6rem);
+    padding-top: 2.6rem;
+}
+#scene0_1 .menuSec .scene_inner {
+    position: relative;
+}
+#scene0_1 .menu {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene0_1 .mainMenu {
+    width: 100%;
+    height: auto;
+    line-height: 5rem;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+}
+#scene0_1 .menuName {
+    width: 100%;
+    height: auto;
+    line-height: 5rem;
+    font-size: 1.6rem;
+    text-indent: 1.2rem;
+    color: #000;
+}
+#scene0_1 .plusIco {
+    display: block;
+    width: 1.8rem;
+    height: auto;
+    line-height: 5rem;
+    float: right;
+    position: relative;
+}
+#scene0_1 .plusIco span {
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    background-color: #000;
+    position: absolute;
+    opacity: 1;
+    top: 2.6rem;
+    right: 1.2rem;
+}
+#scene0_1 .plusIco span:nth-child(2) {
+    transform: rotate(90deg);
+}
+
+#scene0_1 .subMenuSec {
+    width: 100%;
+    height: auto;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 1.2rem;
+    box-sizing: border-box;
+    position: relative;
+}
+#scene0_1 .subMenu {
+    width: 100%;
+    height: auto;
+}
+#scene0_1 .subMenu a {
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 4rem;
+    font-size: 1.6rem;
+    color: #000;
+}
+#scene0_1 .detailMenuSec {
+    width: 100%;
+    height: auto;
+    border-left: 2px solid #e5e5e5;
+    box-sizing: border-box;
+}
+#scene0_1 .detailMenu {
+    width: 100%;
+    height: auto;
+}
+#scene0_1 .detailMenu a {
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    text-indent: 2rem;
+    color: #555;
+}
+
+
+/*****************************/
+/* 제이쿼리 적용부분 */
+
+/* #scene0_1  : .addClass .open */
+#scene0_1 {
+    left: 100%;
+    transition: 0.5s;
+}
+#scene0_1.open {
+    left: 0;
+}
+
+
+/* #scene0_1 .mainMenu  : .toggleClass .select */
+#scene0_1 .mainMenu.select .menuName {
+    color: #434083;
+}
+#scene0_1 .mainMenu.select .plusIco span:nth-child(2) {
+    opacity: 0;
+}
+
+
+/* #scene0_1 .mainMenu 클릭시 : slideToggle */
+#scene0_1 .subMenuSec {
+    display: none;
+}
+
+/* 제이쿼리 적용부분 끝 */
+/*****************************/
+
+
+
+/****************  초기화셋팅 끝  *************/
+/********************************************/

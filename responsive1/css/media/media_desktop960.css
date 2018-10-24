@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+
+/* 미디어쿼리 - 데스크탑 min-width:960px */
+
+@media screen and (min-width:959px) {
+    
+    body, html {
+        font-size: 10px;
+    }
+    #scene1 .vsImg img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #scene2 {
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    #scene2 .sceneConSec {
+        margin: 12rem auto;
+    }
+    #scene2 .conFrame {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    #scene3 .sceneConSec {
+        padding-top: 3.3rem;
+    }
+    
+    
+}
+
+
+@media screen and (min-width:1279px) {
+    
+    body, html {
+        font-size: 10px;
+    }
+
+    #scene1 .vsImg img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #scene2 {
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    #hd #gnb.desktop {
+        display: block;
+    }
+    
+    #scene2 .sceneConSec {
+        margin: 12rem auto;
+    }
+
+    
+    #scene3 .sldBtn.desktop {
+        display: none;
+    }
+    #scene3 .sldBtn:nth-child(3) {
+        margin-right: 0;
+    }
+    #scene3 .sceneBtnSec ul {
+        width: 6.6rem;
+    }
+    #scene3 .newsBox {
+        width: 93.8rem;
+        height: 30rem;
+        margin: 0 auto;
+        position: relative;
+    }
+    #scene3 .news {
+        position: absolute;
+        top: 0;
+    }
+    #scene3 .news.first {
+        left: 0;
+    }
+    #scene3 .news.second {
+        left: 23.8rem;
+    }
+    #scene3 .news.third {
+        left: 47.6rem;
+    }
+    #scene3 .news.fourth {
+        right: 0;
+    }
+    
+    
+    #scene4 .scene_inner {
+        position: relative;
+        padding-left: 23.125rem;
+        padding-right: 23.125rem;
+    }
+    #scene4 .sceneConSec {
+        margin-top: 6rem;
+    }
+    #scene4 .conGrid {
+        width: 50%;
+        height: 50%;
+        margin-bottom: 0.8rem;
+        float: left;
+    }
+    #scene4 .conGrid:nth-child(1) {
+        width: 50%;
+        height: 100%;
+        margin-bottom: 0.8rem;
+        clear: both;
+    }
+    #scene4 .conGrid:nth-child(1) li {
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+    }
+    #scene4 .conGrid:nth-child(2), #scene4 .conGrid:nth-child(3) {
+        padding-left: 1.5rem;
+        box-sizing: border-box;
+    }
+    #scene4 .conTit {
+        font-size: 1.6rem;
+        line-height: 10rem;
+    }
+    #scene4 .conTxt {
+        font-size: 1.4rem;
+        line-height: 8rem;
+    }
+    #scene4 .conTit, #scene4 .conTxt {
+        padding-left: 3rem;
+    }
+    #scene4 .conGrid:nth-child(1) .conTxt {
+        padding-top: 2rem;
+        line-height: 2rem;
+    }
+    
+    
+    #ft .scene_inner {
+        padding-left: 23.125rem;
+        padding-right: 23.125rem; 
+    }
+    #ft .ftLink {
+        font-size: 1rem;
+    }
+    #ft .ftTxt {
+        font-size: 1rem;
+    }
+    #ft .fmSel button p {
+        font-size: 1.2rem;
+    }
+    #ft .fmLst a {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+@media screen and (min-width:1919px) {
+    body, html {
+        font-size: 14px;
+    }
+    #hd #gnb.desktop {
+        display: block;
+    }
+    
+    #scene1 .vsBtnSec {
+        top: calc(calc(100% - 1.4rem) / 1.8);
+    }
+    
+}
+

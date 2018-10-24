@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/******************************************/
+/*****  메인 scene1 CSS  *****/
+
+
+#scene1 {
+    position: relative;
+}
+#scene1 .vsFrame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#scene1 .vsBox {
+    width: 400%;
+    height: 100%;
+}
+#scene1 .vsImg {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+#scene1 .vsImg img {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+#scene1 .vsTxtSec {
+    width: 100%;
+    height: 19.4rem;
+    position: absolute;
+    left: 0;
+    top: calc( calc(100% - 19.4rem) / 4);
+}
+#scene1 .vsTxtSec li {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene1 .vsLogoImg {
+    display: block;
+    width: 100%;
+    height: 14.4rem;
+}
+#scene1 .vsLogoImg img {
+    display: block;
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+}
+#scene1 .vsTxtSec .sceneSubTit {
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 6rem;
+}
+#scene1 .vsBtnSec {
+    width: 100%;
+    height: 1.4rem;
+    position: absolute;
+    left: 0;
+    top: calc(calc(100% - 1.4rem) / 2);
+}
+#scene1 .vsBtnSec li {
+    width:8.6rem;
+    height: 100%;
+    margin: 0 auto;
+}
+#scene1 .vsBtn {
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-right: 1rem;
+}
+#scene1 .vsBtn:nth-child(4) {
+    margin-right: 0;
+}
+
+#scene1 .scrBtnSec {
+    width: 100%;
+    height: 7.2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#scene1 .scrBtnSec li {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene1 .scrBtn {
+    display: block;
+    width: 10rem;
+    height: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#scene1 .scrTxt {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+}
+#scene1 .scrLine {
+    display: block;
+    width: 0.1rem;
+    height: 5rem;
+    margin: 1rem auto;
+    background-color: #fff;
+}
+
+
+/************************************************/
+/* 제이쿼리 적용 부분 */
+
+/* 1) .vsBtn -  addClass .on */
+#scene1 .vsBtn.on {
+    background-color: #d98d3d;
+}
+
+
+/* 제이쿼리 적용 부분 */
+/************************************************/
+
+
+/*****  메인 scene1 CSS 끝  *****/
+/******************************************/

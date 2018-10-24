@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/*footer 영역 css*/
+
+
+#ft {
+    height: 23.8rem;
+    background-color: #393939;
+}
+#ft .ftLinkSec {
+    width: 100%;
+    height: 4.2rem;
+    border-bottom: 1px solid #606060;
+}
+#ft .scene_inner {
+    position: relative;
+}
+#ft .ftLink {
+    display: block;
+    height: 100%;
+    float: left;
+    font-size: 1.4rem;
+    line-height: 4.2rem;
+    margin-left: 2rem;
+    color: #fff;
+}
+#ft .ftLink:nth-child(1) {
+    margin-left: 0;
+}
+#ft .ftConSec {
+    width: 100%;
+    height: 19.6rem;
+    padding-top: 1.4rem;
+    box-sizing: border-box;
+}
+#ft .ftTxtSec {
+    width: 100%;
+    height: auto;
+}
+#ft .ftTxt {
+    width: 100%;
+    height: auto;
+    font-size: 1.4rem;
+    color: #707070;
+    line-height: 2rem;
+}
+#ft .ftTxt.copyright {
+    padding-top: 0.8rem;
+}
+#ft .fsSec {
+    width: 100%;
+    height: 3.4rem;
+    margin-top: 1rem;
+}
+#ft .fmSel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#ft .fmSel button {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+#ft .fmSel button p {
+    width: 100%;
+    height: 100%;
+    line-height: 3.2rem;
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: left;
+    text-indent: 0.5rem;
+}
+#ft .fmSel .fmsIco {
+    display: block;
+    width: 3rem;
+    height: 100%;
+    float: right;
+}
+#ft .fmSel .fmsIco span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#ft .fmLst {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 3.4rem;
+    background-color: #333;
+    overflow: hidden;
+    transition: 0.5s;
+}
+#ft .fmLst a {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 1.4rem;
+    text-indent: 1rem;
+    line-height: 2.8rem;
+    color: #ccc;
+}
+
+
+
+/*****************************************/
+/* 제이쿼리 */
+
+/* #ft .fmLst - addClass on */
+#ft .fmLst.on {
+    height: auto;
+}
+
+/* 제이쿼리 */
+/*****************************************/
+
+
+

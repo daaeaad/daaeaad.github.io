@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+
+/*  미디어쿼리 - 모바일 portrait(568px 이상일때 기준으로)  */
+
+
+@media screen and (min-width:567px) and (max-width:767px) {
+    
+    body, html {
+        font-size: 10px;
+    }
+    
+    .sceneTitSec {
+        padding-top: 2.4rem;
+    }
+    
+    #scene1 .vsImg img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #scene1 .vsBtnSec {
+        top: calc(calc(100% - 1.4rem) / 1.4);
+    }
+    
+    #scene2 {
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    #scene2 .sceneConSec {
+        margin: 2rem auto;
+    }
+    #scene2 .conFrame {
+        padding-bottom: 1rem;
+        position: relative;
+    }
+    #scene2 .icoLine {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 2.5rem;
+    }
+    #scene2 .icoTxt {
+        line-height: 1rem;
+    }
+    
+    #scene4 {
+        background-position: center center;
+    }
+    
+}

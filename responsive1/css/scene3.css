@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/*메인 #scene3 영역 css*/
+
+
+#scene3 .scene_inner {
+    position: relative;
+}
+#scene3 .sceneConSec {
+    height: 36rem;
+    padding-top: 3.3rem;
+}
+#scene3 .newsFrame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    overflow-x: scroll;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+#scene3 .newsBox {
+    width: 1200%;
+    height: 30rem;
+    margin-left: 6rem;
+}
+#scene3 .news {
+    width: 22.4rem;
+    margin-right: 1.4rem;
+    height: 100%;
+    float: left;
+    background-color: #fff;
+    box-shadow: 3px 8px 6px rgba(0, 0, 0, 0.25);
+}
+#scene3 .news:nth-child(12) {
+    margin-right: 0;
+}
+#scene3 .news a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+}
+#scene3 .newsImg {
+    display: block;
+    width: 100%;
+    height: 17.2rem;
+}
+#scene3 .newsImg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+}
+#scene3 .newsTxt {
+    display: block;
+    width: 100%;
+    height: 12.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+#scene3 .newsTit {
+    display: block;
+    width: 100%;
+    height: 5rem;
+    font-size: 1.4rem;
+    color: #000;
+    margin-top: 2.2rem;
+    overflow: hidden;
+    text-align: left;
+    white-space: no-wrap;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+#scene3 .newsDate {
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 5rem;
+    color: #a0a0a0;
+}
+#scene3 .sceneBtnSec {
+    width: 100%;
+    height: 1.4rem;
+    margin-top: 3rem;
+}
+#scene3 .sceneBtnSec ul {
+    width: 27.8rem;
+    height: 100%;
+    margin: 0 auto;
+}
+#scene3 .sldBtn {
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    float: left;
+    background-color: #cccccc;
+    margin-right: 1rem;
+}
+#scene3 .sldBtn:nth-child(12) {
+    margin-right: 0;
+}
+
+
+/**************************************/
+/* 제이쿼리 적용 부분 */
+
+/* #scene3 .sldBtn - addClass on */
+#scene3 .sldBtn.on {
+    background-color: #d98d3d;
+}
+
+/* 제이쿼리 적용 부분 끝 */
+/**************************************/
+
+
+
+
+/************************************************/
+/* 데스크탑 미디어쿼리적용 */
+
+/*
+#scene3 .sldBtn.desktop {
+    display: none;
+}
+#scene3 .sldBtn:nth-child(3) {
+    margin-right: 0;
+}
+#scene3 .sceneBtnSec ul {
+    width: 6.6rem;
+}
+#scene3 .newsBox {
+    width: 93.8rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#scene3 .news {
+    position: absolute;
+    top: 0;
+}
+#scene3 .news.first {
+    left: 0;
+}
+#scene3 .news.second {
+    left: 23.8rem;
+}
+#scene3 .news.third {
+    left: 47.6rem;
+}
+#scene3 .news.fourth {
+    right: 0;
+}
+*/
+
+/* 데스크탑 미디어쿼리적용 끝 */
+/************************************************/
+
+
+
+
+
+
+
+
