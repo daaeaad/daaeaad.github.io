@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/***********************************************/
+/*   footer css   */
+
+
+#ft {
+    height: 33.33rem;
+    background-attachment: fixed;
+    
+    background-image: url("../images/img_bg_31.png");
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#ft .scene_inner {
+    padding-top: 2.22rem;    
+    padding-bottom: 2.22rem;
+}
+#ft .ftLinkSec {
+    width: 100%;
+    height: 2.77rem;
+    margin:1.66rem auto;
+}
+#ft .ftLinkSec.siteLink {
+    margin: 0 auto;
+}
+#ft .ftLinkSec ul {
+    width: 33.333rem;
+    height: 100%;
+    margin: 0 auto;
+}
+#ft .ftLinkSec.siteLink .ftLink {
+    width: 33.333%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+}
+#ft .ftLinkSec.siteLink .ftLink .linkTxt {
+    display: block;
+    width: auto;
+    height: 2.7rem;
+    float: left;
+    line-height: 2.7rem;
+    color: #fff;
+    font-size: 1rem;
+}
+#ft .ftLinkSec.siteLink .ftLink .linkico {
+    display: block;
+    width: auto;
+    height: 2.7rem;
+    float: right;
+    line-height: 2.7rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#ft .ftLinkSec.snsLink  ul {
+    width: 14.286%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#ft .ftLinkSec.snsLink .ftLink {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 1rem;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+#ft .ftLinkSec.snsLink .ftLink:nth-child(1) {
+    background-image: url("../images/ico_sns_face.png");
+}
+#ft .ftLinkSec.snsLink .ftLink:nth-child(2) {
+    background-image: url("../images/ico_sns_insta.png");
+}
+#ft .ftLinkSec.snsLink .ftLink:nth-child(3) {
+    background-image: url("../images/ico_sns_mail.png");
+}
+#ft .ftLinkSec.snsLink .ftLink:nth-child(4) {
+    background-image: url("../images/ico_sns_naver.png");
+}
+
+
+#ft .ftVsSec {
+    width: 100%;
+    height: 6.11rem;
+}
+#ft .ftVsImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/ft_vstxt.png");
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#ft .ftTxtSec {
+    width: 100%;
+    height: auto;
+    padding-top: 3rem;
+}
+#ft .ftTxtSec p {
+    width: 100%;
+    height: auto;
+    line-height: 1.44rem;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #aaa;
+}
+#ft .ftTxtSec p b {
+    color: #ccc;
+    font-size: 0.8rem;
+}
+
+
+/********************************/
+/*  제이쿼리 적용 부분  */
+
+
+/*  제이쿼리 적용 부분 끝  */
+/*******************************/
+
+
+/*   footer css   */
+/***********************************************/

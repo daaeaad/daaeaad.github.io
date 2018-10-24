@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="keywords" content="마이리얼트립, myrealtrip, 자유여행, 여행포털, 가이드, 여행">
+    <meta name="description" content="100% 리얼 여행, 마이 리얼 트립">
+    
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecolde.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+    
+    <link rel="shortcut icon" href="./images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="./images/ico/favicon.ico">
+    
+    <title>마이리얼트립</title>
+    
+    
+    <!-- -- css 링크 -- -->
+	<!-- 초기화 css -->
+	<link rel="stylesheet" href="./css/default.css">
+	<!-- 공통 css -->
+	<link rel="stylesheet" href="./css/common.css">
+	<!-- 폰트 css -->
+	<link rel="stylesheet" href="./css/font.css">
+	<!-- scene0 css -->
+	<link rel="stylesheet" href="./css/scene0.css">
+	<!-- header css -->
+	<link rel="stylesheet" href="./css/hd.css">
+	<!-- scene1 css -->
+	<link rel="stylesheet" href="./css/scene1.css">
+	<!-- scene2 css -->
+	<link rel="stylesheet" href="./css/scene2.css">
+	<!-- scene3 css -->
+	<link rel="stylesheet" href="./css/scene3.css">
+	<!-- scene4 css -->
+	<link rel="stylesheet" href="./css/scene4.css">
+	<!-- footer css -->
+	<link rel="stylesheet" href="./css/ft.css">
+	
+	
+	<!-- -- 미디어쿼리 링크 -- -->
+	<!-- 미디어 - 모바일 -->
+	<link rel="stylesheet" href="./css/media_mobile.css">
+	<!-- 미디어 - 태블릿 -->
+	<link rel="stylesheet" href="./css/media_tablet.css">
+	<!-- 미디어 - 데스크탑 저해상도 -->
+	<link rel="stylesheet" href="./css/media_desktop_low.css">
+	
+        
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<!-- -- js 링크 -- -->
+	<!-- scene0 js -->
+	<script src="./js/scene0.js"></script>
+	<!-- scene1 js -->
+	<script src="./js/scene1.js"></script>
+	<!-- header js -->
+	<script src="./js/hd.js"></script>
+    
+    
+    
+</head>
+<body>
+
+<div class="wrap">
+    
+    <section id="scene0" class="scene intro">
+		<div class="rltv">
+            
+            <div class="sceneBg">
+                <video autoplay loop>
+                    <source src="./images/vdo_vs.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="sceneCon">
+                <div class="scene_inner">
+                    <ul>
+                        <li class="con">
+                            <img src="./images/img_vslogo_11.png" alt="my">
+                        </li>
+                        <li class="con">
+                            <div class="inputForm">
+                                <input type="text" placeholder="가고싶은 여행지를 검색해보세요!" class="ko_eb" autofocus>
+                                <button class="ico"></button>
+                            </div>
+                        </li>
+                        <li class="con">
+                            <img src="./images/img_vslogo_12.png" alt="trip">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+		</div>
+    </section>
+    
+    
+    <header id="hd" class="scene nf">
+        <div class="scene_inner">
+            
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="./images/logo_white.png" alt="로고 흰색" class="logoWhite">
+                    <img src="./images/logo_color.png" alt="로고 컬러" class="logoColor">
+                </a>
+            </h1>
+            
+            <nav class="gnb desktop">
+                <ul class="menuSec">
+                    <li class="mainMenu">
+                        <span class="ico">
+                            <img src="./images/ico_location_white.png" alt="지도 아이콘 화이트">
+                            <img src="./images/ico_location_black.png" alt="지도 아이콘 블랙">
+                        </span>
+                        <a href="#" class="ko_eb">전체 여행지</a>
+                    </li>
+                    <li class="mainMenu">
+                        <a href="#" class="ko_r">투어&amp;티켓</a>
+                    </li>
+                    <li class="mainMenu">
+                        <a href="#" class="ko_r">항공권</a>
+                    </li>
+                    <li class="mainMenu">
+                        <a href="#" class="ko_r">숙소</a>
+                    </li>
+                    <li class="mainMenu">
+                        <a href="#" class="ko_r">에어텔</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="navIcoSec">
+                <button class="menuBtn">
+                    <span class="menuLine"></span>
+                    <span class="menuLine"></span>
+                    <span class="menuLine"></span>
+                </button>
+            </div>
+            
+        </div>
+    </header>
+    
+    
+    
+    
+    <section id="scene1" class="scene nf">
+        <div class="scene_inner">
+            
+            <p class="sceneTit ko_eb">현재 인기 있는 여행지</p>
+            
+            <div class="sceneTabBtnSec">
+                <ul>
+                    <li class="tabBtn">
+                        <button data-value="1" class="ko_eb">오사카</button>
+                    </li>
+                    <li class="tabBtn">
+                        <button data-value="2" class="ko_r">홍콩</button>
+                    </li>
+                    <li class="tabBtn">
+                        <button data-value="3" class="ko_r">싱가포르</button>
+                    </li>
+                    <li class="tabBtn">
+                        <button data-value="4" class="ko_r">로마</button>
+                    </li>
+                    <li class="tabBtn">
+                        <button data-value="5" class="ko_r">도쿄</button>
+                    </li>
+                    <li class="tabBtn">
+                        <button data-value="6" class="ko_r">파리</button>
+                    </li>
+                    <li class="tabBtn">
+                        <button data-value="7" class="ko_r">마카오</button>
+                    </li>
+                    <li class="tabBtn">
+                        <button data-value="8" class="ko_r">바르셀로나</button>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <div class="sceneConSec">
+                <div class="sceneCon" data-value="1">
+                    <ul>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip1_1.png" alt="인기여행지11">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>라피트 왕복권(교환권)</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip1_2.png" alt="인기여행지12">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">여행편의·도쿄</span>
+                                    <span class="mainTxt ko_b">[전공항] 일본 플레이<br>와이파이 포켓 와이파이</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip1_3.png" alt="인기여행지13">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>주유패스 2일권</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip1_4.png" alt="인기여행지14">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 한큐<br>투어리스트 패스 1일권</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="sceneCon" data-value="2">
+                    <ul>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip2_1.png" alt="인기여행지21">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>라피트 왕복권(교환권)</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip2_2.png" alt="인기여행지22">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">여행편의·도쿄</span>
+                                    <span class="mainTxt ko_b">[전공항] 일본 플레이<br>와이파이 포켓 와이파이</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip2_3.png" alt="인기여행지23">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>주유패스 2일권</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip2_4.png" alt="인기여행지24">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 한큐<br>투어리스트 패스 1일권</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="sceneCon" data-value="3">
+                    <ul>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip3_1.png" alt="인기여행지31">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>라피트 왕복권(교환권)</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip3_2.png" alt="인기여행지32">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">여행편의·도쿄</span>
+                                    <span class="mainTxt ko_b">[전공항] 일본 플레이<br>와이파이 포켓 와이파이</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip3_3.png" alt="인기여행지33">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>주유패스 2일권</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip3_4.png" alt="인기여행지34">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 한큐<br>투어리스트 패스 1일권</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="sceneCon" data-value="4">
+                    <ul>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip4_1.png" alt="인기여행지41">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>라피트 왕복권(교환권)</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip4_2.png" alt="인기여행지42">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">여행편의·도쿄</span>
+                                    <span class="mainTxt ko_b">[전공항] 일본 플레이<br>와이파이 포켓 와이파이</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip4_3.png" alt="인기여행지43">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>주유패스 2일권</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip4_4.png" alt="인기여행지14">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 한큐<br>투어리스트 패스 1일권</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="sceneCon" data-value="5">
+                    <ul>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip5_1.png" alt="인기여행지51">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>라피트 왕복권(교환권)</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip5_2.png" alt="인기여행지52">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">여행편의·도쿄</span>
+                                    <span class="mainTxt ko_b">[전공항] 일본 플레이<br>와이파이 포켓 와이파이</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip5_3.png" alt="인기여행지53">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>주유패스 2일권</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip5_4.png" alt="인기여행지54">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 한큐<br>투어리스트 패스 1일권</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="sceneCon" data-value="6">
+                    <ul>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip6_1.png" alt="인기여행지61">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>라피트 왕복권(교환권)</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip6_2.png" alt="인기여행지62">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">여행편의·도쿄</span>
+                                    <span class="mainTxt ko_b">[전공항] 일본 플레이<br>와이파이 포켓 와이파이</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip6_3.png" alt="인기여행지63">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>주유패스 2일권</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip6_4.png" alt="인기여행지64">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 한큐<br>투어리스트 패스 1일권</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="sceneCon" data-value="7">
+                    <ul>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip7_1.png" alt="인기여행지71">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>라피트 왕복권(교환권)</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip7_2.png" alt="인기여행지72">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">여행편의·도쿄</span>
+                                    <span class="mainTxt ko_b">[전공항] 일본 플레이<br>와이파이 포켓 와이파이</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip7_3.png" alt="인기여행지73">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>주유패스 2일권</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip7_4.png" alt="인기여행지74">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 한큐<br>투어리스트 패스 1일권</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="sceneCon" data-value="8">
+                    <ul>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip8_1.png" alt="인기여행지81">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>라피트 왕복권(교환권)</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip8_2.png" alt="인기여행지82">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">여행편의·도쿄</span>
+                                    <span class="mainTxt ko_b">[전공항] 일본 플레이<br>와이파이 포켓 와이파이</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip8_3.png" alt="인기여행지83">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 오사카<br>주유패스 2일권</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="content">
+                            <a href="#">
+                                <span class="conImg">
+                                    <img src="./images/img_toptrip8_4.png" alt="인기여행지84">
+                                </span>
+                                <span class="conTxt">
+                                    <span class="subTxt ko_b">티켓/교통패스·오사카</span>
+                                    <span class="mainTxt ko_b">[무료배송] 한큐<br>투어리스트 패스 1일권</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    <section id="scene2" class="scene nf">
+        <div class="scene_inner">
+            
+            <p class="sceneTit ko_r"><b class="ko_eb">호텔 예약</b>은 하셨나요?</p>
+            
+            <div class="sceneConSec">
+                <ul>
+                    <p class="con ko_r">
+                        <button class="selBtn ko_b">
+                            여행지
+                            <span class="selIco ko_b">▼</span>
+                        </button>
+                             &nbsp; &nbsp; &nbsp; 의 호텔에서,
+                    </p>
+                    <p class="con ko_r">
+                        <button class="selBtn ko_b">
+                            날짜
+                            <span class="selIco ko_b">▼</span>
+                        </button>
+                              &nbsp; &nbsp; &nbsp; 동안 머물거에요.
+                    </p>
+                    <button class="searchBtn ko_eb">
+                        호텔 검색
+                    </button>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    <section id="scene3" class="scene nf">
+        <div class="scene_inner">
+            
+            <div class="sceneBg">
+                <ul>
+                    <li class="sceneBgImg one show">
+                        <img src="./images/img_bg_21.png" alt="테마여행배경이미지21">
+                    </li>
+                    <li class="sceneBgImg two">
+                        <img src="./images/img_bg_22.png" alt="테마여행배경이미지22">
+                    </li>
+                    <li class="sceneBgImg three">
+                        <img src="./images/img_bg_23.png" alt="테마여행배경이미지23">
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sceneCon">
+                <ul>
+                    <p class="conTxt ko_r">테마가 있는</p>
+                    <div class="conTxtFrame">
+						<div class="overflow">
+							<ul class="conTxtBox">
+								<li class="conTxt movTxt one ko_eb">그랜드캐년</li>
+								<li class="conTxt movTxt two ko_eb">몽셍미셀</li>
+								<li class="conTxt movTxt three ko_eb">후쿠오카</li>
+							</ul>
+						</div>
+                    </div>
+                    <p class="conTxt ko_r">여행</p>
+                    
+                    <div class="conBtnSec">
+                        <ul>
+                            <li class="conBtn">
+                                <button></button>
+                            </li>
+                            <li class="conBtn">
+                                <button></button>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    <section id="scene4" class="scene nf">
+        <div class="scene_inner">
+            
+            <p class="sceneTit ko_r">여행 가기 전 <b class="ko_eb">필수 체크리스트</b> 확인하세요!</p>
+            
+            <div class="sceneConSec">
+                <ul>
+                    <li class="con">
+                        <a href="#">
+                            <span class="conImg">
+                                <img src="./images/img_check_11.png" alt="체크리스트이미지11">
+                            </span>
+                            <span class="conTxt">
+                                <span class="conMainTxt ko_eb">여행자 보험</span>
+                                <span class="conSubTxt ko_b">공항보다 저렴하게, 빠르게 여행자<br>보험 가입하고 마음 편한 여행 즐기기</span>
+                            </span>
+                        </a>
+                        <a href="#" class="more ko_b">체크하러가기</a>
+                    </li>
+                    
+                    <li class="con">
+                        <a href="#">
+                            <span class="conImg">
+                                <img src="./images/img_check_12.png" alt="체크리스트이미지12">
+                            </span>
+                            <span class="conTxt">
+                                <span class="conMainTxt ko_eb">인터넷 면세점</span>
+                                <span class="conSubTxt ko_b">마이리얼트립 구매 회원에게<br>신라인터넷면세점 적립금 혜택!</span>
+                            </span>
+                        </a>
+                        <a href="#" class="more ko_b">체크하러가기</a>
+                    </li>
+                    
+                    <li class="con">
+                        <a href="#">
+                            <span class="conImg">
+                                <img src="./images/img_check_13.png" alt="체크리스트이미지13">
+                            </span>
+                            <span class="conTxt">
+                                <span class="conMainTxt ko_eb">포켓 와이파이</span>
+                                <span class="conSubTxt ko_b">데이터 요금 폭탄 걱정없이<br>전세계 어디서나 와이파이 이용</span>
+                            </span>
+                        </a>
+                        <a href="#" class="more ko_b">체크하러가기</a>
+                    </li>
+                    
+                    <li class="con">
+                        <a href="#">
+                            <span class="conImg">
+                                <img src="./images/img_check_14.png" alt="체크리스트이미지14">
+                            </span>
+                            <span class="conTxt">
+                                <span class="conMainTxt ko_eb">렌터카</span>
+                                <span class="conSubTxt ko_b">해외 유명 렌터카 가격 비교와<br>예약을 한번에! 쉽고 빠른 예약</span>
+                            </span>
+                        </a>
+                        <a href="#" class="more ko_b">체크하러가기</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    <footer id="ft" class="scene nf">
+        <div class="scene_inner">
+            
+            <div class="ftLinkSec siteLink">
+                <ul>
+                    <li class="ftLink">
+                        <span class="linkTxt ko_r">ABOUT</span>
+                        <span class="linkico ko_b">+</span>
+                    </li>
+                    <li class="ftLink">
+                        <span class="linkTxt ko_r">PARTNERSHIP</span>
+                        <span class="linkico ko_b">+</span>
+                    </li>
+                    <li class="ftLink">
+                        <span class="linkTxt ko_r">HELP</span>
+                        <span class="linkico ko_b">+</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="ftLinkSec snsLink">
+                <ul>
+                    <li class="ftLink">
+                        <a href="#"></a>
+                    </li>
+                    <li class="ftLink">
+                        <a href="#"></a>
+                    </li>
+                    <li class="ftLink">
+                        <a href="#"></a>
+                    </li>
+                    <li class="ftLink">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="ftVsSec">
+                <span class="ftVsImg">
+                    
+                </span>
+            </div>
+            
+            <div class="ftTxtSec">
+                <p class="ko_r">상호명 마이리얼트립 | 대표 : 이동건 | 개인정보책임자 : 류종민</p>
+                <p class="ko_r">사업자등록번호 : 209-81-55339 | 통신판매업신고번호 : 2017-서울강남-03960 | 사업자정보확인</p>
+                <p class="ko_r">서울특별시 강남구 강남대로 364(역삼동), 미왕빌딩 15층 (주)마이리얼트립</p>
+                <p class="ko_r"><b>일반 전화문의 : 1661-2860</b> | 일반 이메일문의 : help@myrealtrip.com 운영시간(한국) 09:00 ~ 22:00, 주말/공휴일 포함.</p>
+                <p class="ko_r"><b>항공권 전화문의 : 1661-2644</b> | 항공권 이메일문의 : flights@myrealtrip.com 운영시간(한국) 09:00 ~ 18:00, 주말/공휴일 휴무.</p>
+                <p class="ko_r"><b>마케팅/제휴 이메일문의 : marketing@myrealtrip.com</b> 운영시간(한국) 09:00 ~ 18:00, 주말/공휴일 휴무</p>
+                <p class="ko_r">자사는 서울특별시관광협회 공제영업보증보험에 가입이 되어 있습니다.</p>
+                <p class="ko_r">마이리얼트립은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 마이리얼트립은 상품·거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
+            </div>
+            
+        </div>
+    </footer>
+  
+    
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/***********************************************/
+/*   scene3 css   */
+
+
+#scene3 {
+    height: 28rem;
+}
+#scene3 .scene_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene3 .sceneBg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#scene3 .sceneBg ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene3 .sceneBgImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+#scene3 .sceneBgImg img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 100%;
+}
+#scene3 .sceneCon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#scene3 .sceneCon > ul {
+    width: 26.11rem;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+#scene3 .conTxt {
+    width: 100%;
+    height: 1.88rem;
+    margin-bottom: 1.88rem;
+    text-align: center;
+    font-size: 1.11rem;
+    color: #fff;
+}
+#scene3 .conTxt:nth-child(1) {
+    padding-top: 9.16rem;
+}
+#scene3 .conTxtFrame {
+    width: 5.55rem;
+    height: 1.88rem;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 1.88rem;
+    position: relative;
+}
+#scene3 .conTxtFrame .overflow {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#scene3 .conTxtFrame .conTxtBox {
+    width: 300%;
+    height: 100%;
+    padding-bottom: 1.88rem;
+}
+#scene3 .conTxtFrame .conTxt {
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 0;
+}
+#scene3 .conTxtFrame:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3.83rem;
+    background-image: url("../images/graphic_slash_color.png");
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -1.2rem;
+    left: 0;
+}
+
+#scene3 .conBtnSec {
+    width: 100%;
+    height: 1.88rem;
+    position: absolute;
+    left: 0;
+    top: calc(calc(100% - 1.88rem) / 2);
+}
+#scene3 .conBtnSec ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene3 .conBtn {
+    width: 50%;
+    height: 100%;
+}
+#scene3 .conBtn:nth-child(1) {
+    float: left;
+}
+#scene3 .conBtn:nth-child(2) {
+    float: right
+}
+#scene3 .conBtn button {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#scene3 .conBtn:nth-child(1) button {
+    background-image: url("../images/ico_arrow_left.png");
+    background-size: auto 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+#scene3 .conBtn:nth-child(2) button {
+    background-image: url("../images/ico_arrow_right.png");
+    background-size: auto 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+
+/********************************/
+/*  제이쿼리 적용 부분  */
+
+/* #scene3 .sceneBgImg - addClass show */
+#scene3 .sceneBgImg.show {
+    opacity: 1;
+}
+
+/*  제이쿼리 적용 부분 끝  */
+/*******************************/
+
+
+/*   scene3 css   */
+/***********************************************/
