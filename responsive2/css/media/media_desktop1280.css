@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+
+
+/*****************************************/
+/*  미디어쿼리 - 데스크탑 1280 버전  */
+
+
+@media screen and (min-width:1280px) and (max-width:1919px) {
+    
+/*    default css */
+    body, html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    /*    default css */
+    body, html {
+        font-size: 18px;
+    }
+}
+
+
+/*  미디어쿼리 - 태블릿 버전 끝  */
+/*****************************************/

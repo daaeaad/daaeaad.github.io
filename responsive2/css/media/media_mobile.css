@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+
+
+/*****************************************/
+/*  미디어쿼리 - 태블릿 버전  */
+
+
+@media screen and (max-width:766px) {
+    
+/*    default css */
+    body, html {
+        font-size: 10px;
+    }
+    
+/*    common css */
+    .scene_inner {
+        width: 100%;
+        height: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        box-sizing: border-box;
+    }
+    
+/*    header css */
+    #hd {
+        height: 5.6rem;
+    }
+    #hd .t_hd {
+        height: 100%;
+        position: relative;
+    }
+    #hd .b_hd {
+        display: none;
+    }
+    #hd .menuOpenBtn {
+        display: block;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        width: 4.4rem;
+    }
+    #hd .t_gnb {
+        width: 3rem;
+        padding-right: 2rem;
+        float: right;
+    }
+    #hd .t_gnb ul {
+        padding-top: 1.6rem;
+    }
+    #hd .mMenu {
+        display: none;
+    }
+    #hd .searchBtn {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+    #hd .searchBtn button {
+        background-size: 2.8rem;
+    }
+    
+    /* #scene1 */
+    #scene1 .vsImg img {
+        height: 100%;
+        width: auto;
+    }
+    
+    /* #scene2 */
+    #scene2 .scene_inner {
+        width: 100%;
+    }
+    #scene2 .tabConImg:nth-child(3), #scene2 .tabConImg:nth-child(4), #scene2 .tabConImg:nth-child(5), #scene2 .tabConImg:nth-child(6), #scene2 .tabConImg:nth-child(7), #scene2 .tabConImg:nth-child(8) {
+        display: none;
+    }
+    
+    /* #scene3 */
+    #scene3 {
+        height: auto;
+    }
+    #scene3 .scene_inner {
+        width: 100%;
+    }
+    #scene3 .snsBox {
+        width: 19.33rem;
+        margin: 1.22rem auto;
+    }
+    #scene3 .snsBox li {
+        clear: both;
+        margin: 2rem auto;
+    }
+    
+    /* #ft */
+    #ft .scene_inner {
+        width: 100%;
+        padding-top: 3rem;
+    }
+    
+}
+
+
+/*  미디어쿼리 - 태블릿 버전 끝  */
+/*****************************************/

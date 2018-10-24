@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/**************************************************/
+/* 헤더영역 */
+
+
+#hd {
+    width: 100%;
+    height: 11.4rem;
+    background-color: #fff;
+}
+#hd .t_hd {
+    width: 100%;
+    height: 7.38rem;
+    border-bottom: 1px solid #494b57;
+    box-sizing: border-box;
+}
+#hd .menuOpenBtn {
+    width: 1.6rem;
+    height:100%;
+    float: left;
+    padding-top: 3.66rem;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    display: none;
+}
+#hd .m_open {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#hd .button_inner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#hd .button_inner span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #494b57;
+    margin-top: 0.55rem;
+}
+#hd .button_inner span:nth-child(1) {
+    margin-top: 0;
+}
+#hd .logo {
+    width: 10.66rem;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+#hd .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url("../images/logo_color.png");
+    background-repeat: no-repeat;
+    background-size: auto 3rem;
+    background-position: center center;
+}
+#hd .t_gnb {
+    width: 18.33rem;
+    height: 100%;
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#hd .t_gnb ul {
+    width: 100%;
+    height: 1.66rem;
+    padding-top: 3.66rem;
+    position: relative;
+}
+#hd .mMenu {
+    width: 5rem;
+    height: 100%;
+    float: left;
+}
+#hd .mMenu a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.833rem;
+    text-align: center;
+    line-height: 1.66rem;
+    color: #666;
+}
+#hd .searchBtn {
+    width: 1.66rem;    
+    float: left;
+    height: 1.66rem;
+}
+#hd .searchBtn button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/btn_search.png");
+    background-size: 1.11rem auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#hd .b_hd {
+    width: 100%;
+    height: 4.05rem;
+}
+#hd .b_gnb {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#hd .mainGnb {
+    width: 100%;
+    height: auto;
+    line-height: 4.05rem;
+}
+#hd .mainMenu {
+    width: 12.22rem;
+    height: auto;
+    line-height: 4.05rem;
+    float: left;
+    position: relative;
+}
+#hd .mainMenu > a {
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 4.05rem;
+    text-align: center;
+    font-size: 1.277rem;
+    color: #000;
+}
+#hd .subGnb {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 4.05rem;
+    z-index: 200;
+}
+#hd .subMenu {
+    width: 100%;
+    height: auto;
+    line-height: 4.05rem;
+}
+#hd .subMenu a {
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 2.22rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/****************************************/
+/* jquery 적용 부분 */
+
+/* #hd .mainMenu - addClass mHover */
+        /*this 에 .subGnb - slideDown*/
+#hd .mainMenu.mHover > a {
+    color:#feb415;
+    font-weight: bold;
+}
+
+/* #hd .subMenu - addClass hover */
+#hd .subMenu.hover a {
+    color: #000;
+    font-weight: bold;
+}
+
+/* jquery 끝 */
+/****************************************/
+
+
+
+/****************************************/
+/* 미디어쿼리 적용 부분 */
+
+
+
+/* 미디어쿼리 끝 */
+/****************************************/
+
+
+/* 헤더영역 끝 */
+/**************************************************/

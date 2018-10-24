@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+
+/********************************************/
+/****************  폰트 CSS  ****************/
+
+/* 국문서체 */
+
+@font-face {
+    font-family:"NanumSquareR";
+    src:local("NanumSquareR"),
+        url("./fontmake/NanumSquareR.eot") format("embedded-opentype"),
+        url("./fontmake/NanumSquareR.woff") format("woff");
+}
+@font-face {
+    font-family:"NanumSquareEB";
+    src:local("NanumSquareEB"),
+        url("./fontmake/NanumSquareEB.eot") format("embedded-opentype"),
+        url("./fontmake/NanumSquareEB.woff") format("woff");
+}
+@font-face {
+    font-family:"NanumSquareL";
+    src:local("NanumSquareL"),
+        url("./fontmake/NanumSquareL.eot") format("embedded-opentype"),
+        url("./fontmake/NanumSquareL.woff") format("woff");
+}
+@font-face {
+    font-family:"NanumSquarB";
+    src:local("NanumSquarB"),
+        url("./fontmake/NanumSquarB.eot") format("embedded-opentype"),
+        url("./fontmake/NanumSquarB.woff") format("woff");
+}
+
+
+/* 클래스 지정 - 국문 */
+.ko_l {
+    font-family: "NanumSquareL";
+}
+.ko_r {
+    font-family: "NanumSquareR";
+}
+.ko_b {
+    font-family: "NanumSquareB";
+}
+.ko_eb {
+    font-family: "NanumSquareEB";
+}
+
+
+
+/****************  폰트 CSS 끝  **************/
+/********************************************/

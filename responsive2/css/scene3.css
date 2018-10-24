@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+
+/********************************************/
+/*  #scene3 css  */
+
+
+#scene3 {
+    height: 41.22rem;
+    background-color: #feb415;
+}
+#scene3 .scene_inner {
+    width: 79.33rem;
+    padding-top: 5rem;
+    box-sizing: border-box;
+}
+#scene3 .sceneTitSec {
+    height: 4.44rem;
+    margin-bottom: 0;
+}
+#scene3 .sceneTit {
+    color: #fff;
+}
+#scene3 .sceneConSec {
+    width: 100%;
+    height: 28.55rem;
+}
+#scene3 .snsBox {
+    width: 100%;
+    height: 27.33rem;
+    margin-top: 1.22rem;
+}
+#scene3 .snsBox li {
+    width: 19.33rem;
+    height: 100%;
+    float: left;
+    margin-left: 0.66rem;
+    position: relative;
+}
+#scene3 .snsBox li:nth-child(1) {
+    margin-left: 0;
+}
+#scene3 .snsBox a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.66rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#scene3 .snsIco {
+    display: block;
+    width: 100%;
+    height: 3.55rem;
+    position: absolute;
+    top: -1.77rem;
+    left: 0;
+    z-index: 1;
+}
+#scene3 .snsIco img {
+    display: block;
+    width: 3.55rem;
+    height: 100%;
+    margin: 0 auto;
+}
+#scene3 .snsThum {
+    display: block;
+    width: 100%;
+    height: 22.55rem;
+    overflow: hidden;
+}
+#scene3 .snsThum img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+#scene3 .snsBox li:hover .snsThum img {
+    transform: scale(1.2);
+}
+
+#scene3 .snsTit {
+    display: block;
+    width: 100%;
+    height: 4.77rem;
+}
+#scene3 .snsTit span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 4.77rem;
+    text-align: center;
+    font-size: 1.22rem;
+    color: #000;
+}
+
+
+/*  #scene3 css  */
+/********************************************/

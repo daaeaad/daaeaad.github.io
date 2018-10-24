@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+
+
+
+/***************************************************************************/
+/*  #scene1 css  */
+
+
+#scene1 {
+    height: 36.6rem;
+}
+#scene1 .vsFrame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene1 .vsBox {
+    width: 300%;
+    height: 100%;
+}
+#scene1 .vsImg {
+    width: 33.333%;
+    height: 100%;
+    float: left;
+}
+#scene1 .vsImg a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene1 .vsImg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#scene1 .vsBtnBox {
+    width: 3.67rem;
+    height: 0.722rem;
+    position: absolute;
+    top: calc(100% - 2.33rem);
+    left: calc(calc(100% - 3.61rem) / 2);
+}
+#scene1 .vsBtnBox_inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#scene1 .vsBtnBox button {
+    display: block;
+    width: 0.722rem;
+    height: 0.722rem;
+    float: left;
+    margin-left: 0.722rem;
+    border-radius: 0.361rem;
+    background-color: #fff;
+}
+#scene1 .vsBtnBox button:nth-child(1) {
+    margin-left: 0;
+}
+
+
+
+/******************************************/
+/* jquery 적용 부분 */
+
+/* #scene1 .vsBtnBox button - addClass on */
+#scene1 .vsBtnBox button.on {
+    background-color: #feb415;
+}
+
+/* jquery 적용 부분 끝 */
+/******************************************/
+
+
+
+
+/*  #scene1 css  */
+/***************************************************************************/

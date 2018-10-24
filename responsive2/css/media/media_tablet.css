@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+
+
+/*****************************************/
+/*  미디어쿼리 - 태블릿 버전  */
+
+
+@media screen and (min-width:767px) and (max-width:959px) {
+    
+/*    default css */
+    body, html {
+        font-size: 10px;
+    }
+    
+/*    header css */
+    #hd {
+        height: 5.6rem;
+    }
+    #hd .t_hd {
+        height: 100%;
+    }
+    #hd .b_hd {
+        display: none;
+    }
+    #hd .menuOpenBtn {
+        display: block;
+        padding-top: 2rem;
+    }
+    #hd .t_gnb ul {
+        padding-top: 2.4rem;
+    }
+    
+}
+
+
+/*  미디어쿼리 - 태블릿 버전 끝  */
+/*****************************************/
