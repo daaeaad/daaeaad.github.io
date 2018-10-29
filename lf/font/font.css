@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:"Montserrat-ExtraLight";
+    src:local("Montserrat-ExtraLight"),
+        url("./fontmake/Montserrat-ExtraLight.eot") format("embedded-opentype"),
+        url("./fontmake/Montserrat-ExtraLight.woff") format("woff");
+}
+
+@font-face {
+    font-family:"Montserrat-Light";
+    src:local("Montserrat-Light"),
+        url("./fontmake/Montserrat-Light.eot") format("embedded-opentype"),
+        url("./fontmake/Montserrat-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family:"Montserrat-SemiBoldItalic";
+    src:local("Montserrat-SemiBoldItalic"),
+        url("./fontmake/Montserrat-SemiBoldItalic.eot") format("embedded-opentype"),
+        url("./fontmake/Montserrat-SemiBoldItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family:"Montserrat-Light";
+    src:local("Montserrat-Light"),
+        url("./fontmake/Montserrat-Light.eot") format("embedded-opentype"),
+        url("./fontmake/Montserrat-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family:"Montserrat-ThinItalic";
+    src:local("Montserrat-ThinItalic"),
+        url("./fontmake/Montserrat-ThinItalic.eot") format("embedded-opentype"),
+        url("./fontmake/Montserrat-ThinItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family:"Montserrat-Bold";
+    src:local("Montserrat-Bold"),
+        url("./fontmake/Montserrat-Bold.eot") format("embedded-opentype"),
+        url("./fontmake/Montserrat-Bold.woff") format("woff");
+}
+
+
+
+@font-face {
+    font-family:"NanumSquareR";
+    src:local("NanumSquareR"),
+        url("./fontmake/NanumSquareR.eot") format("embedded-opentype"),
+        url("./fontmake/NanumSquareR.woff") format("woff");
+}
+
+@font-face {
+    font-family:"NanumSquareEB";
+    src:local("NanumSquareEB"),
+        url("./fontmake/NanumSquareEB.eot") format("embedded-opentype"),
+        url("./fontmake/NanumSquareEB.woff") format("woff");
+}
+
+@font-face {
+    font-family:"NanumSquareL";
+    src:local("NanumSquareL"),
+        url("./fontmake/NanumSquareL.eot") format("embedded-opentype"),
+        url("./fontmake/NanumSquareL.woff") format("woff");
+}
+
+
+
+.en_el {
+    font-family:"Montserrat-ExtraLight";
+}
+.en_l {
+     font-family:"Montserrat-Light";
+}
+.en_t {
+    font-family: "Montserrat-Thin";
+}
+.en_sbi {
+    font-family:"Montserrat-SemiBoldItalic";
+}
+.en_b {
+    font-family:"Montserrat-Bold";
+}
+.en_ti {
+    font-family: "Montserrat-ThinItalic";
+}
+
+
+.en80 {
+    font-family:"Montserrat-ExtraLight";
+    font-size: 80px;
+}
+.en20 {
+    font-size: 20px;
+}
+.en18 {
+    font-size: 18px;
+}
+.en14 {
+    font-size: 14px;
+}
+.en16 {
+	font-size:16px;
+}
+.en12 {
+    font-size: 12px;
+}
+.en24 {
+    font-size: 24px;
+}
+.en40 {
+	font-size: 40px;
+}
+
+
+
+.ko_l {
+    font-family: "NanumSquareL";
+}
+.ko_r {
+    font-family: "NanumSquareR";
+}
+.ko_eb {
+    font-family: "NanumSquareEB";
+}
+
+.ko10 {
+    font-size: 10px;
+}
+.ko12 {
+    font-size: 12px;
+}
+.ko14 {
+    font-size: 14px;
+}
+.ko18 {
+    font-size: 18px;
+}
+.ko20 {
+    font-size: 20px;
+}
+.ko24 {
+	font-size: 24px;
+}
+.ko39 {
+	font-size: 39px;
+}
+.ko76 {
+	font-size: 76px;
+}
