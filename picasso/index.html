@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>picasso brush</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./default.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./header.css">
+    
+    <link rel="stylesheet" href="./main1.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+<!--
+    <script src="ktslider2.js"></script>
+    <script src="ktsmslider.js"></script>
+-->
+    
+    <link rel="stylesheet" href="./main2_4.css">
+    
+    <style> /*페이지이동버튼*/
+    
+/*
+        .pgnav {
+            width: 23px;
+            height: 100%;
+            position: fixed;
+            z-index: 800;
+            margin-left: 50px;
+        }
+        .pgTar {
+            width: 100%;
+            height: 150px;
+            margin-top: 412px;
+        }
+        .pgnav li {
+            
+        }
+*/
+        
+        #collapse div.collapse_inner {
+            width: 954px;
+        }
+        
+    </style>
+
+    
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./topbtn.css">
+    
+    
+    <script>
+        $(document).ready(function() {
+           
+            var wd = parseInt($("#visual").width());
+            
+            var cnt = $(".banImg").length;
+            
+            var intv = setInterval(function(){rightAni();},3500);
+            
+            
+            $(".next").click(function() {
+               
+                clearInterval(intv);
+                rightAni();
+                
+                intv=setInterval(function() {
+                    rightAni();
+                },3500)
+                
+            });
+            
+            $(".prev").click(function() {
+                
+                clearInterval(intv);
+                leftAni();
+                
+                intv = setInterval(function() {
+                    rightAni();
+                },3500);
+                
+            });
+            
+//            
+//            $(".sldPagingBtn").eq(0).click(function() {
+//                
+//                clearInterval(intv);
+//                
+//                $(".banImg.one")
+//                    .prependTo($(".gallery"));
+//                
+//                $(".banImg.two")
+//                    .insertAfter($(".banImg.one"));
+//                
+//                $(".banImg.three")
+//                    .appendTo($(".gallery"));
+//                
+//                $(".gallery")
+//                    .not(":animated")
+//                    .animate({"margin-left":"0px"},800);
+//                
+//                intv = setInterval(function() {
+//                    rightAni();
+//                },3500);
+//                
+//            });
+            
+            
+            function leftAni() {
+                
+                $(".banImg")
+                    
+                    .eq(cnt-1)
+                    .prependTo($(".gallery"));
+                
+                $(".gallery")
+                    .css("margin-left", wd*-1+"px");
+                
+                $(".gallery")
+                    .not(":animated")
+                    .animate({"margin-left":"0px"}, 800);
+                
+            }
+            
+            function rightAni() {
+                
+                $(".gallery")
+                
+                    .not(":animated")
+                    .animate({"margin-left":wd*-1+"px"},800, function() {
+                    $(".banImg")
+                        .eq(0)
+                        .appendTo($(".gallery"));
+                    $(".gallery")
+                        .css("margin-left", "0px");
+                });
+                
+            }
+            
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+           
+            var ht=parseInt($(window).height());
+            
+            $(window).on("mousewheel", function(e){
+                if(e.originalEvent.wheelDelta < 0){  //아래로 스크롤
+                    $("html, body").not(":animated").animate({scrollTop:"+="+ht+"px"}, 800);
+                } else {  //위로 스크롤
+                    $("html, body").not(":animated").animate({scrollTop:"-="+ht+"px"}, 800);
+
+                }
+                return false;
+    });
+            
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function() {
+            
+            $(window).scroll(function(){
+                
+                var ht=parseInt($(window).height());
+                
+               
+                if($(this).scrollTop()==0) {
+                    
+                    $(".hdWrap")
+                        .animate({"margin":"50px auto"},300);
+                    
+                    $(".hd .logo img")
+                        .attr("src", "./images/logo_white.png");
+                    
+                    $(".hd .opener span")
+                        .css("background-image", "url('./images/ico_menu_w.png')");
+                    
+                    $(".gnb.top li a")
+                        .css("color", "#fff");
+                    
+                    $(".gnb .menu a")
+                        .css("color", "#fff");
+                    
+                } else if($(this).scrollTop()==ht) {
+                    
+                    $(".hdWrap")
+                        .animate({"margin":"20px auto"},300);
+                    
+                    $(".hd .logo img")
+                        .attr("src", "./images/logo_black.png");
+                    
+                    $(".hd .opener span")
+                        .css("background-image", "url('./images/ico_menu_b.png')");
+                    
+                    $(".gnb.top li a, .gnb .menu a")
+                        .css("color", "#000");
+                    
+                } else if($(this).scrollTop()==ht*2) {
+                    
+                    $(".hdWrap")
+                        .animate({"margin":"20px auto"},300);
+                    
+                    $(".hd .logo img")
+                        .attr("src", "./images/logo_white.png");
+                    
+                    $(".hd .opener span")
+                        .css("background-image", "url('./images/ico_menu_w.png')");
+                    
+                    $(".gnb.top li a")
+                        .css("color", "#fff");
+                    
+                    $(".gnb .menu a")
+                        .css("color", "#fff");
+                    
+                } else if($(this).scrollTop()==ht*3) {
+                    
+                    $(".hdWrap")
+                        .animate({"margin":"20px auto"},300);
+                    
+                    $(".hd .logo img")
+                        .attr("src", "./images/logo_black.png");
+                    
+                    $(".hd .opener span")
+                        .css("background-image", "url('./images/ico_menu_b.png')");
+                    
+                    $(".gnb.top li a, .gnb .menu a")
+                        .css("color", "#000");
+                    
+                } else if($(this).scrollTop()==ht*4) {
+                    
+                    $(".hdWrap")
+                        .animate({"margin":"20px auto"},300);
+                    
+                    $(".hd .logo img")
+                        .attr("src", "./images/logo_white.png");
+                    
+                    $(".hd .opener span")
+                        .css("background-image", "url('./images/ico_menu_w.png')");
+                    
+                    $(".gnb.top li a")
+                        .css("color", "#fff");
+                    
+                    $(".gnb .menu a")
+                        .css("color", "#fff");
+                    
+                } 
+                
+            });
+            
+        })    
+    </script>
+    
+    <script>
+        $(document).ready(function() {
+           
+            $(window).scroll(function() {
+               
+                if($(this).scrollTop()>500) {
+                    $(".toTop").fadeIn();
+                } else {
+                    $(".toTop").fadeOut();
+                }
+                
+            });
+            
+            $(".toTop").click(function() {
+               
+                $("html, body").animate({
+                    scrollTop:0
+                }, 500);
+                
+                return false;
+                
+            });
+            
+        });
+    </script>
+
+
+</head>
+<body>
+    
+    <div class="wrap">
+        
+        <header class="hd">
+            <div class="hdWrap">
+                
+                <div class="hdcon left">
+                   
+                    <input type="checkbox" id="ck" class="ckItem">
+                    <label for="ck" class="opener">
+                        <span></span>
+                    </label>
+                    
+                    <h1>
+                        <a href="" class="logo">
+                            <img src="./images/logo_white.png" alt="피카소브랜드로고">
+                        </a>
+                    </h1>
+                    
+                    <nav id="collapse">
+                       <label for="ck" id="close"></label>
+                        <div class="collapse_inner">
+                            <a href="index.html" class="logo"></a>
+                            
+                            <ul class="colItem">
+                                <li class="colmenu">
+                                    <a href="sub1_1.html" class="colmenuTit">BRAND</a>
+                                    <div class="colsub"  id="coltar1">
+                                        <ul>
+                                            <li>
+                                                <a href="sub1_1.html">about picasso</a>
+                                            </li>
+                                            <li>
+                                                <a href="sub1_2.html">store info</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="colmenu" id="coltar2">
+                                    <a href="sub2_1.html" class="colmenuTit">ONLINE SHOP</a>
+                                    <div class="colsub">
+                                        <ul>
+                                            <li>
+                                                <a href="sub2_1.html">new</a>
+                                            </li>
+                                            <li>
+                                                <a href="sub2_2.html">for artist</a>
+                                            </li>
+                                            <li>
+                                                <a href="sub2_3.html">purpose of use</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="colmenu" id="coltar3">
+                                    <a href="sub3_1.html" class="colmenuTit">CAMPAIGN</a>
+                                    <div class="colsub">
+                                        <ul>
+                                            <li>
+                                                <a href="sub3_1.html">current</a>
+                                            </li>
+                                            <li>
+                                                <a href="sub3_2.html">past</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="colmenu" id="coltar4">
+                                    <a href="#ft" class="colmenuTit">MEET US</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                
+                <div class="hdcon right">
+                    
+                    <ul class="gnb top">
+                        <li>
+                            <a href="login.html">login</a>
+                        </li>
+                        <li>
+                            <a href="join.html">join us</a>
+                        </li>
+                    </ul>
+                    <nav class="gnb">
+                        <ul class="menuouter">
+                            <li class="menu">
+                                <a href="sub1_1.html">BRAND</a>
+                            </li>
+                            <li class="menu">
+                                <a href="sub2_1.html">ONLINE SHOP</a>
+                            </li>
+                            <li class="menu">
+                                <a href="sub3_1.html">CAMPAIGN</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+                
+            </div>
+        </header>
+        
+        <section class="page" id="page1">
+            
+             <div class="imgSlide" id="visual">
+                <p class="prev"></p>
+                <p class="next"></p>
+                <div class="gallery">
+                    <img src="./images/img_vs_main1.1.png" class="banImg two" alt="배너3">
+                    <img src="./images/img_vs_main1.3.png" class="banImg one" alt="배너2">
+                    <img src="./images/img_vs_main1.2.png" class="banImg three" alt="배너1">
+                </div>
+                
+                <div class="pagingSec">
+                    <ul>
+                        <li class="pagingBtn">
+                            <a></a>
+                        </li>
+                        <li class="pagingBtn">
+                            <a></a>
+                        </li>
+                        <li class="pagingBtn">
+                            <a></a>
+                        </li>
+                        <li class="pagingBtn">
+                            <a></a>
+                        </li>
+                        <li class="pagingBtn">
+                            <a></a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <ul class="banCon">
+                    <li class="banTitleBox">
+                        <h2 class="banTit">ALL OF BEAUTY,<br>PICASSO</h2>
+                        <a href="sub1_1.html" class="more">더 보기 ></a>
+                    </li>
+                </ul>
+                <ul class="lrBtn">
+                    <li class="left">
+                        <a class="prev"></a>
+                    </li>
+                    <li class="right">
+                        <a class="next"></a>
+                    </li>
+                </ul>
+<!--
+                <div class="sldPaging">
+                   <ul>
+                        <li class="sldPagingBtn">
+                            <a></a>
+                        </li>
+                        <li class="sldPagingBtn">
+                            <a></a>
+                        </li>
+                        <li class="sldPagingBtn">
+                            <a></a>
+                        </li>
+                        <li class="sldPagingBtn_play">
+                            <a></a>
+                        </li>
+                    </ul>
+                </div>
+-->
+            </div>
+       
+        </section>
+        
+        <section class="page" id="page2">
+            
+            <div class="pgWrap">
+                
+                <input type="radio" name="rdo1" class="raItem" id="ra1" checked>
+                <input type="radio" name="rdo1" class="raItem" id="ra2">
+                <input type="radio" name="rdo1" class="raItem" id="ra3">
+                
+                <div class="imgBox2">
+                   <ul class="imgBox2_inner first">
+                        <li class="item1">
+                            <div class="imgFrame">
+                                <img src="./images/img_pro_whiteline.png" alt="화이트라인제품컷">
+                            </div>
+                            <div class="txtFrame">
+                                <p class="ibTit small">Best Item</p>
+                                <p class="ibTit big">PICASSO<br>WHITE<br>LINE</p>
+                                <span class="txtinner">
+                                    <p class="ibCom">메이크업 입문자부터 전문가까지 모두 사용 가능한<br>브러쉬의 화이트 라인을 새롭게 선보입니다.<br>부담없는 가격에 최상의 터치와 그립감을 경험하세요.</p>
+                                    <a href="sub2_1.html" class="detail">더보기 ></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="imgBox2_inner second">
+                        <li class="item2">
+                            <div class="imgFrame">
+                                <img src="./images/img_pro_minerva.png" alt="미네르바제품컷">
+                            </div>
+                            <div class="txtFrame">
+                                <p class="ibTit small">Best Item</p>
+                                <p class="ibTit big">PICASSO MINERVA BRUSH SET</p>
+                                <span class="txtinner">
+                                    <p class="ibCom comment">휴대성과 완벽한 메이크업을 위한 모든 조건을 갖춘 피카소 25주년 기획 상품, 미네르바 브러쉬 9종 세트. 그립감과 완벽한 모질, 터치감에 휴대성을 더했습니다.</p>
+                                    <a href="sub2_1.html" class="detail">더보기 ></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="imgBox2_inner third">
+                        <li class="item3">
+                            <div class="imgFrame">
+                                <img src="./images/img_pro_pony.png" alt="포니14호제품컷">
+                            </div>
+                            <div class="txtFrame">
+                                <p class="ibTit small">Best Item</p>
+                                <p class="ibTit big">PONY 14 MINI<br>BRUSH</p>
+                                <span class="txtinner">
+                                    <p class="ibCom comment">피카소 브러쉬만의 DT나노공법기술을 이용하여 모질의 부드러움을 극대화했습니다. 섬세한 터치와 그라데이션 표현에 탁월한 제품으로 프로 아티스트들의 애장품입니다.</p>
+                                    <a href="sub2_1.html" class="detail">더보기 ></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+       
+                <div class="btnBox sld">
+                    <ul class="ibBtn_sld">
+                        <li>
+                            <label for="ra2" class="sldBtn right"></label>
+                        </li>
+                        <li>
+                            <label for="ra1" class="sldBtn left"></label>
+                            <label for="ra3" class="sldBtn right"></label>
+                        </li>
+                        <li>
+                            <label for="ra2" class="sldBtn left"></label>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="btnBox rdo">
+                    <ul class="ibBtn_rdo">
+                        <li>
+                            <label for="ra1" class="ib_rdobtn first"></label>
+                            <label for="ra2" class="ib_rdobtn second"></label>
+                            <label for="ra3" class="ib_rdobtn third"></label>
+                        </li>
+                    </ul>
+                </div>
+
+                
+            </div>
+            
+        </section>
+        
+        <section class="page" id="page3">
+            
+            <div class="pgWrap">
+                
+                <div class="pgWrap_inner left">
+                    
+                    <!-- 페이지 이동 버튼 들어올 자리 -->
+                    
+                </div>
+                
+                <div class="pgWrap_inner right">
+                    
+                    <article class="txtBox">
+                        
+                        <span class="titBox">
+                            <p class="acaTit small">Find your beauty with</p>
+                            <p class="acaTit big">TOP to TOE<br>BEAUTY ACADEMY</p>
+                        </span>
+                        <span class="comBox">
+                            <p class="acaCom comment">우리의 외면과 내면은 개개인마다 다르고 각자의 독특한 매력을 가지고 있습니다.<br>하지만 각자의 소중한 개성이 타인에 의해 정해진 미의 기준으로 단점이 되어 버리는 경우도 있습니다.<br>탑투토 뷰티 아카데미는 개인에게 맞춰진 맨투맨 방식의 교육을 통해 당신만의 개성을 캐치하여<br>당신 본연의 아름다움을 찾아 극대화 시킬 수 있도록 도와드립니다. 그 자체로 아름다운 당신을 위하여.</p>
+                            <a href="" class="detail">더보기 ></a>
+                        </span>
+                    </article>
+                    
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <section class="page" id="page4">
+            
+            <div class="pgWrap">
+              <div class="pgWrap_inner"> 
+                
+                <input type="radio" name="camprdo" id="campra1" class="camprd" checked>
+                <input type="radio" name="camprdo" id="campra2" class="camprd">
+                <input type="radio" name="camprdo" id="campra3" class="camprd">
+                <input type="radio" name="camprdo" id="campra4" class="camprd">
+                <input type="radio" name="camprdo" id="campra5" class="camprd">
+                
+                <div class="thumBox left">
+                    
+                    <ul>
+                        <label for="campra1" class="campBtn a">
+                            <span class="thumImg_box left">
+                                <img src="./images/img_campthumb_1.png" alt="캠페인썸네일이미지1">
+                            </span>
+                            <span class="thumbTit_box right">
+                                <p>MY FACE BUT BETTER</p>
+                            </span>
+                        </label>
+                        
+                        <label for="campra2" class="campBtn b">
+                            <span class="thumImg_box left">
+                                <img src="./images/img_campthumb_2.png" alt="캠페인썸네일이미지2">
+                            </span>
+                            <span class="thumbTit_box right">
+                                <p>DON'T CARE<br>GENDER IN BEAUTY</p>
+                            </span>
+                        </label>
+                        
+                        <label for="campra3" class="campBtn c">
+                            <span class="thumImg_box left">
+                                <img src="./images/img_campthumb_3.png" alt="캠페인썸네일이미지3">
+                            </span>
+                            <span class="thumbTit_box right">
+                                <p>피카소의 늦은 고백</p>
+                            </span>
+                        </label>
+                        
+                        <label for="campra4" class="campBtn d">
+                            <span class="thumImg_box left">
+                                <img src="./images/img_campthumb_4.png" alt="캠페인썸네일이미지4">
+                            </span>
+                            <span class="thumbTit_box right">
+                                <p>TOP to TOE ACADEMY</p>
+                            </span>
+                        </label>
+                        
+                        <label for="campra5" class="campBtn e">
+                            <span class="thumImg_box left">
+                                <img src="./images/img_campthumb_5.png" alt="캠페인썸네일이미지5">
+                            </span>
+                            <span class="thumbTit_box right">
+                                <p>이전 캠페인</p>
+                            </span>
+                        </label>
+                        
+                    </ul>
+                    
+                </div>
+                
+                <div class="imgBox3 right">
+                    
+                    <ul class="imgBox3_inner first">
+                        <li class="campItem1">
+                            <div class="cimgFrame left">
+                                <img src="./images/img_camp1.png" alt="캠페인이미지1">
+                            </div>
+                            <div class="ctxtFrame right">
+                                <span class="cTitBox">
+                                    <p class="cTit small">Campaign</p>
+                                    <p class="cTit big">MY FACE<br>BUT BETTER</p>
+                                </span>
+                                <span class="cTxtinner">
+                                    <p class="cCom comment">당신의 작지만 솔직해보이는 눈, 그리고 둥글납작한 코가 사랑스럽습니다. 웃을때 튀어나오는 광대가 얼마나<br>아름다운지 아시나요? 그 위에 보이는 주근깨는<br>따뜻한 햇살에 비친 귀여운 소녀 같아요.<br>매일매일 이렇게 아름다운 나를 가리기 위한 메이크업이 아닌 이제 피카소와 함께 나를 위한 메이크업을<br>해보세요. 당신은 그 자체 로 아름답기 때문입니다.</p>
+                                    <a href="" class="detail">더보기 ></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <ul class="imgBox3_inner second">
+                        <li class="campItem2">
+                            <div class="cimgFrame left">
+                                <img src="./images/img_camp2.png" alt="캠페인이미지2">
+                            </div>
+                            <div class="ctxtFrame right">
+                                <span class="cTitBox">
+                                    <p class="cTit small">Campaign</p>
+                                    <p class="cTit big">DON'T CARE<br>GENDER<br>IN BEAUTY</p>
+                                </span>
+                                <span class="cTxtinner">
+                                    <p class="cCom comment">아름다움을 추구하는 데에 성에 의한 제약은 없습니다.<br>피카소는 지금껏 그래왔듯이 성별에 대한 선입견 없이<br>많은 아티스트와 함께 해왔고 그들을 응원하며,<br>앞으로도 그들에 대한 사회적 선입견이 사라지기 위한<br>활동을 할 것입니다. with CHARLES JAMES.</p>
+                                    <a href="" class="detail">더보기 ></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <ul class="imgBox3_inner third">
+                        <li class="campItem3">
+                            <div class="cimgFrame left">
+                                <img src="./images/img_camp3.png" alt="캠페인이미지3">
+                            </div>
+                            <div class="ctxtFrame right">
+                                <span class="cTitBox">
+                                    <p class="cTit small">Campaign</p>
+                                    <p class="cTit big">피카소의<br>늦은 고백</p>
+                                </span>
+                                <span class="cTxtinner">
+                                    <p class="cCom comment">피카소는 천연모 브러쉬의 수요에 따라<br>지금까지 천연모 브러쉬 생산과 공급을 해왔습니다.<br>천연모는 살아있는 동물의 털을 사용하며,<br>생산과정에서 비인도적인 과정을 거치게 됩니다.<br>피카소는 이에 대한 늦은 고백과 함께<br>천연모 브러쉬의 생산 중단을 시작하려 합니다.</p>
+                                    <a href="" class="detail">더보기 ></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <ul class="imgBox3_inner fourth">
+                        <li class="campItem4">
+                            <div class="cimgFrame left">
+                                <img src="./images/img_camp4.png" alt="캠페인이미지4">
+                            </div>
+                            <div class="ctxtFrame right">
+                                <span class="cTitBox">
+                                    <p class="cTit small">Campaign</p>
+                                    <p class="cTit big">
+                                    TOPtoTOE<br>ACADEMY</p>
+                                </span>
+                                <span class="cTxtinner">
+                                    <p class="cCom comment">우리는 각자의 독특한 매력을 가지고 있습니다.<br>본인만의 개성이 그저 타인이 정한 미의 기준으로 인하여<br>단점이 되어 버리기도 하죠. 탑투토 뷰티 아카데미는<br>개인에게 맞춰진 맨투맨 방식의 교육을 통해 당신만의<br>개성을 캐치하여 본연의 아름다움을 찾아 극대화<br>시킬 수 있도록 도와드립니다.</p>
+                                    <a href="" class="detail">더보기 ></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <ul class="imgBox3_inner fifth">
+                        <li class="campItem5">
+                            <img src="./images/img_logo_ft.png" alt="캠페인피카소로고">
+                            <span>
+                                <p class="cCom comment">이전 캠페인</p>
+                                <a href="" class="detail">더보기 ></a>
+                            </span>
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+              </div>  
+            </div>
+            
+        </section>
+        
+        <footer id="ft" class="page">
+           <div class="ftWrap">
+                <div class="ftWrap_inner right">
+                    <div class="cs right">
+                        <p class="csTit">
+                            <img src="./images/img_cstxt_ft.png" alt="고객서비스텍스트이미지">
+                        </p>
+                        <p class="csTel">1588-3195</p>
+                        <p>운영시간 AM 9:00 - PM 6:00
+                        <br>점심시간 AM 12:00 - PM 1:30
+                        <br>공휴일 휴무
+                        <br>E-MAIL:picassobrush@picassobrush.co.kr</p>
+                    </div>
+                 </div>
+                 <div class="ftWrap_inner left">       
+                    <div class="info left">
+                        <h3 class="ftlogo">
+                            <img src="./images/img_logo_ft.png" alt="피카소풋터로고이미지">
+                        </h3>
+                        <p class="contact">서울시 강남구 압구정로 54길 213
+                        <br>대표 : 안익제  개인정보관리책임자 : 신미화
+                        <br>사업자번호 : 211-88-56043  &#40;주&#41;소산퍼시픽
+                        <br>통신판매업 : 2011-서울강남-02070호
+                        <br>TEL 1588-3195  FAX 02-511-7863</p>
+                        <p class="copyright">COPYRIGHT 2018 ALL RIGHTS RESERVED.</p>
+    <!--
+                        <ul class="ftmenu">
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+    -->
+                    </div>
+                </div>
+            </div>
+            
+            <button class="toTop">
+               <a>TOP</a>
+            </button>
+            
+        </footer>
+        
+    </div>
+    
+</body>
+</html>

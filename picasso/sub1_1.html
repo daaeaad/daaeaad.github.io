@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>picasso brush</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./default.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./header.css">
+    
+    <link rel="stylesheet" href="./main1.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="ktslider2.js"></script>
+    <script src="txtslider2.js"></script>
+    <script src="ktsmslider.js"></script>
+    
+    <link rel="stylesheet" href="./main2_4.css">
+    
+    <style> /*페이지이동버튼*/
+    
+/*
+        .pgnav {
+            width: 23px;
+            height: 100%;
+            position: fixed;
+            z-index: 800;
+            margin-left: 50px;
+        }
+        .pgTar {
+            width: 100%;
+            height: 150px;
+            margin-top: 412px;
+        }
+        .pgnav li {
+            
+        }
+*/
+        
+    </style>
+
+    
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./topbtn.css">
+    
+
+
+</head>
+<body>
+    
+    <div class="wrap">
+        
+        <header class="hd">
+            <div class="hdWrap">
+                
+                <div class="hdcon left">
+                   
+                    <input type="checkbox" id="ck" class="ckItem">
+                    <label for="ck" class="opener">
+                        <span></span>
+                    </label>
+                    
+                    <h1>
+                        <a href="" class="logo">
+                            <img src="./images/logo_white.png" alt="피카소브랜드로고">
+                        </a>
+                    </h1>
+                    
+                    <nav id="collapse">
+                       <label for="ck" id="close"></label>
+                        <div class="collapse_inner">
+                            <a href="" class="logo"></a>
+                            
+                            <ul class="colItem">
+                                <li class="colmenu">
+                                    <a href="sub1.html" class="colmenuTit">BRAND</a>
+                                    <div class="colsub"  id="coltar1">
+                                        <ul>
+                                            <li>
+                                                <a href="sub1_1.html">about picasso</a>
+                                            </li>
+                                            <li>
+                                                <a href="sub1_2.html">store info</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="colmenu" id="coltar2">
+                                    <a href="sub2.html" class="colmenuTit">ONLINE SHOP</a>
+                                    <div class="colsub">
+                                        <ul>
+                                            <li>
+                                                <a href="sub2_1.html">new</a>
+                                            </li>
+                                            <li>
+                                                <a href="sub2_2.html">for artist</a>
+                                            </li>
+                                            <li>
+                                                <a href="sub2_3.html">purpose of use</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="colmenu" id="coltar3">
+                                    <a href="sub3.html" class="colmenuTit">CAMPAIGN</a>
+                                    <div class="colsub">
+                                        <ul>
+                                            <li>
+                                                <a href="sub3_1.html">current</a>
+                                            </li>
+                                            <li>
+                                                <a href="sub3_2.html">past</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="colmenu" id="coltar4">
+                                    <a href="#ft" class="colmenuTit">MEET US</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                
+                <div class="hdcon right">
+                    
+                    <ul class="gnb top">
+                        <li>
+                            <a href="">login</a>
+                        </li>
+                        <li>
+                            <a href="">join us</a>
+                        </li>
+                    </ul>
+                    <nav class="gnb">
+                        <ul class="menuouter">
+                            <li class="menu">
+                                <a href="">BRAND</a>
+                            </li>
+                            <li class="menu">
+                                <a href="">ONLINE SHOP</a>
+                            </li>
+                            <li class="menu">
+                                <a href="">CAMPAIGN</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+                
+            </div>
+        </header>
+        
+        
+        <section class="page" id="page1">
+           
+            <div class="pgWrap">
+                
+                <div class="pgWrap_inner">
+                    <p class="pgTit big">
+                        BRAND
+                    </p>
+                </div>
+                <div class="pgWrap_inner">
+                    <nav class="subGnb">
+                        <ul>
+                            <li>
+                                <a href="trgt11" class="small">about picasso</a>
+                            </li>
+                            <li>
+                                <a href="trgt21" class="small">store info</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <figure class="subVs">
+                        <p></p>
+                    </figure>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <section class="page" id="page2">
+           
+            <div class="pgWrap">
+                
+                <div class="subTab"> 
+                  <!--div.subTab의width값200%로, ul.sub1_1~2는 50%씩 해서 타겟팅 당할 때 마진 레프트로 화면 바뀌게 하기-->
+                   
+                    <ul class="sub1_1sec">
+                        <li class="tabmenu" id="trgt11">
+                            <a href="trgt11">브랜드 소개</a>
+                            <div class="subCon">
+                                <ul class="con_inner">
+                                   <li>
+                                        <p class="subTit small"></p>
+                                    </li>
+                                    <li>
+                                        <p class="subTit big"></p>
+                                    </li>
+                                    <li>
+                                        <p class="subCom"></p>
+                                    </li>
+                                </ul>
+                                <div class="con_inner">
+                                    <p class="subTit small"></p>
+                                    <p class="subTit big"></p>
+                                    <ul class="subComBox">
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="tabmenu" id="trgt12">
+                            <a href="trgt12">브랜드 연혁</a>
+                            <div class="subCon">
+                                <ul class="con_inner">
+                                   <li>
+                                        <p class="subTit small"></p>
+                                    </li>
+                                    <li>
+                                        <p class="subTit big"></p>
+                                    </li>
+                                    <li>
+                                        <p class="subCom"></p>
+                                    </li>
+                                </ul>
+                                <div class="con_inner">
+                                    <p class="subTit small"></p>
+                                    <p class="subTit big"></p>
+                                    <ul class="subComBox">
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="tabmenu" id="trgt13">
+                            <a href="trgt13">피카소 브러쉬</a>
+                            <div class="subCon">
+                                <ul class="con_inner">
+                                   <li>
+                                        <p class="subTit small"></p>
+                                    </li>
+                                    <li>
+                                        <p class="subTit big"></p>
+                                    </li>
+                                    <li>
+                                        <p class="subCom"></p>
+                                    </li>
+                                </ul>
+                                <div class="con_inner">
+                                    <p class="subTit small"></p>
+                                    <p class="subTit big"></p>
+                                    <ul class="subComBox">
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <ul class="sub1_2sec">
+                        <li class="tabmenu" id="trgt21">
+                            <a href="trgt21"></a>
+                            <div class="subCon">
+                                <ul class="con_inner">
+                                   <li>
+                                        <p class="subTit small"></p>
+                                    </li>
+                                    <li>
+                                        <p class="subTit big"></p>
+                                    </li>
+                                    <li>
+                                        <p class="subCom"></p>
+                                    </li>
+                                </ul>
+                                <div class="con_inner">
+                                    <p class="subTit small"></p>
+                                    <p class="subTit big"></p>
+                                    <ul class="subComBox">
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="tabmenu" id="trgt22">
+                            <a href="trgt22"></a>
+                            <div class="subCon">
+                                <ul class="con_inner">
+                                   <li>
+                                        <p class="subTit small"></p>
+                                    </li>
+                                    <li>
+                                        <p class="subTit big"></p>
+                                    </li>
+                                    <li>
+                                        <p class="subCom"></p>
+                                    </li>
+                                </ul>
+                                <div class="con_inner">
+                                    <p class="subTit small"></p>
+                                    <p class="subTit big"></p>
+                                    <ul class="subComBox">
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="tabmenu" id="trgt23">
+                            <a href="trgt23"></a>
+                            <div class="subCon">
+                                <ul class="con_inner">
+                                   <li>
+                                        <p class="subTit small"></p>
+                                    </li>
+                                    <li>
+                                        <p class="subTit big"></p>
+                                    </li>
+                                    <li>
+                                        <p class="subCom"></p>
+                                    </li>
+                                </ul>
+                                <div class="con_inner">
+                                    <p class="subTit small"></p>
+                                    <p class="subTit big"></p>
+                                    <ul class="subComBox">
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                        <li>
+                                            <p class="subCom"></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <section class="page" id="page3">
+           
+            <div class="pgWrap">
+                
+                
+                
+            </div>
+            
+        </section>
+
+        
+        <footer id="ft" class="page">
+           <div class="ftWrap">
+                <div class="ftWrap_inner right">
+                    <div class="cs right">
+                        <p class="csTit">
+                            <img src="./images/img_cstxt_ft.png" alt="고객서비스텍스트이미지">
+                        </p>
+                        <p class="csTel">1588-3195</p>
+                        <p>운영시간 AM 9:00 - PM 6:00
+                        <br>점심시간 AM 12:00 - PM 1:30
+                        <br>공휴일 휴무
+                        <br>E-MAIL:picassobrush@picassobrush.co.kr</p>
+                    </div>
+                 </div>
+                 <div class="ftWrap_inner left">       
+                    <div class="info left">
+                        <h3 class="ftlogo">
+                            <img src="./images/img_logo_ft.png" alt="피카소풋터로고이미지">
+                        </h3>
+                        <p class="contact">서울시 강남구 압구정로 54길 213
+                        <br>대표 : 안익제  개인정보관리책임자 : 신미화
+                        <br>사업자번호 : 211-88-56043  &#40;주&#41;소산퍼시픽
+                        <br>통신판매업 : 2011-서울강남-02070호
+                        <br>TEL 1588-3195  FAX 02-511-7863</p>
+                        <p class="copyright">COPYRIGHT 2018 ALL RIGHTS RESERVED.</p>
+    <!--
+                        <ul class="ftmenu">
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+    -->
+                    </div>
+                </div>
+            </div>
+            
+            <button class="toTop">
+               <a href="#page1">TOP</a>
+            </button>
+            
+        </footer>
+        
+    </div>
+    
+</body>
+</html>

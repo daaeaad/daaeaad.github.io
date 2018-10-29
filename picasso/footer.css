@@ -1,0 +1,65 @@
+
+
+@charset "utf-8";
+
+
+
+        /*footer*/
+        
+        #ft {
+            background-image: url("./images/img_vs_ft.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        .ftWrap_inner {
+            width:50%;
+            height: 674px;
+            margin: 170px auto;
+        }
+        #ft img {
+            display: block;
+        }
+        #ft p, h3 {
+            display: block;
+            color: white;
+            font-size: 12px;
+            line-height: 24px;
+            clear: both;
+        }
+        .cs p {
+            text-align: right;
+        }
+        .cs {
+            width: 380px;
+            height: 280px;
+        }
+        .csTit {
+            width: 218px;
+            height: 80px;
+            float: right;
+        }
+        .cs img {
+            width: 218px;
+            height: 80px;
+        }
+        #ft .cs p:nth-child(2) {
+            line-height: 92px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        
+        .info {
+            width: 370px;
+            height: 346px;
+            margin-top: 328px;
+        }
+        .info .ftlogo {
+            width: 140px;
+            height: 122px;
+            margin-bottom: 34px;
+        }
+        .info .contact {
+            margin-bottom: 20px;
+        }

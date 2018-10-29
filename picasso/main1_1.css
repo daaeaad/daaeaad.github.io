@@ -1,0 +1,157 @@
+
+
+
+@charset "utf-8";
+
+
+
+
+        /*page1*/
+        
+    .imgSlide {
+        position:relative;
+        width:100%;
+        height:100%;
+        overflow:hidden;
+    }
+    .gallery {
+        position:absolute;
+        width:400%;
+        height:100%;
+    }
+    .gallery img {
+        display:block;
+        width:25%;
+        height:auto;
+        position:absolute;
+        background-attachment: fixed;
+    }
+    .banCon {
+        background-color:transparent; 
+        height:100%;
+    }
+    .banTitleBox {
+        width:50%; /*크게 설정할 수록 가로로 움직이는 효과*/
+        float:left; 
+        height:100%; 
+        opacity:0; 
+        position:absolute; 
+        left:0;  
+        top:0;
+
+    }
+    .banTitleBox.on { 
+        width:25%; 
+        opacity:1; 
+    }
+    .banTitleBox .banTit { 
+        top:30%;  
+        opacity:0; 
+
+        transition-duration:0.6s;
+        transition-delay:0.3s; 
+
+        left:65%; 
+        clear:both; 
+        position:absolute; 
+        padding-top:40%;  
+        font-size:90px; 
+        color:#fff; 
+        font-weight:100;
+    }
+    .banTitleBox.on .banTit { 
+        padding-top:0;  
+        opacity:1; 
+    }    
+    .banTitleBox .more { 
+        display:block;  
+        padding-top:70%;
+        left:65%; 
+        top:70%; 
+        position:absolute; 
+        opacity:0;
+        color:#fff;
+        clear:both; 
+        transition-duration:0.5s;
+        transition-delay:0.3s;  
+    }
+    .banTitleBox.on .more { 
+        padding-top:0;
+        opacity:1;
+    }
+    .next, .prev, .paging { 
+        z-index:999;
+        position:absolute;
+        display:block;
+        width:50px; 
+        height:50px; 
+        top:10%; 
+        background-repeat:no-repeat; 
+        cursor:pointer; 
+    }
+    .next, .prev { 
+        width:58px; 
+        height:58px; 
+        background-image:url("./source/slide_btn.png"); 
+        text-indent:-9999px;
+        z-index: 999;
+    }
+    .next {
+        right:10%;  
+        background-position:center bottom; 
+    }
+    .prev {
+        left:10%; 
+        background-position:center top; 
+    }
+    .paging {
+        left: calc(calc(100% - 200px) / 2);
+        top:85%;
+        width:200px;  
+    }
+    .paging a, .paging button {
+        display:block; 
+        margin:5px;
+        float:left; 
+        text-align:center;
+        width:30px; 
+        height:30px;
+        line-height:20px; 
+        border:0; 
+        outline:0;
+        background-color:transparent; 
+        background-repeat:no-repeat;
+        background-color:#333;
+        color:#fff; 
+        line-height:30px;
+        font-size:14px;  
+        cursor:pointer; 
+        border-radius:16px; 
+    }
+    .paging a { 
+        border:1px solid #fff;
+        width:14px; 
+        height:14px; 
+        background-color:transparent;
+        text-indent:-9999px; 
+    }
+    .paging a.paging_on { 
+        background-color:#fff; 
+        border:0;
+        width:14px;
+        height:14px;
+    }
+    .playBtn {
+        background-image:url("./source/btn_autostop.png"); 
+    }
+    .playBtn
+        [control-toggle="play"]
+        { 
+            background-position:center 10px; 
+        }
+    .playBtn
+        [control-toggle="stop"] 
+        { 
+            background-position:center -30px; 
+        }   
+

@@ -1,0 +1,142 @@
+
+
+
+@charset "utf-8";
+
+
+
+
+        /*page1*/
+        
+    .imgSlide {
+        position:relative;
+        width:100%;
+        height:100%;
+        overflow:hidden;
+    }
+    .gallery {
+        position:absolute;
+        width:300%;
+        height:100%;
+		background-color : #000;
+    }
+    .gallery img {
+        display:block;
+        width:33.333%;
+        height:auto;
+        position:absolute;
+    }
+    .banCon {
+        height: 316px;
+		width : 794px;
+		position: absolute;
+		top:300px;
+		left:310px;
+    }
+    .banTitleBox {
+        width:802px;
+		height:253px;
+        float:left;  
+    }
+    .banTitleBox .banTit { 
+        clear:both; 
+        font-size:100px; 
+        color:#fff; 
+        font-weight:100;
+    }
+    .banTitleBox .more { 
+        display:block;
+        color:#fff;
+        clear:both; 
+    }
+	.banTitleBox .more:after {
+		content:" ";
+		display: block;
+		width:63px;
+		height:1px;
+		background-color:white;
+	}
+	.imgSlide .lrBtn {
+		width: 100%;
+		height:73px;
+		position:absolute;
+		left:0;
+		top: 416px;
+	}
+	.lrBtn li {
+		width:73px;
+		height:73px;
+		cursor : pointer;
+	}
+	.lrBtn li.left {
+		margin-left:160px;
+	}
+	.lrBtn li.right {
+		margin-right: 160px;
+	}
+	.lrBtn a {
+		display: block;
+		width:73px;
+		height:73px;
+	}
+	.lrBtn a.prev {
+		background-image : url("./images/btn_left_g.png");
+	}
+	.lrBtn a.next {
+		background-image: url("./images/btn_right_g.png");
+	}
+
+	.imgSlide .sldPaging {
+		width : 100%;
+		height: 16px;
+		position: absolute;
+		bottom : 90px;
+		left:0;
+	}
+	.sldPaging ul {
+		width: 100px;
+		height: 16px;
+		margin: 0 auto;
+	}
+	.sldPaging ul li {
+		float:left;
+		cursor : pointer;
+	}
+	.sldPaging ul .sldPagingBtn {
+		width:14px;
+		height: 14px;
+		background-image: url("./images/btn_sldrdo_w2.png");
+		
+		margin-right:15px;
+	}
+	.sldPaging ul .sldPagingBtn_play {
+		width:10px;
+		height : 16px;
+		background-image: url("./images/btn_sldplay.png");
+	}
+	
+	
+	.sldPaging ul .sldPagingBtn.on {
+		background-image: url("./images/btn_sldrdo_w1.png");
+	}
+	.sldPaging ul .sldPagingBtn_play.btn_pause {
+		background-image: url("./images/btn_sldpause.png");
+	}
+	
+	
+	/*
+    .playBtn {
+        background-image:url("./source/btn_autostop.png"); 
+    }
+    .playBtn
+        [control-toggle="play"]
+        { 
+            background-position:center 10px; 
+        }
+    .playBtn
+        [control-toggle="stop"] 
+        { 
+            background-position:center -30px; 
+        }   
+		*/
+
