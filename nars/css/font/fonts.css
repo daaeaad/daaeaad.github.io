@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+
+
+@font-face {
+    font-family :"HelveticaNeue-UltraLight";
+    src: local("HelveticaNeue-UltraLight"), url("./fontmake/HelveticaNeue-UltraLight.eot") format("embedded-opentype"), url("./fontmake/HelveticaNeue-UltraLight.woff") format("woff");
+}
+
+@font-face {
+    font-family :"HelveticaNeue-Bold";
+    src: local("HelveticaNeue-Bold"), url("./fontmake/HelveticaNeue-Bold.eot") format("embedded-opentype"), url("./fontmake/HelveticaNeue-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family :"HelveticaNeue-Light";
+    src: local("HelveticaNeue-Light"), url("./fontmake/HelveticaNeue-Light.eot") format("embedded-opentype"), url("./fontmake/HelveticaNeue-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family :"HelveticaNeue-Medium";
+    src: local("HelveticaNeue-Medium"), url("./fontmake/HelveticaNeue-Medium.eot") format("embedded-opentype"), url("./fontmake/HelveticaNeue-Medium.woff") format("woff");
+}
+@font-face {
+    font-family :"HelveticaNeue-Thin";
+    src: local("HelveticaNeue-Thin"), url("./fontmake/HelveticaNeue-Thin.eot") format("embedded-opentype"), url("./fontmake/HelveticaNeue-Thin.woff") format("woff");
+}
+
+
+
+@font-face {
+    font-family:"NanumSquareR";
+    src:local("NanumSquareR"),
+        url("./fontmake/NanumSquareR.eot") format("embedded-opentype"),
+        url("./fontmake/NanumSquareR.woff") format("woff");
+}
+
+@font-face {
+    font-family:"NanumSquareB";
+    src:local("NanumSquareB"),
+        url("./fontmake/NanumSquareB.eot") format("embedded-opentype"),
+        url("./fontmake/NanumSquareB.woff") format("woff");
+}
+
+
+
+
+.en_ul {
+    font-family: "HelveticaNeue-UltraLight";
+}
+.en_b {
+    font-family: "HelveticaNeue-Bold";
+}
+.en_l {
+    font-family: "HelveticaNeue-Light";
+}
+.en_t {
+    font-family: "HelveticaNeue-Thin";
+}
+.en_m {
+    font-family: "HelveticaNeue-Medium";
+}
+
+
+.ko_r {
+    font-family: "NanumSquareR";
+}
+.ko_b {
+    font-family: "NanumSquareB";
+}
+
+
+
+
+
+

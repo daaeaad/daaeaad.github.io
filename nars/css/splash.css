@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/*    스플래쉬 화면*/
+
+        .splash {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 550;
+        }
+        .splash .spl_inner {
+            width: 150px;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .splash .splAni {
+            width: 100%;
+            height: 64px;
+            position: absolute;
+            top: 280px;
+            left: 0;
+        }
+        .splash .splAni span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .splash .splImg {
+            display: block;
+            height: 64px;
+            position: absolute;
+            float: left;
+            transition: 0.6s;
+        }
+        
+        #splAni1 {
+            display: block;
+        }
+        #splAni2 {
+            display: block;
+        }
+        
+        #splAni1 .splImg {
+            opacity: 0;
+            animation: splAni1 1.2s ease;
+            animation-delay: 0.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        #splAni1 .splImg:nth-child(1) {
+            width: 47px;
+            top: -34px;
+            left: 0;
+        }
+        #splAni1 .splImg:nth-child(2) {
+            width: 30px;
+            top: 42px;
+            left: 47px;
+        }
+        #splAni1 .splImg:nth-child(3) {
+            width: 44px;
+            right: 29px;
+            top: -20px;
+        }
+        #splAni1 .splImg:nth-child(4) {
+            width: 29px;
+            right: 0;
+            top:30px;
+        }
+        @keyframes splAni1 {
+            to {
+                opacity: 1;
+                top: 0;
+            }
+        }
+        
+        #splAni2 .splImg {
+            width: 151px;
+            top: 0;
+            opacity: 0;
+        }
+        #splAni2 .splImg:nth-child(1) {
+            left: 0;
+            animation: splAni21 0.8s ease;
+            animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+            animation-delay: 1.8s;
+        }
+        #splAni2 .splImg:nth-child(2) {
+            left: 0;
+            animation: splAni22 0.8s ease;
+            animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+            animation-delay: 1.8s;
+        }
+        #splAni2 .splImg:nth-child(3) {
+            left: 0;
+            animation: splAni23 0.8s ease;
+            animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+            animation-delay: 1.8s;
+        }
+        @keyframes splAni21 {
+            from {
+                opacity: 0;
+            } to {
+                opacity: 1;
+            }
+        }
+        @keyframes splAni22 {
+            from {
+                opacity: 0;
+            } 10% {
+                opacity: 1;
+            }50% {
+                left: -2px;
+            } to {
+                left: 0;
+                opacity: 0;
+            }
+        }
+        @keyframes splAni23 {
+            from {
+                opacity: 0;
+            } 10% {
+                opacity: 1;
+            } 50% {
+                left: 2px;
+            } to {
+                left: 0;
+                opacity: 0;
+            }
+        }

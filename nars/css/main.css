@@ -1,0 +1,540 @@
+@charset "utf-8";
+
+/* 메인 css */
+
+
+/*****************************************/
+/* #scene1 부분 */
+
+#scene1 {
+    padding-top: 50px;
+    height: 384px;
+}
+#scene1 .vsFrame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene1 .vsBox {
+    width: 300%;
+    height: 100%;
+}
+#scene1 .vsItem {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+#scene1 .vsBg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#scene1 .vsBg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#scene1 .vsPro {
+    width: 234.5px;
+    height: 258px;
+    padding: 44px 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#scene1 .vsPro img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#scene1 .vsTxt {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    left: 0;
+    bottom: 28px;
+}
+
+
+/******************************/
+/* 제이쿼리 적용 부분 */
+
+/* 원래 상태 */
+#scene1 .vsTxt p {
+    width: 100%;
+    font-size: 46px;
+    text-align: center;
+    
+    transition: 0.8s;
+    opacity: 0;
+    letter-spacing: 8px;
+}
+/* addClass 후 */
+#scene1 .vsTxt.txtEvent p {
+    opacity: 1;
+    letter-spacing: -10px;
+}
+
+/* 원래 상태 */
+#scene1 .vsTxt .more {
+    display: block;
+    width: 64px;
+    height: 28px;
+    margin: 8px auto;
+    font-size: 10pt;
+    text-align: center;
+    line-height: 28px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    
+    transition: 0.8s;
+    opacity: 0;
+}
+/* addClass 후 */
+#scene1 .vsTxt.txtEvent .more {
+    opacity: 1;
+}
+
+/******************************/
+
+
+
+/* #scene1 부분 끝 */
+/****************************************/
+
+
+
+/****************************************/
+/* #scene2 부분 */
+
+#scene2 {
+    height: 586.5px;
+    background-color: #000;
+}
+#scene2 .scene_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene2 .vsVideoSec {
+    width: 100%;
+    height: 212px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#scene2 .vsVideoSec .sec_inner {
+    width: 100%;
+    height: 100%;
+}
+#scene2 .vsVdo {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* 제이쿼리 적용 부분 */
+#scene2 .vsVideoSec {
+    height: 300px;
+    padding-top: 0px;
+}
+#scene2 .vsVideoSec.active {
+    height: 212px;
+    padding-top: 50px;
+}
+
+#scene2 .vsVideoSec .vsVdo {
+    transition: 0.8s;
+    transform: scale(3.6);
+}
+#scene2 .vsVideoSec.active .vsVdo {
+    transform: scale(1);
+}
+/********************/
+
+#scene2 .newProSec {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#scene2 .newProSec .sec_inner {
+    width: 100%;
+    height: 100%;
+    padding-top: 105px;
+    box-sizing: border-box;
+    position: relative;
+}
+#scene2 .newPro {
+    width: 100%;
+    position: absolute;
+}
+
+/************************/
+/* 제이쿼리 적용 부분 */
+#scene2 .newPro.np0 {
+    height: 216px;
+    position: absolute;
+    left: 0;
+    top: 242px;
+    z-index: 2;
+
+    opacity: 0;
+    margin-top: 0;
+    transition: 0.6s;
+}
+#scene2 .newProSec.active .newPro.np0 {
+    opacity: 1;
+}
+#scene2 .newProSec.active .newPro.np0 .npVsCenter {
+    margin: -20px auto;
+}
+/*
+#scene2 .newPro.np0.active {
+    top: 230px;
+}
+*/
+/************************/
+
+#scene2 .npVsCenter {
+    width: 100px;
+    height: 100%;
+    margin: 0 auto;
+}
+#scene2 .npVsCenter img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#scene2 .newPro.np1 {
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    top: 160px;
+    left: 0;
+}
+#scene2 .newPro.np1 ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene2 .newPro.np1 .npVs {
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#scene2 .newPro.np1 .npVs img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#scene2 .newPro.np1 .npTxt {
+    width: 100%;
+    height: 90px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 66px;
+}
+#scene2 .newPro.np1 .npTxtImg {
+    display: block;
+    width: 46px;
+    height: 80px;
+    float: left;
+}
+#scene2 .newPro.np1 .npTxtImg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#scene2 .newPro.np2 {
+    width: 100%;
+    height: 232px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#scene2 .newPro.np2 ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene2 .newPro.np2 .npVs {
+    width: 188px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#scene2 .newPro.np2 .npVs img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#scene2 .newPro.np2 .npTxt {
+    width: 100%;
+    height: 114px;
+    padding-left: 170px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+#scene2 .newPro.np2 .npTxtImg {
+    display: block;
+    float: left;
+}
+#scene2 .newPro.np2 .npTxtImg:nth-child(1) {
+    width: 35px;
+    height: 58px;
+
+    opacity: 0;
+    margin-top: -15px;
+    transition: 1.4s;
+    transition-delay: 0.3s;
+}
+#scene2 .newPro.np2 .npTxtImg:nth-child(2) {
+    width: 35px;
+    height: 113px;
+
+    opacity: 0;
+    margin-top: -25px;
+    transition: 1s;
+    transition-delay: 0.3s;
+}
+#scene2 .newPro.np2 .npTxtImg:nth-child(3) {
+    width: 34px;
+    height: 113px;
+
+    opacity: 0;
+    margin-top: -8px;
+    transition: 1.4s;
+    transition-delay: 0.3s;
+}
+#scene2 .newPro.np2 .npTxtImg:nth-child(4) {
+    width: 34px;
+    height: 7px;
+    padding-top: 106px;
+
+    opacity: 0;
+    margin-top: -35px;
+    transition: 1s;
+    transition-delay: 0.3s;
+}
+#scene2 .newPro.np2 .npTxtImg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 원래 상태 */
+#scene2 .newPro.np2 .npMore {
+    width: 100%;
+    height: 28px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#scene2 .newPro.np2 .npMore .more {
+    display: block;
+    width: 64px;
+    height: 28px;
+    margin-left: 216px;
+    font-size: 10pt;
+    text-align: center;
+    line-height: 28px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    
+    transition: 0.8s;
+    transition-delay: 0.7s;
+    opacity: 0;
+}
+/* addClass 후 */
+#scene2 .newPro.active.np2 .npMore .more {
+    opacity: 1;
+}
+
+/*********************/
+/* 제이쿼리 적용 부분 */
+
+#scene2 .newPro.np1 .npTxtImg:nth-child(1) {
+    opacity: 0;
+    margin-top: -8px;
+    transition: 1s;
+}
+#scene2 .newPro.np1 .npTxtImg:nth-child(2) {
+    opacity: 0;
+    margin-top: 8px;
+    transition: 1.4s;
+}
+#scene2 .newPro.np1 .npTxtImg:nth-child(3) {
+    opacity: 0;
+    margin-top: -8px;
+    transition: 1s;
+}
+#scene2 .newPro.np1 .npTxtImg:nth-child(4) {
+    opacity: 0;
+    margin-top: 16px;
+    transition: 1.6s;
+}
+#scene2 .newPro .npVs {
+    opacity: 0;
+    transition: 0.7s;
+}
+#scene2 .newPro.np2 .npVs {
+    transition-delay: 0.3s;
+}
+
+
+#scene2 .newPro.active .npTxtImg:nth-child(1) {
+    opacity: 1;
+    margin-top: 0px;
+}
+#scene2 .newPro.active .npTxtImg:nth-child(2) {
+    opacity: 1;
+    margin-top: 0px;
+}
+#scene2 .newPro.active .npTxtImg:nth-child(3) {
+    opacity: 1;
+    margin-top: 0px;
+}
+#scene2 .newPro.active .npTxtImg:nth-child(4) {
+    opacity: 1;
+    margin-top: 0px;
+}
+#scene2 .newPro.active .npVs {
+    opacity: 1;
+}
+
+
+/********************/
+
+
+/* #scene2 부분 끝 */
+/****************************************/
+
+
+
+
+/****************************************/
+/* #scene3 부분 */
+
+#scene3 {
+    width: 100%;
+    height: 282px;
+    padding-top: 40px;
+    clear: both;
+    background-color: #000;
+}
+#scene3 .scene_bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/img_bg_w.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+#scene3 .scene_inner {
+    width: 100%;
+    height: 166px;
+    padding-top: 58px;
+    position: relative;
+}
+#scene3 .bestPro {
+    height: 100%;
+    float: left;
+}
+#scene3 .bestPro.bstTitSec {
+    width: 94px;
+    padding-left: 20px;
+}
+#scene3 .bestPro.bstTitSec li {
+    width: 100%;
+    height: 52px;
+    padding-top: 46px;
+}
+#scene3 .bestPro.bstTitSec .bstTit {
+    display: block;
+    width: 100%;
+    height: 43px;
+    color: #000;
+    font-size: 16pt;
+    line-height: 22px;
+}
+#scene3 .bestPro.bstTitSec .bstLine {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin-top: 8px;
+}
+
+#scene3 .bestPro.bstVsSec {
+    width: 258px;
+    float: right;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+#scene3 .bestPro.bstVsSec .bstVsBox {
+    width: 840px;
+    height: 100%;
+}
+#scene3 .bestPro.bstVsSec .bstVsBox a {
+    display: block;
+    width: 105px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+#scene3 .bestPro.bstVsSec .bstImg {
+    display: block;
+    width: 105px;
+    height: 105px;
+    clear: both;
+}
+#scene3 .bestPro.bstVsSec .bstImg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#scene3 .bestPro.bstVsSec .bstVsTxt {
+    display: block;
+    width: 100%;
+    height: 61px;
+}
+#scene3 .bestPro.bstVsSec .bstName {
+    display: block;
+    color: #000;
+    font-size: 8.2pt;
+    text-align: center;
+    padding-top: 10px;
+}
+#scene3 .bestPro.bstVsSec .bstPrice {
+    display: block;
+    color: #000;
+    font-size: 7.2pt;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+/* #scene3 부분 끝 니아라아넝ㄹ ㄴ아잇발*/
+/****************************************/
+
+
+

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>NARS</title>
+    
+<!--    뷰포트-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+<!--    css 폰트-->
+    <link rel="stylesheet" href="./css/font/fonts.css">
+    
+    <meta name="application-name" content="나스">
+    <meta name="author" content="daae">
+    <meta name="keywords" content="화장품, 코스메틱, 나스, NARS, nars, 나스코스메틱, 브랜드화장품, 백화점화장품, 화장품브랜드, 백화점화장품브랜드, 브랜드, 립, 블러쉬">
+    <meta name="description" content="nars mobile">
+    <link rel="icon" href="./images/ico/logo_bg_Cwi_icon.ico">
+
+<!--   css 초기화-->
+    <link rel="stylesheet" href="./css/default.css">
+
+<!--   css 스플래시 화면-->
+    <link rel="stylesheet" href="./css/splash.css">
+    
+<!--   css 공통서식-->
+    <link rel="stylesheet" href="./css/common.css">
+    
+<!--   css 헤더 부분-->
+    <link rel="stylesheet" href="./css/header.css">
+	
+<!--   css 메인 영역 부분  -->
+	<link rel="stylesheet" href="./css/main.css">
+
+<!--   css 풋터 영역 부분  -->	
+	<link rel="stylesheet" href="./css/footer.css">
+    
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+<!--    스플래시 화면-->
+    <script src="./js/splash.js"></script>
+    
+<!--    헤더 로고 애니메이션-->
+    <script src="./js/logo.js"></script>
+	
+<!--    메뉴 영역 이벤트 -->
+	<script src="./js/menu.js"></script>
+	
+<!--    #scene1 영역 이벤트-->
+	<script src="./js/scene1.js"></script>
+	
+<!--    #scene2 영역 이벤트-->
+	<script src="./js/scene2.js"></script>
+   
+<!--    풋터 영역 이벤트-->
+    <script src="./js/footer.js"></script>
+    
+</head>
+<body>
+   
+<!--   스플래시 화면-->
+    <div class="splash">
+        <div class="spl_inner">
+            <section class="splAni" id="splAni1">
+               <span>
+                    <img class="splImg" src="./images/img_splash11.png" alt="">
+                    <img class="splImg" src="./images/img_splash12.png" alt="">
+                    <img class="splImg" src="./images/img_splash13.png" alt="">
+                    <img class="splImg" src="./images/img_splash14.png" alt="">
+                </span>
+            </section>
+            <section class="splAni" id="splAni2">
+               <span>
+                    <img src="./images/img_splash21.png" alt="" class="splImg">
+                    <img src="./images/img_splash23.png" alt="" class="splImg">
+                    <img src="./images/img_splash24.png" alt="" class="splImg">
+                </span>
+            </section>
+        </div>
+    </div>
+    
+<!--    메인-->
+    <div class="wrap">
+       
+<!--       헤더, 메뉴 영역-->
+        <header id="hd">
+<!--            헤더 디자인-->
+            <div class="hd_inner">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="./images/logo_w.png" alt="브랜드로고" class="lgImg">
+                        <img src="./images/logo_ani_3.png" alt="브랜드로고 애니11" class="lgImg">
+                        <img src="./images/logo_ani_4.png" alt="브랜드로고 애니12" class="lgImg">
+                    </a>
+                </h1>
+                
+                <div class="iconSec">
+                    <button id="menuOpen">
+                        <span class="menuLine"></span>
+                        <span class="menuLine"></span>
+                        <span class="menuLine"></span>
+                    </button>
+                </div>
+            </div>
+<!--            헤더 디자인 끝-->
+            <div id="allBlackBg"></div>
+<!--            메뉴영역-->
+            <div class="menuBlackBg">
+               <div class="menuSec">
+                    <div class="menuSec_inner">
+                        <section class="menuSec_hd">
+                            <section class="searchSec">    
+                                <button id="searchBtn"></button>
+                                <ul class="searchForm">
+                                    <input type="text" class="searchInput" value="검색어를 입력하세요">
+                                </ul>
+                            </section>
+                        </section>
+                        
+                        <section class="menuSec_con">
+                            <ul>
+                                <li class="menu">
+                                    <span class="mainMenu en_t">PRODUCTS</span>
+                                    <ul class="subMenuSec">
+                                        <li class="subMenu">
+                                            <ul>
+                                                <span class="subMenuTxt en_t">NEW</span>
+                                                <span class="subMenuIco">
+                                                    <span class="subIcoLine"></span><span class="subIcoLine"></span>
+                                                </span>
+                                                <ul class="detailMenuSec">
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">신제품</a>
+                                                    </li>
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">뉴컬렉션</a>
+                                                    </li>
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">HOW-TO FILMS</a>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+
+                                            <ul>
+                                                <span class="subMenuTxt">BEST SELLERS</span>
+                                                <span class="subMenuIco">
+                                                    <span class="subIcoLine"></span><span class="subIcoLine"></span>
+                                                </span>
+                                                <ul class="detailMenuSec">
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">어워드 위너</a>
+                                                    </li>
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">오르가즘 컬렉션</a>
+                                                    </li>
+                                                    <li class="detailMenu">
+                                                        <a href="#"  class="ko_r">컬트 클래식</a>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+
+                                            <ul>
+                                                <span class="subMenuTxt">MAKEUP</span>
+                                                <span class="subMenuIco">
+                                                    <span class="subIcoLine"></span><span class="subIcoLine"></span>
+                                                </span>
+                                                <ul class="detailMenuSec">
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">립</a>
+                                                    </li>
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">치크</a>
+                                                    </li>
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">페이스</a>
+                                                    </li>
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">아이</a>
+                                                    </li>
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">멀티유즈</a>
+                                                    </li>
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">아이코닉 NARS</a>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+
+                                            <ul>
+                                                <span class="subMenuTxt en_t">SKINCARE</span>
+                                                <span class="subMenuIco">
+                                                    <span class="subIcoLine"></span><span class="subIcoLine"></span>
+                                                </span>
+                                                <ul class="detailMenuSec">
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">나스스킨</a>
+                                                    </li>
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">메이크업 리무버</a>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+
+                                            <ul>
+                                                <span class="subMenuTxt en_t">BRUSHES</span>
+                                                <span class="subMenuIco">
+                                                    <span class="subIcoLine"></span><span class="subIcoLine"></span>
+                                                </span>
+                                                <ul class="detailMenuSec">
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">브러쉬</a>
+                                                    </li>
+                                                    <li class="detailMenu">
+                                                        <a href="#" class="ko_r">툴</a>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+
+                                            <ul>
+                                                <span class="subMenuTxt en_t">PALETTES&amp;GIFTS</span>
+                                                <span class="subMenuIco">
+                                                    <span class="subIcoLine"></span><span class="subIcoLine"></span>
+                                                </span>
+                                                <ul class="detailMenuSec">
+                                                    <li class="detailMenu">
+                                                        <a href="#"  class="ko_r">PALETTES&amp;GIFTS</a>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <span class="mainMenuLine"></span>
+                                </li>
+
+                                <li class="menu">
+                                    <span class="mainMenu en_t">STORES</span>
+                                    <ul class="subMenuSec">
+                                        <li class="subMenu">
+                                            <a href="#">
+                                                <span class="subMenuTxt ko_l">매장 찾기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <span class="mainMenuLine"></span>
+                                </li>
+
+                                <li class="menu">
+                                    <span class="mainMenu en_t">FRANCOIS NARS</span>
+                                    <ul class="subMenuSec">
+                                        <li class="subMenu">
+                                            <a href="#">
+                                                <span class="subMenuTxt ko_l">프랑수아 나스<br><span style="display:block;float:left;font-size:12px;">(Francois Nars)</span>소개</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <span class="mainMenuLine"></span>
+                                </li>
+
+                            </ul>
+                        </section>
+
+                        <section class="menuSec_ft">
+                            <ul>
+                                <span class="menuFtFrame">
+                                    <a href="#" class="mFtBtn login en_l">LOGIN</a>
+                                </span>
+                                <span class="menuFtFrame">
+                                    <a href="#" class="mFtBtn email ko_l">이메일 구독 신청</a>
+                                </span>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+<!--           메뉴 영역 끝-->
+       
+        </header>
+<!--        헤더,메뉴 영역 끝-->
+        
+        <section class="scene" id="scene1">
+            <div class="vsFrame">
+                <ul class="vsBox">
+                    <li class="vsItem">
+                        <span class="vsBg">
+                            <img src="./images/img_vs_bg1.png" alt="vs배경1">
+                        </span>
+                        <span class="vsPro">
+                            <img src="./images/img_vs1.png" alt="vs제품이미지1">
+                        </span>
+                    </li>
+                    <li class="vsItem">
+                        <span class="vsBg">
+                            <img src="./images/img_vs_bg2.png" alt="vs배경2">
+                        </span>
+                        <span class="vsPro">
+                            <img src="./images/img_vs2.png" alt="vs제품이미지2">
+                        </span>
+                    </li>
+                    <li class="vsItem">
+                        <span class="vsBg">
+                            <img src="./images/img_vs_bg3.png" alt="vs배경3">
+                        </span>
+                        <span class="vsPro">
+                            <img src="./images/img_vs3.png" alt="vs제품이미지3">
+                        </span>
+                    </li>
+                </ul>
+				<ul class="vsTxt">
+                    <p class="en_ul">GLASS ACTS</p>
+                    <button class="more" id="vsMoreBtn">더보기</button>
+                </ul>
+            </div>
+        </section>
+        
+        
+        <section class="scene" id="scene2">
+           <div class="scene_inner">
+                <div class="vsVideoSec">
+                    <div class="sec_inner">
+                        <img src="./images/vdo_vs.gif" alt="비주얼 gif" class="vsVdo">
+                    </div>
+                </div>
+                
+                <div class="newProSec">
+                    <div class="sec_inner">
+                        <ul class="newPro np0">
+                            <li class="npVsCenter">
+                                <img src="./images/img_mascara.png" alt="클라이맥스마스카라이미지">
+                            </li>
+                        </ul>
+                        <div class="newPro np1">
+							<ul>
+								<li class="npVs">
+									<img src="./images/img_mascara_bg1.png" alt="마스카라배경이미지1">
+								</li>
+								<li class="npTxt">
+									<span class="npTxtImg">
+										<img src="./images/img_txt_11.png" alt="마스카라텍스트11">
+									</span>
+									<span class="npTxtImg">
+										<img src="./images/img_txt_12.png" alt="마스카라텍스트12">
+									</span>
+									<span class="npTxtImg">
+										<img src="./images/img_txt_13.png" alt="마스카라텍스트13">
+									</span>
+									<span class="npTxtImg">
+										<img src="./images/img_txt_14.png" alt="마스카라텍스트14">
+									</span>
+								</li>
+							</ul>
+                        </div>
+                        <div class="newPro np2">
+							<ul>
+								<li class="npVs">
+									<img src="./images/img_mascara_bg2.png" alt="마스카라배경이미지2">
+								</li>
+								<li class="npTxt">
+									<span class="npTxtImg">
+										<img src="./images/img_txt_21.png" alt="마스카라텍스트21">
+									</span>
+									<span class="npTxtImg">
+										<img src="./images/img_txt_22.png" alt="마스카라텍스트22">
+									</span>
+									<span class="npTxtImg">
+										<img src="./images/img_txt_23.png" alt="마스카라텍스트23">
+									</span>
+									<span class="npTxtImg">
+										<img src="./images/img_txt_24.png" alt="마스카라텍스트24">
+									</span>
+								</li>
+								<li class="npMore">
+									<button class="more" id="nPMoreBtn">더보기</button>
+								</li>
+							</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="scene" id="scene3">
+            <div class="scene_bg">
+                <div class="scene_inner">
+                    <ul class="bestPro bstTitSec">
+                        <li>
+                            <p class="bstTit en_t">BEST<br>SELLERS</p>
+                            <span class="bstLine"></span>
+                        </li>
+                    </ul>
+                    
+                    <div class="bestPro bstVsSec">
+                        <ul class="bstVsBox">
+                            <a href="#">
+                                <span class="bstImg">
+                                    <img src="./images/img_bestpro1.png" alt="베스트아이템1" class="bstVsImg">
+                                </span>
+                                <span class="bstVsTxt">
+                                    <span class="bstName ko_b">어데이셔스 립스틱<br>- 도미니크</span>
+                                    <span class="bstPrice ko_r">\ 39,000</span>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="bstImg">
+                                    <img src="./images/img_bestpro2.png" alt="베스트아이템2" class="bstVsImg">
+                                </span>
+                                <span class="bstVsTxt">
+                                    <span class="bstName ko_b">멀티플<br>- 오르가즘</span>
+                                    <span class="bstPrice ko_r">\ 55,000</span>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="bstImg">
+                                    <img src="./images/img_bestpro3.png" alt="베스트아이템3" class="bstVsImg">
+                                </span>
+                                <span class="bstVsTxt">
+                                    <span class="bstName ko_b">퓨어 래디언트<br>틴티드 모이스처라이저</span>
+                                    <span class="bstPrice ko_r">\ 63,000</span>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="bstImg">
+                                    <img src="./images/img_bestpro4.png" alt="베스트아이템4" class="bstVsImg">
+                                </span>
+                                <span class="bstVsTxt">
+                                    <span class="bstName ko_b">쉬어 글로우<br>파운데이션</span>
+                                    <span class="bstPrice ko_r">\ 65,000</span>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="bstImg">
+                                    <img src="./images/img_bestpro5.png" alt="베스트아이템5" class="bstVsImg">
+                                </span>
+                                <span class="bstVsTxt">
+                                    <span class="bstName ko_b">블러쉬<br>- 오르가즘</span>
+                                    <span class="bstPrice ko_r">\ 40,000</span>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="bstImg">
+                                    <img src="./images/img_bestpro6.png" alt="베스트아이템6" class="bstVsImg">
+                                </span>
+                                <span class="bstVsTxt">
+                                    <span class="bstName ko_b">브론징 파우더<br>- 라구나</span>
+                                    <span class="bstPrice ko_r">\ 52,000</span>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="bstImg">
+                                    <img src="./images/img_bestpro7.png" alt="베스트아이템7" class="bstVsImg">
+                                </span>
+                                <span class="bstVsTxt">
+                                    <span class="bstName ko_b">래디언트 크리미 컨실러<br>- 커스터드</span>
+                                    <span class="bstPrice ko_r">\ 40,000</span>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="bstImg">
+                                    <img src="./images/img_bestpro8.png" alt="베스트아이템8" class="bstVsImg">
+                                </span>
+                                <span class="bstVsTxt">
+                                    <span class="bstName ko_b">일루미네이터<br>- 오르가즘</span>
+                                    <span class="bstPrice ko_r">\ 43,000</span>
+                                </span>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <footer id="ft">
+            <div class="ft_inner">
+               <section class="ftBg_ani">
+					<div class="ftAni_wrap">
+						<section class="ftAni" id="ftAni1">
+							<span>
+								<img class="ftImg" src="./images/img_splash11.png" alt="">
+								<img class="ftImg" src="./images/img_splash12.png" alt="">
+								<img class="ftImg" src="./images/img_splash13.png" alt="">
+								<img class="ftImg" src="./images/img_splash14.png" alt="">
+							</span>
+						</section>
+						<section class="ftAni" id="ftAni2">
+							<span>
+								<img src="./images/img_splash21.png" alt="" class="ftImg">
+								<img src="./images/img_splash23.png" alt="" class="ftImg">
+								<img src="./images/img_splash24.png" alt="" class="ftImg">
+							</span>
+						</section>
+					</div>
+                </section>
+                
+                <section class="ftBg_black">
+                    <section class="ftTextSec">
+                        <ul class="ftLinkSec siteMap">
+                            <li class="ftLink">
+                                <a href="#">브랜드 뉴스</a>
+                            </li>
+                            <li class="ftLink">
+                                <a href="#">고객 서비스</a>
+                            </li>
+                            <li class="ftLink">
+                                <a href="#">채용정보</a>
+                            </li>
+                            <li class="ftLink">
+                                <a href="#">STORES</a>
+                            </li>
+                            <li class="ftLink">
+                                <a href="#">이벤트</a>
+                            </li>
+                            <li class="ftLink">
+                                <a href="#">이메일 구독신청</a>
+                            </li>
+                            <li class="ftLink">
+                                <a href="#">지역 변경</a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="ftLinkSec snsMap">
+                            <li class="ftLink">
+                                <a href="#"></a>
+                            </li>
+                            <li class="ftLink">
+                                <a href="#"></a>
+                            </li>
+                            <li class="ftLink">
+                                <a href="#"></a>
+                            </li>
+                            <li class="ftLink">
+                                <a href="#"></a>
+                            </li>
+                            <li class="ftLink">
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="ftCopySec">
+                            <a href="">이용약관</a>
+                            <a href="">개인정보보호정책</a>
+                            <p>© 2017 NARS Cosmetics. All Rights Reserved.</p>
+                        </ul>
+                    </section>
+                </section>
+            </div>
+        </footer>
+        
+    </div>
+    
+</body>
+</html>

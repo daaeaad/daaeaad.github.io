@@ -1,0 +1,213 @@
+
+
+@charset "utf-8";
+
+
+/******************************************/
+/* footer#ft 영역 */
+/******************************************/
+
+#ft {
+    width: 100%;
+    height: 390px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-color: #000;
+}
+#ft .ft_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#ft .ftBg_ani {
+    width: 100%;
+    height: 64px;
+    position: absolute;
+    top: 180px;
+    left: 0;
+}
+#ft .ftAni_wrap {
+    width: 150px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#ft .ftAni {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#ft .ftAni span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/**********************************/
+/* ftAni1 */
+#ft.on #ftAni1 .ftImg {
+    display: block;
+    position: absolute; 
+    
+    animation: ftAni1 1.2s ease;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#ft #ftAni1 .ftImg:nth-child(1) {
+    width: 47px;
+    top: -34px;
+    left: 0;
+    opacity: 0;
+}
+#ft #ftAni1 .ftImg:nth-child(2) {
+    width: 30px;
+    top: 42px;
+    left: 47px;
+    opacity: 0;
+}
+#ft #ftAni1 .ftImg:nth-child(3) {
+    width: 44px;
+    right: 29px;
+    top: -20px;
+    opacity: 0;
+}
+#ft #ftAni1 .ftImg:nth-child(4) {
+    width: 29px;
+    right: 0;
+    top:30px;
+    opacity: 0;
+}
+@keyframes ftAni1 {
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+/**********************************/
+
+/**********************************/
+/* ftAni2 */
+#ft #ftAni2 .ftImg {
+    width: 150px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+#ft.on #ftAni2 .ftImg:nth-child(1) {
+    left: 0;
+    animation: ftAni21 0.8s ease;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+}
+#ft.on #ftAni2 .ftImg:nth-child(2) {
+    left: 0;
+    animation: ftAni22 0.8s ease;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+}
+#ft.on #ftAni2 .ftImg:nth-child(3) {
+    left: 0;
+    animation: ftAni23 0.8s ease;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+}
+@keyframes ftAni21 {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+@keyframes ftAni22 {
+    from {
+        opacity: 0;
+    } 10% {
+        opacity: 1;
+    }50% {
+        left: -2px;
+    } to {
+        left: 0;
+        opacity: 0;
+    }
+}
+@keyframes ftAni23 {
+    from {
+        opacity: 0;
+    } 10% {
+        opacity: 1;
+    } 50% {
+        left: 2px;
+    } to {
+        left: 0;
+        opacity: 0;
+    }
+}
+/**********************************/
+
+
+
+#ft .ftBg_black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#ft .ftTextSec {
+    width: 210px;
+    height: 100%;
+    margin: 0 auto;
+}
+#ft .ftLinkSec {
+    width: 100%;
+    height: auto;
+}
+#ft .ftLink {
+    width: 100%;
+    height: 30px;
+}
+#ft .ftLink a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#ft .ftCopySec {
+    width: 100%;
+    height: 50px;
+}
+#ft .ftCopySec a {
+    display: block;
+    width: 50%;
+    float: left;
+    height: 25px;
+    font-size: 12px;
+    text-align: center;
+}
+#ft .ftCopySec a:nth-child(1) {
+    width: 46%;
+}
+#ft .ftCopySec a:nth-child(2) {
+     width: 54%;   
+}
+#ft .ftCopySec p {
+    display: block;
+    width: 100%;
+    height: 25px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/******************************************/
+/* footer#ft 영역 끝 */
+/******************************************/
+
