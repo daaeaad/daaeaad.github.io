@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/**********************************************/
+/*   scene0   */
+
+
+#scene0 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.6s;
+    opacity: 1;
+}
+#scene0 .rltv {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    transition: 0.6s;
+}
+#scene0 .scene_inner {
+    width: 53.3rem;
+}
+#scene0 .sceneBg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+#scene0 .sceneBg:before {
+    content: "";
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#scene0 .sceneBg video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+#scene0 .sceneBg source {
+    width: 100%;
+    height: 100%;
+}
+#scene0 .sceneCon {
+    width: 100%;
+    height: 16.66rem;
+    position: absolute;
+    left: 0;
+    top: calc(calc(100% - 16.66rem) / 2);
+}
+#scene0 .scene_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene0 .sceneCon ul {
+    width: 100%;
+    height: 100%;
+}
+#scene0 .con {
+    width: 100%;
+    height: 33.33%;
+}
+#scene0 .con img {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+#scene0 .inputForm {
+    width: 42%;
+    height: 3.22rem;
+    position: relative;
+    margin: 0 auto;
+/*    border: 3px solid #2c96ec;*/
+    box-sizing: border-box;
+}
+#scene0 .inputForm:before {
+    content: "";
+    display: block;
+    width: 1.277rem;
+    height: 1rem;
+    background-image: url("../images/graphic_slash_t_color.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+}
+#scene0 .inputForm:after {
+    content: "";
+    display: block;
+    width: 1.277rem;
+    height: 1rem;
+    background-image: url("../images/graphic_slash_b_color.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    bottom: -1rem;
+    left: -1rem;
+}
+#scene0 .inputForm input {
+    display: block;
+    float: left;
+    width: 90%;
+    height: 100%;
+    text-indent: 8%;
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: #2c96ec;
+    text-align: center;
+}
+#scene0 .inputForm input::placeholder {
+    color: #2c96ec;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#scene0 .inputForm .ico {
+    width: 10%;
+    height: 100%;
+    display: block;
+    float: left;
+    background-image: url("../images/ico_search_color.png");
+    background-repeat: no-repeat;
+    background-size: auto 54%;
+    background-position: center center;
+}
+
+
+
+/*******************************/
+/*  제이쿼리  */
+
+/*
+function playVid() { 
+    vid.play(); 
+} 
+
+function pauseVid() { 
+    vid.pause(); 
+}
+*/
+
+/* #scene0, .scene.nf - addClass .scroll */
+#scene0.scroll {
+    position: relative;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+/*
+#scene0.scroll {
+    top:-100%;
+    opacity: 0;
+}
+*/
+#scene0.scroll .rltv {
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+.scene.nf {
+    opacity: 0;
+}
+.scene.nf.scroll {
+    opacity: 1;
+}
+
+/*  제이쿼리 끝  */
+/*******************************/
+
+
+/*   scene0   */
+/**********************************************/

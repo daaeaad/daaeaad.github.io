@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/***********************************************/
+/*   scene4 css   */
+
+
+#scene4 {
+    height: 48rem;
+}
+#scene4 .sceneConSec {
+    width: 57.22rem;
+    height: 21.4rem;
+    margin: 5.55rem auto;
+}
+#scene4 .sceneConSec ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#scene4 .con {
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+#scene4 .con a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#scene4 .conImg {
+    display: block;
+    width: 100%;
+    height: 12.2rem;
+    position: relative;
+}
+
+#scene4 .conImg:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/graphic_slash_color_2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    display: none;
+}
+
+#scene4 .conImg img {
+    display: block;
+    width: 12.2rem;
+    height: 100%;
+    margin: 0 auto;
+}
+#scene4 .conTxt {
+    display: block;
+    width: 100%;
+    height: 3.88rem;
+    margin: 1.6rem auto;
+}
+#scene4 .conMainTxt, #scene4 .conSubTxt {
+    display: block;
+    width: 100%;
+    height: 1.94rem;
+    text-align: center;
+    color: #000;
+}
+#scene4 .conMainTxt {
+    font-size: 1.11rem;
+}
+#scene4 .conSubTxt {
+    font-size: 0.77rem;
+    color: #8b8b8b;
+}
+#scene4 .con a.more {
+    width: 70%;
+    height: 2.22rem;
+    font-size: 0.77rem;
+    border: 1px solid #2c96ec;
+    box-sizing: border-box;
+    color: #8b8b8b;
+    text-align: center;
+    line-height: 2rem;
+    text-indent: 1.2rem;
+    background-image: url("../images/ico_check.png");
+    background-size: 0.7rem auto;
+    background-position: 1.5rem center;
+    background-repeat: no-repeat;
+    
+    position: absolute;
+    bottom: 0;
+    left: calc(calc(100% - 70%) / 2);
+    
+    display: none;
+}
+#scene4 .con:hover a.more {
+    display: block;
+}
+#scene4 .con:hover .conImg:before {
+    display: block;
+}
+
+
+
+/********************************/
+/*  제이쿼리 적용 부분  */
+
+
+/*  제이쿼리 적용 부분 끝  */
+/*******************************/
+
+
+/*   scene4 css   */
+/***********************************************/

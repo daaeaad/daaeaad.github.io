@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/*********************************************/
+/*  scene1 css  */
+
+
+#scene1 {
+    background-image: url("../images/img_bg_11.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#scene1 .sceneTit {
+    color: #fff;
+    padding-top: 12.44rem;
+}
+#scene1 .sceneTabBtnSec {
+    width: 100%;
+    height: 2.44rem;
+    margin: 2.4rem auto;
+}
+#scene1 .sceneTabBtnSec ul {
+    width: 51.55rem;
+    height: 100%;
+    margin: 0 auto;
+}
+#scene1 .tabBtn {
+    width: auto;
+    height: 100%;
+    margin-left: 2.88rem;
+    float: left;
+}
+#scene1 .tabBtn:nth-child(1) {
+    margin-left: 0;
+}
+#scene1 .tabBtn button {
+    width: auto;
+    height: 100%;
+    line-height: 2.4rem;
+    font-size: 1.22rem;
+    color: #fff;
+    position: relative;
+}
+#scene1 .tabBtn button:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    clear: both;
+    opacity: 0;
+    transition: 0.3s;
+}
+#scene1 .sceneConSec {
+    width: 56rem;
+    height: 19.44rem;
+    margin: 3.6rem auto;
+    position: relative;
+}
+#scene1 .sceneCon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    display: none;
+}
+#scene1 .sceneCon:nth-child(1) {
+    display: block;
+}
+#scene1 .sceneCon ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene1 .content {
+    width: 12.22rem;
+    height: 100%;
+    float: left;
+    margin-left: 2.11rem;
+}
+#scene1 .content:nth-child(1) {
+    margin-left: 0;
+}
+#scene1 .content a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#scene1 .conImg {
+    display: block;
+    width: 12.22rem;
+    height: 12.22rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+#scene1 .conImg:before {
+    content: "";
+    display: block;
+    width: 1.277rem;
+    height: 0.833rem;
+    background-image: url("../images/graphic_slash_t_white.png");
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    opacity: 0;
+    transition: 0.4s;
+}
+#scene1 .conImg:after {
+    content: "";
+    display: block;
+    width: 1.277rem;
+    height: 0.833rem;
+    background-image: url("../images/graphic_slash_b_white.png");
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -1rem;
+    left: -1rem;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+#scene1 .content:hover .conImg:before {
+    opacity: 1;
+}
+#scene1 .content:hover .conImg:after {
+    opacity: 1;
+}
+
+#scene1 .conImg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#scene1 .conTxt {
+    display: block;
+    width: 100%;
+    height: 5.55rem;
+}
+#scene1 .subTxt, #scene1 .mainTxt {
+    padding-top: 0.88rem;
+}
+#scene1 .subTxt {
+    display: block;
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    color: #ccc;
+}
+#scene1 .mainTxt {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+/********************************/
+/* 제이쿼리 적용 부분 */
+
+/* #scene .tabBtn button - addClass .ko_eb */
+#scene1 .tabBtn button.ko_eb:after {
+    opacity: 1;
+}
+
+/* 제이쿼리 적용 부분 */
+/********************************/
+
+
+
+/*  scene1 css  */
+/*********************************************/

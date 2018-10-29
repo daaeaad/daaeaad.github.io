@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/************************************************/
+/*   header css   */
+
+
+#hd {
+    width: 100%;
+    height: 5.55rem;
+    background-color: transparent;
+    border-bottom: 1px solid #8d8d8d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    transition: 0.4s;
+}
+#hd .logo {
+    width: 16.666%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 16.66rem;
+}
+#hd .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#hd .logo img {
+    display: block;
+    width: auto;
+    height: 33.33%;
+    position: absolute;
+    top: 33.33%;
+    left: 0;
+    transition: 0.4s;
+    opacity: 1;
+}
+#hd .logo img.logoColor {
+    opacity: 0;
+}
+
+#hd .gnb {
+    width: 62.666%;
+    height: 100%;
+    margin: 0 auto;
+}
+#hd .menuSec {
+    width: 100%;
+    height: 100%;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    box-sizing: border-box;
+}
+#hd .mainMenu {
+    width: auto;
+    height: 33.33%;
+    margin-top: 2.4rem;
+    margin-left: 4.44rem;
+    float: left;
+}
+#hd .mainMenu:nth-child(5) {
+    margin-right: 4.44rem;
+}
+#hd .mainMenu .ico {
+    display: block;
+    float: left;
+    width: auto;
+    height: 100%;
+    position: relative;
+}
+#hd .mainMenu .ico img {
+    display: block;
+    width: auto;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    opacity: 1;
+}
+#hd .mainMenu .ico img:nth-child(2) {
+    opacity: 0;
+}
+#hd .mainMenu:nth-child(1) a {
+    text-indent: 1rem;
+}
+#hd .mainMenu a {
+    display: block;
+    float: left;
+    width: auto;
+    height: 100%;
+    color: #fff;
+    transition: 0.4s;
+}
+
+#hd .navIcoSec {
+    width: 16.66%;
+    height: 100%;
+    position: absolute;
+    right: 16.66rem;
+    top: 0;
+}
+#hd .menuBtn {
+    width: 1.66rem;
+    height: 21%;
+    margin-top: 2.4rem;
+    float: right;
+    position: relative;
+}
+#hd .menuLine {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    transition: 0.4s;
+}
+#hd .menuLine:nth-child(1) {
+    top: 0;
+}
+#hd .menuLine:nth-child(2) {
+    top: calc(calc(100% - 2px) / 2);
+}
+#hd .menuLine:nth-child(3) {
+    bottom: 0;
+}
+
+
+/*********************************/
+/* 제이쿼리 적용부분 */
+
+/* #hd - .addClass color */
+#hd.color {
+    background-color: #fff;
+}
+#hd.color .logo img.logoWhite {
+    opacity: 0;
+}
+#hd.color .logo img.logoColor {
+    opacity: 1;
+}
+#hd.color .mainMenu a {
+    color: #000;
+}
+#hd.color .mainMenu .ico img:nth-child(1) {
+    opacity: 0;
+}
+#hd.color .mainMenu .ico img:nth-child(2) {
+    opacity: 1;
+}
+#hd.color .menuLine {
+    background-color: #000;
+}
+
+/* 제이쿼리 적용부분 */
+/*********************************/
+
+
+/*   header css   */
+/************************************************/

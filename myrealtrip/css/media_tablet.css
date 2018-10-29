@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+
+/************************************************************/
+/*    미디어쿼리 태블릿    */
+
+
+@media screen and (min-width:768px) and (max-width:1025px) {
+    
+    /*********************************/
+    /*  default 설정  */
+    body, html {
+        font-size: 18px;
+    }
+    /*  default 설정 끝  */
+    /*********************************/
+    
+    
+    /*********************************/
+    /*  common 설정  */
+    .scene_inner {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .sceneTit {
+        width: 100%;
+        padding-top: 3.75rem;
+        font-size: 1.66rem;
+        line-height: 3rem;
+        text-align: center;
+    }
+    .sceneConSec {
+        width: 100%;
+        margin: 1.8rem auto;
+    }
+
+    /*  common 설정 끝  */
+    /*********************************/
+    
+    
+    /*********************************/
+    /*  scene0 설정  */
+    #scene0 .sceneCon {
+        height: 22.4rem;
+        position: absolute;
+        left: 0;
+        top: calc(calc(100% - 24rem) / 2);
+    }
+    #scene0 .con img {
+        display: block;
+        width: auto;
+        height: 80%;
+        margin: 0 auto;
+    }
+    #scene0 .con:nth-child(1) img {
+        display: block;
+        width: auto;
+        height: 60%;
+        margin: 0 auto;
+    }
+    #scene0 .con:nth-child(2) {
+        height: 
+    }
+    #scene0 .inputForm {
+        width: 80%;
+        height: 7rem;
+        position: relative;
+        margin: 0 auto;
+    /*    border: 3px solid #2c96ec;*/
+        box-sizing: border-box;
+    }
+    #scene0 .inputForm input::placeholder {
+        font-size: 1.6rem;
+    }
+    #scene0 .inputForm .ico {
+        background-size: auto 42%;
+    }
+    /*  scene0 설정 끝  */
+    /*********************************/
+    
+    
+    /*********************************/
+    /*  scene1 설정  */
+    #scene1 {
+        overflow: hidden;
+        background-size: auto 100%;
+    }
+    #scene1 .sceneTabBtnSec {
+        overflow-x: scroll;
+    }
+    #scene1 .sceneTabBtnSec ul {
+        width: 55.55rem;
+    }
+    #scene1 .sceneConSec {
+        width: 108%;
+        overflow-x: scroll;
+    }
+    #scene1 .sceneCon {
+        width: 56rem;
+    }
+    
+    /*  scene1 설정 끝  */
+    /*********************************/
+    
+    
+    /*********************************/
+    /*  header 설정  */
+    #hd .logo {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #hd .logo img {
+        left: calc(calc(100% - 9rem;) / 2 );
+    }
+    #hd .gnb {
+        display: none;
+    }
+    #hd .navIcoSec {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        right: 1.6rem;
+        top: 0;
+    }
+    
+    /*  header 설정 끝  */
+    /*********************************/
+    
+    
+    /*********************************/
+    /*  scene2 설정  */
+    #scene2 {
+        height: 30rem;
+    }
+    #hd .logo img {
+        left: calc(calc(100% - 9rem;) / 2 );
+    }
+    #hd .gnb {
+        display: none;
+    }
+    #hd .navIcoSec {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        right: 1.6rem;
+        top: 0;
+    }
+    
+    /*  scene2 설정 끝  */
+    /*********************************/
+    
+    
+    /*********************************/
+    /*  scene3 설정  */
+    #scene3 {
+        overflow: hidden;
+    }
+    
+    /*  scene3 설정 끝  */
+    /*********************************/
+    
+    
+    /*********************************/
+    /*  scene4 설정  */
+    #scene4 {
+        height: 40rem;
+    }
+    #scene4 .sceneConSec {
+        width: 100%;
+        height: 21rem;
+    }
+    #scene4 .sceneConSec ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: center;
+    }
+    #scene4 .con {
+        height: auto;
+    }
+    
+    /*  scene4 설정 끝  */
+    /*********************************/
+    
+    
+    /*********************************/
+    /*  footer 설정  */
+    #ft .ftVsSec {
+        display: none;
+    }
+    #ft .ftTxtSec {
+        padding-top: 1rem;
+    }
+    /*  footer 설정  */
+    /*********************************/
+    
+}
+
+
+/*    미디어쿼리 태블릿    */
+/************************************************************/
