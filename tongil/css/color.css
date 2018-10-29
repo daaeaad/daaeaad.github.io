@@ -1,0 +1,22 @@
+
+@charset "utf-8";
+
+.c_navy {
+    color: #003964;
+}
+.c_red {
+    color: #ed1a3b;
+}
+.c_grey {
+    color: #58595b;
+}
+
+.b_navy {
+    backgorund-color: #003964;
+}
+.b_red {
+    backgorund-color: #ed1a3b;
+}
+.b_grey {
+    backgorund-color: #58595b;
+}
