@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+
+/*****************************************************/
+/*       scene2 - 홈2영역 css       */
+/*****************************************************/
+
+
+
+
+#scene2 .sceneConSec {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#scene2 .sceneConSec .inner {
+    width: 100%;
+    height: 100%;
+    padding-left: 12.5%;
+    box-sizing: border-box;
+}
+#scene2 .sceneConSec:nth-child(2) .inner {
+    padding-left: 0;
+    padding-right: 12.5%;
+}
+#scene2 .sceneConSec .sceneConTit {
+    width: 100%;
+    height: 12.5%;
+    line-height: 12.5%;
+    font-size: 5.5rem;
+    color: #000;
+}
+#scene2 .sceneConSec .sceneConTxt {
+    width: 100%;
+    height: 87.5%;
+}
+#scene2 .sceneConSec .sceneConTxt .right {
+    width: 12.5%;
+    height: 100%;
+    float: left;
+}
+#scene2 .sceneConSec .sceneConTxt .left {
+    width: 85%;
+    height: 100%;
+    float: right;
+}
+#scene2 .sceneConSec .conLst {
+    width: 100%; 
+    text-align: left;
+    color: #000;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+
+#scene2 .sceneConSec:nth-child(2) .sceneConTxt .right {
+    width: auto;
+    height: 100%;
+}
+#scene2 .sceneConSec:nth-child(2) .sceneConTxt .left {
+    width: auto;
+    height: 100%;
+    float: left;
+}
+
+
+
+
+/**********************************/
+/*       제이쿼리 적용할 부분       */
+/**********************************/
+
+
+
+
+/**********************************/
+/*       제이쿼리 적용할 부분 끝     */
+/**********************************/
+
+
+/*****************************************************/
+/*       scene2 - 홈2영역 css 끝       */
+/*****************************************************/

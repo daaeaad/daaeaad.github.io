@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+
+/*****************************************************/
+/*       초기화 css       */
+/*****************************************************/
+
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin:0;
+    padding:0;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-color: #fff;
+    
+/*    미디어쿼리  */
+    font-size: 20px;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img, fieldset {
+    border: 0;
+}
+button, input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+
+
+
+/**********************************/
+/*       제이쿼리 적용할 부분       */
+/**********************************/
+
+/*  body - .addClass "rock"  */
+body.rock {
+    overflow: hidden;
+}
+
+/**********************************/
+/*       제이쿼리 적용할 부분 끝     */
+/**********************************/
+
+
+/*****************************************************/
+/*       초기화 css 끝       */
+/*****************************************************/

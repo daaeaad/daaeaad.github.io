@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+
+
+
+#mainGnb {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #fff;
+    
+    display: none;
+}
+#mainGnb .gnb_inner {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#mainGnb ul {
+    
+}

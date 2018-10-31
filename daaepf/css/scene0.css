@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+
+/*****************************************************/
+/*       scene0 - 픽스영역 css       */
+/*****************************************************/
+
+
+
+#scene0 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+/*    visibility: hidden;*/
+}
+
+#scene0 .header {
+/*
+    position: fixed;
+    top: 0;
+    left: 0;
+*/
+    width: 87.5%;
+    height: 12.5%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    
+    justify-content: space-between;
+}
+#scene0 .header .logo {
+    width: 50%;
+    height: 90%;
+}
+#scene0 .header .logo a {
+    display: block;
+    width: 14.3%;
+    height: 50%;
+    background-image: url("../images/logo_color.png");
+    background-size: auto 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+#scene0 .header .contactBtn {
+    width: 50%;
+    height: 100%;
+}
+#scene0 .header .contactBtn li {
+    width: 100%;
+    height: 1.9rem;
+}
+#scene0 .header .contactBtn .btn {
+    height: 100%;
+    width: 20%;
+    float: right;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 100%;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+
+#scene0 .gnbBtnSec {
+    width: 6.25%;
+    height: 75%;
+    float: right;
+    margin-right: 6.25%;
+    display: flex;
+/*    align-items: center;*/
+    flex-direction: column;
+    justify-content: space-around;
+}
+#scene0 .gnbBtnSec ul {
+    width: 100%;
+    height: 15%;
+}
+#scene0 .gnbBtnSec .navIco {
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+#scene0 .gnbBtnSec .btn {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#scene0 .gnbBtnSec .line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+}
+#scene0 .gnbBtnSec .line:nth-child(2) {
+    top: calc(calc(100% - 1px) / 2);
+}
+#scene0 .gnbBtnSec .line:nth-child(3) {
+    bottom: 0.5rem;
+}
+
+#scene0 .footer {
+    width: 87.5%;
+    height: 12.5%;
+    clear: both;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+#scene0 .footer .footerSec{
+    width: 12.5%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+#scene0 .footer .sldBtnSec ul {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+#scene0 .footer .sldBtnSec .sldBtn {
+    height: 0.5rem;
+    width: 25%;
+}
+#scene0 .footer .sldBtnSec .sldBtn button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #0000cc;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#scene0 .scrBtnSec .scrBtn {
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+}
+#scene0 .scrBtnSec span {
+    display: block;
+}
+#scene0 .scrBtnSec .scrTxt {
+    width: 100%;
+    font-size: 0.5rem;
+    text-align: center;
+}
+#scene0 .scrBtnSec .line {
+    width: 0.6px;
+    height: 90%;
+    background-color: #000;
+    position: absolute;
+    bottom: -1.5rem;
+    left: calc(calc(100% - 1px) / 2);
+}
+
+#scene0 .copyrightSec .copyright {
+    width: 100%;
+    text-align: right;
+    font-size: 0.5rem;
+    color: #0000cc;
+}
+
+#scene0 .topBtnSec {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+}
+#scene0 .topBtnSec .topBtn {
+    display: block;
+    width: 25%;
+    height: 50%;
+    margin-left: 25%;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+#scene0 .topBtnSec .topBtn span {
+    display: block;
+    text-align: center;
+    line-height: 100%;
+}
+
+
+
+
+
+/**********************************/
+/*       제이쿼리 적용할 부분       */
+/**********************************/
+
+/* #scene0 .footer .sldBtnSec .sldBtn - .addClass "on" */
+#scene0 .footer .sldBtnSec .sldBtn.on {
+    width: 50%;
+}
+#scene0 .footer .sldBtnSec .sldBtn.on button {
+    background-color: #0000cc;
+}
+
+
+/**********************************/
+/*       제이쿼리 적용할 부분 끝     */
+/**********************************/
+
+
+/*****************************************************/
+/*       scene0 - 픽스영역 css 끝       */
+/*****************************************************/

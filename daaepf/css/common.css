@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+
+/*****************************************************/
+/*       공통서식 css       */
+/*****************************************************/
+
+
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.scene {
+    width: 100%;
+    height: 100%;
+}
+.scene_inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.sceneConSec {
+    width: 50%;
+    height: 100%;
+}
+.inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.sceneTit, .sceneConTit {
+    width: 100%;
+    font-size: 5.5rem;
+    line-height: 5.8rem;
+    margin: 5.8rem auto;
+    text-align: left;
+    color: #000;
+}
+p {
+    width: 100%;
+    color: #000;
+    text-align: left;
+}
+.btn {
+    cursor: pointer;
+}
+
+
+
+
+/**********************************/
+/*       제이쿼리 적용할 부분       */
+/**********************************/
+
+/*    */
+
+
+/**********************************/
+/*       제이쿼리 적용할 부분 끝     */
+/**********************************/
+
+
+/*****************************************************/
+/*       공통서식 css 끝       */
+/*****************************************************/

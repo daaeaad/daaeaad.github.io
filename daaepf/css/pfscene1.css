@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+
+
+
+#pf_scene1 {
+    background-image: url("../images/img_pgbg_vstxt_portfolio1.png");
+    background-size: 41.5% auto;
+    background-repeat: no-repeat;
+    background-position: center 1.5rem;
+}
+#pf_scene1 .pfMainVsSec {
+    width: 87.5%;
+    height: 75%;
+    margin: 0 auto;
+}
+#pf_scene1 .pfMainTxtSec {
+    width: 87.5%;
+    height: 25%;
+    margin: 0 auto;
+}
+#pf_scene1 .inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#pf_scene1 .pfMainVsFrame {
+    width: 100%;
+    height: 100%;
+}
+#pf_scene1 .pfMainVsFrame ul {
+    width: 600%;
+    height: 100%;
+}
+#pf_scene1 .pfMainVsFrame .pfMainVsImg {
+    width: 16.666%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#pf_scene1 .pfMainVsImg img {
+    display: block;
+    width: auto;
+    height: 80%;
+    margin: 40% auto;
+}
+#pf_scene1 .pfSldBtnFrame {
+    width: 100%;
+    height: 6.25%;
+    position: absolute;
+    top: calc(calc(100% - 6.25%) / 2);
+    left: 0;
+}
+#pf_scene1 .sldLrBtn {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#pf_scene1 .sldLrBtn button {
+    display: block;
+    width: 50%;
+    height: 100%;
+}
+#pf_scene1 .sldLrBtn.left {
+    float: left;
+}
+#pf_scene1 .sldLrBtn.right {
+    float: right;
+}
+#pf_scene1 .sldLrBtn.left button {
+    float: left;
+    background-image: url("../images/btn_arrow_left.png");
+    background-repeat: no-repeat;
+    background-size: auto 30%;
+    background-position: left center;
+}
+#pf_scene1 .sldLrBtn.right button {
+    float: right;
+    background-image: url("../images/btn_arrow_right.png");
+    background-repeat: no-repeat;
+    background-size: auto 30%;
+    background-position: right center;
+}
+
+
+
+#pf_scene1 .pfMainTxtSec ul {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#pf_scene1 .pfMainTxtSec li {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#pf_scene1 .pfMainTxtSec li.right {
+    float: right;
+}
+#pf_scene1 .pfMainTxtSec p {
+    width: 100%;
+    height: auto;
+    color: #000;
+}
+#pf_scene1 .pfMainTxtSec .pfName {
+    font-size: 2.5rem;
+}
+#pf_scene1 .pfMainTxtSec .pfDate, #pf_scene1 .pfMainTxtSec .pfSkill, #pf_scene1 .pfMainTxtSec .wbLink {
+    font-size: 1rem;
+}
+#pf_scene1 .pfMainTxtSec .webLink {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    position: relative;
+}
+#pf_scene1 .pfMainTxtSec .webLink:before {
+    content: "";
+    display: block;
+    width: 12.5%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: calc(calc(100% - 2px) / 2);
+    left: calc(calc(100% - 12.5%) / 1.4);
+}
+
+
+
+
+
+
+#pf_scene1 .pfMainVsFrame .pfMainVsImg.on, #pf_scene1 .pfMainTxtSec ul.on {
+    display: block;
+}
