@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+
+
+
+
+/*미디어쿼리 모바일 567px 이하일때*/
+
+@media screen and (max-width:576px) {
+    
+    body, html {
+        font-size: 10px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:768px) {
+    
+    body, html {
+        font-size: 14px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:992px) {
+    
+    body, html {
+        font-size: 16px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:1200px) {
+    
+    body, html {
+        font-size: 16px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:1600px) {
+    
+    body, html {
+        font-size: 16px;
+    }
+    
+}

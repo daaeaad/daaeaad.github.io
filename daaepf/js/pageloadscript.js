@@ -18,7 +18,7 @@ $(document).ready(function() {
         var sct = parseInt($(window).scrollTop());
         
         
-        if(sct >= winHt) {
+        if(sct > 500) {
             
             $("#scene12")
                 .addClass("load");
