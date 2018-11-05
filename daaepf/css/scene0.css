@@ -7,33 +7,26 @@
 
 
 
-#scene0 {
+.header {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 1.5rem;
+    left: calc(calc(100% - 87.5%) / 2 );
     z-index: 100;
-/*    visibility: hidden;*/
-}
-
-#scene0 .header {
-/*
-    position: fixed;
-    top: 0;
-    left: 0;
-*/
+    
     width: 87.5%;
     height: 12.5%;
     margin: 0 auto;
-    position: relative;
-    display: flex;
     
+    display: flex;
     justify-content: space-between;
 }
-#scene0 .header .logo {
+.header .logo {
     width: 50%;
     height: 90%;
+    display: flex;
+    align-items: center;
 }
-#scene0 .header .logo a {
+.header .logo a {
     display: block;
     width: 14.3%;
     height: 50%;
@@ -42,17 +35,19 @@
     background-position: left center;
     background-repeat: no-repeat;
 }
-#scene0 .header .contactBtn {
+.header .contactBtn {
     width: 50%;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
-#scene0 .header .contactBtn li {
+.header .contactBtn li {
     width: 100%;
     height: 1.9rem;
 }
-#scene0 .header .contactBtn .btn {
+.header .contactBtn .btn {
     height: 100%;
-    width: 20%;
+    width: 7.6rem;
     float: right;
     font-size: 1rem;
     text-align: center;
@@ -60,12 +55,36 @@
     color: #000;
     background-color: #fff;
     border: 1px solid #000;
+    position: relative;
+    transition-delay: 0.2s;
+    transition-duration: 0.4s;
+}
+.header .contactBtn .btn:before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: #0000cc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
 }
 
 
-#scene0 .gnbBtnSec {
+
+
+
+
+.gnbBtnSec {
+    position: fixed;
+    right: 0;
+    top: 12.5%;
+    z-index: 100;
+    
     width: 6.25%;
-    height: 75%;
+    height: 62.5%;
     float: right;
     margin-right: 6.25%;
     display: flex;
@@ -73,66 +92,80 @@
     flex-direction: column;
     justify-content: space-around;
 }
-#scene0 .gnbBtnSec ul {
+.gnbBtnSec ul {
     width: 100%;
     height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-#scene0 .gnbBtnSec .navIco {
+.gnbBtnSec .navIco {
+/*
     width: 50%;
     height: 50%;
+*/
+    
+    width: 2.5rem;
+    height: 2.5rem;
     float: right;
 }
-#scene0 .gnbBtnSec .btn {
+.gnbBtnSec .btn {
     display: block;
     width: 100%;
     height: 100%;
     position: relative;
 }
-#scene0 .gnbBtnSec .line {
+.gnbBtnSec .line {
     display: block;
     width: 100%;
     height: 1px;
     background-color: #000;
     transform: rotate(-45deg);
-    position: absolute;
-    top: 0.5rem;
-    left: 0;
-}
-#scene0 .gnbBtnSec .line:nth-child(2) {
-    top: calc(calc(100% - 1px) / 2);
-}
-#scene0 .gnbBtnSec .line:nth-child(3) {
-    bottom: 0.5rem;
+    margin-top: 0.8rem;
+    transition: 0.5s;
+    box-shadow: 4px 6px 4px rgba(0, 0, 204, 0.4);
 }
 
-#scene0 .footer {
+
+
+
+
+
+.footer {
+    
+    position: fixed;
+    bottom: 1.5rem;
+    left: calc(calc(100% - 87.5%) / 2 );
+    z-index: 100;
+    
     width: 87.5%;
     height: 12.5%;
     clear: both;
     margin: 0 auto;
-    position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
-#scene0 .footer .footerSec{
+.footer .footerSec{
     width: 12.5%;
     height: 50%;
+    position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
-#scene0 .footer .sldBtnSec ul {
+.footer .sldBtnSec ul {
     width: 100%;
     height: 50%;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 }
-#scene0 .footer .sldBtnSec .sldBtn {
+.footer .sldBtnSec .sldBtn {
     height: 0.5rem;
     width: 25%;
+    transition: 0.5s;
 }
-#scene0 .footer .sldBtnSec .sldBtn button {
+.footer .sldBtnSec .sldBtn button {
     display: block;
     width: 100%;
     height: 100%;
@@ -140,9 +173,10 @@
     border: 1px solid #0000cc;
     box-sizing: border-box;
     cursor: pointer;
+    transition: 0.1s;
 }
 
-#scene0 .scrBtnSec .scrBtn {
+.scrBtnSec .scrBtn {
     display: block;
     width: 50%;
     height: 100%;
@@ -150,49 +184,61 @@
     position: relative;
     cursor: pointer;
 }
-#scene0 .scrBtnSec span {
+.scrBtnSec span {
     display: block;
 }
-#scene0 .scrBtnSec .scrTxt {
+.scrBtnSec .scrTxt {
     width: 100%;
     font-size: 0.5rem;
     text-align: center;
 }
-#scene0 .scrBtnSec .line {
+.scrBtnSec .line {
     width: 0.6px;
-    height: 90%;
+    height: 80%;
     background-color: #000;
     position: absolute;
     bottom: -1.5rem;
     left: calc(calc(100% - 1px) / 2);
 }
 
-#scene0 .copyrightSec .copyright {
+@keyframes scrBtnLine_ani {
+    to {
+        height: 0;
+    } from {
+        height: 90%;
+    }
+}
+
+
+.copyrightSec .copyright {
     width: 100%;
     text-align: right;
     font-size: 0.5rem;
     color: #0000cc;
 }
 
-#scene0 .topBtnSec {
+.topBtnSec {
     width: 12.5%;
     height: 12.5%;
-    position: absolute;
     right: 1.5rem;
     bottom: 1.5rem;
+    position: fixed;
+    z-index: 100;
 }
-#scene0 .topBtnSec .topBtn {
+.topBtnSec .topBtn {
     display: block;
-    width: 25%;
-    height: 50%;
-    margin-left: 25%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 40%;
     border: 1px solid #000;
     cursor: pointer;
+    transition: 0.4s;
 }
-#scene0 .topBtnSec .topBtn span {
+.topBtnSec .topBtn span {
     display: block;
     text-align: center;
-    line-height: 100%;
+    line-height: 2.5rem;
+    transition: 0.4s;
 }
 
 
@@ -203,12 +249,79 @@
 /*       제이쿼리 적용할 부분       */
 /**********************************/
 
-/* #scene0 .footer .sldBtnSec .sldBtn - .addClass "on" */
-#scene0 .footer .sldBtnSec .sldBtn.on {
+/* .footer .sldBtnSec .sldBtn - .addClass "on" */
+.footer .sldBtnSec .sldBtn.on {
     width: 50%;
 }
-#scene0 .footer .sldBtnSec .sldBtn.on button {
+.footer .sldBtnSec .sldBtn.on button {
     background-color: #0000cc;
+}
+
+
+
+.gnbBtnSec #gnbBtn.hvr .line {
+    transform: rotate(0deg);
+}
+.gnbBtnSec .navIco {
+    position: relative;
+}
+.gnbBtnSec #gnbBtn.clk .line {
+    position: absolute;
+    right: 0;
+}
+.gnbBtnSec #gnbBtn.clk .line:nth-child(2) {
+    width: 0;
+    height: 0;
+}
+.gnbBtnSec #gnbBtn.clk .line:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+
+
+.header .contactBtn .btn.hvr {
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    z-index: 0;
+}
+.header .contactBtn .btn.hvr:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #0000cc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.scrBtnSec.hvr .line {
+    transition: 0.4s;
+    animation-name: scrBtnLine_ani;
+    animation-duration: 0.8s;
+}
+
+
+
+
+.topBtnSec .topBtn {
+    opacity: 0;
+}
+.topBtnSec .topBtn.on {
+    opacity: 1;
+}
+
+
+
+.topBtnSec .topBtn.hvr {
+    border: 0;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 204, 0.22);
+}
+.topBtnSec .topBtn.hvr span {
+    color: #0000cc;
 }
 
 

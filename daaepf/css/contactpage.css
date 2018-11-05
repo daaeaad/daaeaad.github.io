@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+
+
+/*컨택페이지 css*/
+
+
+#scene3 {
+     background-image: url("../images/img_pgbg_vstxt_contact2.png");
+    position: relative;
+}
+#scene3:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/img_pgbg_vstxt_contact1.png");
+    background-repeat: no-repeat;
+    background-size: 41.5% auto;
+    background-position: center 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*
+#scene3 .scene_inner {
+    width: 50%;
+    float: right;
+}
+*/
+
+.header .contactBtn .btn {
+    visibility: hidden;
+}
+
+#scene3 .sceneConSec .sceneConTit {
+    height: 12.5%
+}
+#scene3 .conFormSec {
+    margin-top: 2%;
+}
+#scene3 .conBtnSec.hidden {
+    display: none;
+}
+
+/*
+
+#scene3 .sceneConSec {
+    width: 87.5%;
+    height: 87.5%;
+    padding-left: 12.5%;
+    padding-top: 12.5%;
+}
+*/
+
+.sceneTit, .sceneConTit {
+    padding-top: 6.25%;
+}
+#scene3 .sceneConSec {
+    width: 50%;
+}
+#scene3 .sceneConSec .sceneConTxt {
+    height: 15%;
+    padding-top: 36%;
+}
+#scene3 .conTxt {
+    height: auto;
+}
+#scene3 .conBtnSec ul {
+    padding-top: 1.2rem;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+#scene3 .contactInfo .infoCon {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 9%;
+}
+#scene3 .contactInfo .left {
+    width: 40%;
+    height: auto;
+}
+#scene3 .contactInfo .right {
+    width: 40%;
+    height: auto;
+}
+#scene3 .contactInfo .infoCon p {
+    width: 100%;
+    height: auto;
+    padding-top: 12.5%;
+}
+#scene3 .contactInfo .infoCon p:nth-child(1) {
+    padding-top: 0;
+}
+#scene3 .contactInfo .infoCon p.lstCon {
+    line-height: 1.4;
+}

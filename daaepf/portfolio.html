@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="./css/font.css">
 	<!--   default css -->
     <link rel="stylesheet" href="./css/default.css">
+    <!--   scene_splash css   -->
+    <link rel="stylesheet" href="./css/splashani.css">
+    <!--   scene_splash2 css   -->
+    <link rel="stylesheet" href="./css/splashani2.css">
 	<!--   common css -->
     <link rel="stylesheet" href="./css/common.css">
     <!--   scene0 - fix영역 css -->
@@ -33,18 +37,52 @@
     <link rel="stylesheet" href="./css/scene3.css">
     <!--   pf_scene1 - 포트폴리오 1페이지 영역 css-->
     <link rel="stylesheet" href="./css/pfscene1.css">
+	<!--   maingnb - 메뉴화면 css  -->
+	<link rel="stylesheet" href="./css/maingnb.css">
    
 <!--    js 링크    -->
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	
+	<script src="./js/splash.js"></script>
+	<script src="./js/splash2.js"></script>
+	
+	<script src="./js/pageloadscript_pf.js"></script>
+	
+    <!--  버튼 인터랙션 js  -->
+<!--    <script src="./js/btnelement_interaction.js"></script>-->
+    <!--  컨택버튼 기능 js  -->
+<!--    <scirpt src="./js/contactbtn.js"></scirpt>-->
+    <!--  gnb nav버튼 인터랙션 js  -->
+<!--    <script src="./js/gnbbtn_interaction.js"></script>-->
+    <!--  메뉴 컬랩 기능 js  -->
+<!--    <script src="./js/menuopen.js"></script>-->
+    <!--  원페이지스크롤링 js  -->
+<!--    <script src="./js/onepgscrolling.js"></script>-->
+    <!--  페이지네이션 js  -->
+<!--    <script src="./js/pagination.js"></script>-->
+    <!--  탑버튼 인터랙션 및 기능 js  -->
+<!--    <script src="./js/topbtn.js"></script>-->
+   
+    <script src="./js/scene0.js"></script>
+	
+	<!--  포트폴리오페이지 - 포폴리스트 슬라이드 js  -->
+	<script src="./js/pf_pflstslide.js"></script>
 	
 	
 </head>
 <body>
 <div class="wrap">
+   
+   
+   
+<!--   스플래쉬 화면-->
+   <section id="scene_splash" class="scene animationpage">
+        
+    </section>
+   
+   
     
     <!--    scene0 - 픽스될영역-->
-    <section id="scene0" class="scene fixedEle">
-        <div class="scene_inner">
             
             <header id="hd" class="header">
                 <h1 class="logo">
@@ -73,6 +111,9 @@
             </div>
             
             <footer id="ft" class="footer">
+
+<!--               페이지네이션버튼-->
+               <!--
                 <section class="sldBtnSec footerSec">
                     <ul>
                         <li class="sldBtn on">
@@ -86,8 +127,9 @@
                         </li>
                     </ul>
                 </section>
+-->
                 
-                <section class="copyrightSec footerSec">
+                <section class="copyrightSec footerSec0">
                    <p class="copyright en_m">
                        2018 © DAAE PERSONAL WEB.
                    </p>
@@ -101,9 +143,6 @@
                     </span>
                 </button>
             </section>
-            
-        </div>
-    </section>
     <!--    scene0 - 픽스될영역 끝-->
     
     
@@ -112,7 +151,7 @@
         <div class="gnb_inner">
             <ul>
                 <li class="mainMenu">
-                    <a href="#">
+                    <a href="index.html">
                         <span class="mainMenuImg"></span>
                     </a>
                 </li>
@@ -122,12 +161,12 @@
                     </a>
                 </li>
                 <li class="mainMenu">
-                    <a href="#">
+                    <a href="aboutme.html">
                         <span class="mainMenuImg"></span>
                     </a>
                 </li>
                 <li class="mainMenu">
-                    <a href="#">
+                    <a href="contact.html">
                         <span class="mainMenuImg"></span>
                     </a>
                 </li>
@@ -177,10 +216,129 @@
                 </div>
             </div>
             
-            
+			<div class="webPopSec">
+			<div class="inner">
+				<div class="popUpWindow">
+					<button class="popClose"></button>
+					<div class="ment">
+					<p>
+					지금 연결하시는 사이트는 <b>Chrome</b> 브라우저 환경에 최적화 되어 있습니다.
+					<br>
+					페이지 로드 후에 창의 상단에 위치한 보안 버튼을 클릭하여
+					<br>
+					<b>스크립트 로드</b>를 체크하신 후 이용하시면 더 원활한 사이트 이용이 가능합니다.
+					</p>
+					</div>
+					<span>
+						<a target="_blank" href="https://daaeaad.github.io/myrealtrip/" class="okLink ko_eb">웹사이트 바로가기</a>
+                    </span>
+				</div>
+				
+				<div class="popUpWindow">
+					<button class="popClose"></button>
+					<div class="ment">
+					<p>
+					지금 연결하시는 사이트는 <b>Chrome</b> 브라우저 환경에 최적화 되어 있습니다.
+					<br>
+					페이지 로드 후에 창의 상단에 위치한 보안 버튼을 클릭하여
+					<br>
+					<b>스크립트 로드</b>를 체크하신 후 이용하시면 더 원활한 사이트 이용이 가능합니다.
+					<br>
+					모바일 적응형 사이트로 <b>iPhone6/7/8</b>을 기준으로 제작되었습니다.
+					</p>
+					</div>
+					<span>
+						<a target="_blank" href="https://daaeaad.github.io/nars/" class="okLink ko_eb">웹사이트 바로가기</a>
+                    </span>
+				</div>
+				
+				<div class="popUpWindow">
+					<button class="popClose"></button>
+					<div class="ment">
+					<p>
+					지금 연결하시는 사이트는 <b>Chrome</b> 브라우저 환경에 최적화 되어 있습니다.
+					<br>
+					페이지 로드 후에 창의 상단에 위치한 보안 버튼을 클릭하여
+					<br>
+					<b>스크립트 로드</b>를 체크하신 후 이용하시면 더 원활한 사이트 이용이 가능합니다.
+					<br>
+					모바일 적응형 사이트로 <b>iPhone6/7/8</b>을 기준으로 제작되었습니다.
+					</p>
+					</div>
+					<span>
+						<a target="_blank" href="https://daaeaad.github.io/tongil/" class="okLink ko_eb">웹사이트 바로가기</a>
+                    </span>
+				</div>
+				
+				<div class="popUpWindow">
+					<button class="popClose"></button>
+					<div class="ment">
+					<p>
+					지금 연결하시는 사이트는 <b>Chrome</b> 브라우저 환경에 최적화 되어 있습니다.
+					<br>
+					페이지 로드 후에 창의 상단에 위치한 보안 버튼을 클릭하여
+					<br>
+					<b>스크립트 로드</b>를 체크하신 후 이용하시면 더 원활한 사이트 이용이 가능합니다.
+					<br>
+					이 사이트는 데스크탑 <b>1920*1030px</b>을 기준으로 제작되었습니다.
+					</p>
+					</div>
+					<span>
+						<a target="_blank" href="https://daaeaad.github.io/picasso/" class="okLink ko_eb">웹사이트 바로가기</a>
+                    </span>
+				</div>
+				
+				<div class="popUpWindow">
+					<button class="popClose"></button>
+					<div class="ment">
+					<p>
+					지금 연결하시는 사이트는 <b>Chrome</b> 브라우저 환경에 최적화 되어 있습니다.
+					<br>
+					페이지 로드 후에 창의 상단에 위치한 보안 버튼을 클릭하여
+					<br>
+					<b>스크립트 로드</b>를 체크하신 후 이용하시면 더 원활한 사이트 이용이 가능합니다.
+					<br>
+					이 사이트는 데스크탑 <b>1920*1030px</b>을 기준으로 제작되었습니다.
+					</p>
+					</div>
+					<span>
+						<a target="_blank" href="https://daaeaad.github.io/myrealtrip/" class="okLink ko_eb">웹사이트 바로가기</a>
+                    </span>
+				</div>
+				
+				<div class="popUpWindow">
+					<button class="popClose"></button>
+					<div class="ment">
+					<p>
+					지금 연결하시는 사이트는 <b>Chrome</b> 브라우저 환경에 최적화 되어 있습니다.
+					<br>
+					페이지 로드 후에 창의 상단에 위치한 보안 버튼을 클릭하여
+					<br>
+					<b>스크립트 로드</b>를 체크하신 후 이용하시면 더 원활한 사이트 이용이 가능합니다.
+					<br>
+					이 사이트는 데스크탑 <b>1920*1030px</b>을 기준으로 제작되었습니다.
+					</p>
+					</div>
+					<span>
+						<a target="_blank" href="https://daaeaad.github.io/myrealtrip/" class="okLink ko_eb">웹사이트 바로가기</a>
+                    </span>
+				</div>
+			</div>
+			</div>
+			
             <div class="pfMainTxtSec">
                 <div class="inner">
-                    <ul class="on">
+					<div class="sldCtrBtnSec">
+						<div>
+							<button class="sldCtrBtn clk"></button>
+							<button class="sldCtrBtn"></button>
+							<button class="sldCtrBtn"></button>
+							<button class="sldCtrBtn"></button>
+							<button class="sldCtrBtn"></button>
+							<button class="sldCtrBtn"></button>
+						</div>
+					</div>
+                    <ul class="txtItem on">
                         <li class="left">
                             <p class="pfName en_m">My Real Trip</p>
                             <p class="pfDate en_r">2018</p>
@@ -188,11 +346,12 @@
                         </li>
                         
                         <li class="right">
-                            <a href="https://daaeaad.github.io/myrealtrip/" class="webLink ko_b">웹사이트 바로가기</a>
+							<span class="webLink en_b" page-value="1">MORE</span>
+                           <!-- <a target="_blank" href="https://daaeaad.github.io/myrealtrip/" class="webLink ko_eb">웹사이트 바로가기</a>-->
                         </li>
                     </ul>
                     
-                    <ul>
+                    <ul class="txtItem">
                         <li class="left">
                             <p class="pfName en_m">Nars</p>
                             <p class="pfDate en_r">2018</p>
@@ -200,11 +359,12 @@
                         </li>
                         
                         <li class="right">
-                            <a href="https://daaeaad.github.io/nars/" class="webLink ko_b">웹사이트 바로가기</a>
+                           <span class="webLink en_b" page-value="2">MORE</span>
+<!--                            <a page-value="2" target="_blank" href="https://daaeaad.github.io/nars/" class="webLink ko_b">웹사이트 바로가기</a>-->
                         </li>
                     </ul>
                     
-                    <ul>
+                    <ul class="txtItem">
                         <li class="left">
                             <p class="pfName en_m">통일부</p>
                             <p class="pfDate en_r">2018</p>
@@ -212,11 +372,12 @@
                         </li>
                         
                         <li class="right">
-                            <a href="https://daaeaad.github.io/tongil/" class="webLink ko_b">웹사이트 바로가기</a>
+                           <span class="webLink en_b" page-value="3">MORE</span>
+<!--                            <a page-value="3" target="_blank" href="https://daaeaad.github.io/tongil/" class="webLink ko_b">웹사이트 바로가기</a>-->
                         </li>
                     </ul>
                     
-                    <ul>
+                    <ul class="txtItem">
                         <li class="left">
                             <p class="pfName en_m">Picasso</p>
                             <p class="pfDate en_r">2018</p>
@@ -224,11 +385,12 @@
                         </li>
                         
                         <li class="right">
-                            <a href="https://daaeaad.github.io/picasso/" class="webLink ko_b">웹사이트 바로가기</a>
+                           <span class="webLink en_b" page-value="4">MORE</span>
+<!--                            <a page-value="4" target="_blank" href="https://daaeaad.github.io/picasso/" class="webLink ko_b">웹사이트 바로가기</a>-->
                         </li>
                     </ul>
                     
-                    <ul>
+                    <ul class="txtItem">
                         <li class="left">
                             <p class="pfName en_m">LAD Coffee</p>
                             <p class="pfDate en_r">2018</p>
@@ -236,11 +398,12 @@
                         </li>
                         
                         <li class="right">
-                            <a href="#" class="webLink ko_b">웹사이트 바로가기</a>
+                        <span class="webLink en_b" page-value="5">MORE</span>
+<!--                            <a page-value="5" target="_blank" href="#" class="webLink ko_b">웹사이트 바로가기</a>-->
                         </li>
                     </ul>
                     
-                    <ul>
+                    <ul class="txtItem">
                         <li class="left">
                             <p class="pfName en_m">LF</p>
                             <p class="pfDate en_r">2018</p>
@@ -248,7 +411,8 @@
                         </li>
                         
                         <li class="right">
-                            <a href="#" class="webLink ko_b">웹사이트 바로가기</a>
+                           <span class="webLink en_b" page-value="6">MORE</span>
+<!--                            <a page-value="6" target="_blank" href="#" class="webLink ko_b">웹사이트 바로가기</a>-->
                         </li>
                     </ul>
                 </div>
@@ -266,7 +430,7 @@
             
             <section class="sceneConSec">
                 <div class="inner">
-                    <p class="sceneConTit ko_eb">
+                    <p class="sceneConTit en_b">
                         CONTACT
                     </p>
                     <div class="sceneConTxt">
@@ -295,7 +459,7 @@
                     <div class="conBtnSec">
                         <ul>
                             <li class="moreBtn conBtn">
-                                <a href="#" class="en_m">
+                                <a href="contact.html" class="en_m">
                                     <b class="en_b">MORE</b> INFO ABOUT CONTACT
                                 </a>
                             </li>

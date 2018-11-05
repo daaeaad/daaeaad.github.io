@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+
+/*******************************************************************/
+/*     about me 페이지 css     */
+
+
+
+
+#scene11 {
+    opacity: 0;
+    transition: 0.5s;
+}
+#scene11.load {
+    opacity: 1;
+}
+#scene11 .scene_inner {
+    background-image: url("../images/img_pgbg_vstxt_aboutme1.png");
+    background-size: 41.5% auto;
+    background-repeat: no-repeat;
+    background-position: center 1.5rem;
+    
+    width: 75%;
+}
+#scene11 .conGroup {
+    width: 50%;
+    height: 100%;
+    padding: 8% 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+#scene11 .sceneConSec {
+    width: 100%;
+}
+#scene11 .sceneConTxt {
+    margin: 2% auto;
+}
+#scene11 .sceneConTit, #scene12 .sceneConTit {
+    font-size: 2rem;
+    padding-top: 0;
+    line-height: 2;
+}
+
+
+
+
+#scene11 .conGroup.topConSec {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#scene11 .conGroup.topConSec .sceneConSec {
+    width: 100%;
+    height: 50%;
+    padding-top: 28.25%;
+    box-sizing: border-box;
+    transition-delay: 0.5s;
+    transition: 0.5s;
+}
+#scene11.load .conGroup.topConSec .sceneConSec {
+    padding-top: 6.25%;
+}
+
+
+#scene11 .conGroup.topConSec:nth-child(1) .sceneConTit {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-indent: -0.5rem;
+    line-height: 1.4;
+}
+#scene11 .conGroup.topConSec:nth-child(1) .conTxt {
+    width: 100%;
+}
+#scene11 .conGroup.topConSec .sceneConTxt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#scene11 .conGroup.topConSec .conTxt {
+    width: auto;
+    height: 100%;
+}
+#scene11 .conGroup.topConSec .conTxt:nth-child(1) {
+    width: 16%;
+}
+#scene11 .conGroup.topConSec .conTxt:nth-child(2) {
+    width: 84%;
+}
+#scene11 .conGroup.topConSec:nth-child(1) .conTxt {
+    width: 90%;
+}
+#scene11 .conGroup.topConSec:nth-child(1) .conTxt p {
+    word-break: keep-all;
+    line-height: 1.8;
+}
+#scene11 .conGroup.topConSec:nth-child(1) .conTxt p b {
+    font-size: 1.1rem;
+}
+#scene11 .conGroup.topConSec .conTxt p {
+    font-size: 0.8rem;
+    line-height: 2.5;
+}
+#scene11 .conGroup.topConSec .conTxt p.date {
+    color: #999;
+}
+
+
+
+
+
+#scene12 {
+    opacity: 0;
+    transition: 0.5s;
+}
+#scene12.load {
+    opacity: 1;
+}
+#scene12 .scene_inner {
+    width: 75%;
+}
+#scene12 .conGroup {
+    width: 100%;
+    height: 50%;
+    padding: 30% 0;
+    text-align: center;
+    transition: 0.7s;
+}
+#scene12.load .conGroup {
+    padding: 16% 0;
+}
+#scene12 .sceneConSec {
+    width: 100%;
+    height: 100%;
+}
+#scene12 .sceneConTxt {
+    margin: 3.125% auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#scene12 .chart {
+    position: relative;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+#scene12 .chart figcaption {
+    padding: 2.5rem 1.25rem;
+    width: 5rem;
+    height: 2.5rem;
+    border: 1rem solid #fff;
+    border-radius: 5rem;
+    line-height: 2.5rem;
+}
+#scene12 .chart p {
+    position: absolute;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    background-color: #fff;
+}
+
+#scene12 .photoshop {
+    top: 2.5rem;
+    left: 2.25rem;
+}
+#scene12 .photoshop + svg .outer {
+    stroke: #0000cc;
+}
+#scene12 .illustrator {
+    top: 2.5rem;
+    left: 2.25rem;    
+}
+#scene12 .illustrator + svg .outer {
+    stroke: #0000cc;
+}
+#scene12 .html {
+    top: 2.5rem;
+    left: 2.25rem;
+}
+#scene12 .html + svg .outer {
+    stroke: #0000cc;
+    
+}
+#scene12 .css {
+    top: 2.75rem;
+    left: 2.4rem;
+}
+#scene12 .css + svg .outer {
+    stroke: #0000cc;
+}
+#scene12 .jquery {
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+    top: 2.25rem;
+    left: 2.25rem;
+}
+#scene12 .jquery + svg .outer {
+    stroke: #0000cc;
+}
+#scene12 .chart svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+#scene12.load .outer {
+    fill:transparent;
+    stroke:#333;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 534;
+    transition: stroke-dashoffset 1s;
+    -webkit-animation-play-state: running;
+    -moz-transform: rotate(-89deg) translateX(-190px);
+}
+/*
+.chart:hover .outer {
+  stroke-dashoffset: 534 !important;
+  -webkit-animation-play-state: paused;
+}
+*/
+
+
+#scene12.load .chart[data-percent='100'] .outer {
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 3.5s;
+  animation: show100 3.5s;
+}
+
+#scene12.load .chart[data-percent='70'] .outer {
+  stroke-dashoffset: 150;
+  -webkit-animation: show70 3.5s;
+  animation: show70 3.5s;
+}
+
+#scene12.load .chart[data-percent='75'] .outer {
+  stroke-dashoffset: 133;
+  -webkit-animation: show75 3.5s;
+  animation: show75 3.5s;
+}
+
+#scene12.load .chart[data-percent='78'] .outer {
+  stroke-dashoffset: 133;
+  -webkit-animation: show78 3.5s;
+  animation: show78 3.5s;
+}
+#scene12.load .chart[data-percent='54'] .outer {
+    stroke-dashoffset:267;
+    -webkit-animation : show54 3.5s;
+    animation: show54 3.5s;
+}
+
+
+@-webkit-keyframes show100 {
+    from {
+        stroke-dashoffset : 537;
+    } to {
+        stroke-dashoffset : 0;
+    }
+}
+@keyframes show100 {
+    from {
+        stroke-dashoffset: 537;
+    } to {
+        stroke-dashoffset : 0;
+    }
+}
+
+@-webkit-keyframes show70 {
+    from {
+        stroke-dashoffset : 537;
+    } to {
+        stroke-dashoffset : 150;
+    }
+}
+@keyframes show70 {
+    from {
+        stroke-dashoffset: 537;
+    } to {
+        stroke-dashoffset : 150;
+    }
+}
+
+@-webkit-keyframes show75 {
+    from {
+        stroke-dashoffset : 537;
+    } to {
+        stroke-dashoffset : 133;
+    }
+}
+@keyframes show75 {
+    from {
+        stroke-dashoffset: 537;
+    } to {
+        stroke-dashoffset : 133;
+    }
+}
+
+@-webkit-keyframes show78 {
+    from {
+        stroke-dashoffset : 537;
+    } to {
+        stroke-dashoffset : 133;
+    }
+}
+@keyframes show78 {
+    from {
+        stroke-dashoffset: 537;
+    } to {
+        stroke-dashoffset : 133;
+    }
+}
+
+@-webkit-keyframes show54 {
+    from {
+        stroke-dashoffset : 537;
+    } to {
+        stroke-dashoffset : 267;
+    }
+}
+@keyframes show54 {
+    from {
+        stroke-dashoffset: 537;
+    } to {
+        stroke-dashoffset : 267;
+    }
+}
+
+
+
+
+
+
+
+
+#scene3 {
+    background-image: url("../images/img_pgbg_vstxt_aboutme2.png");
+}
+
+
+
+
+
+
+
+
+
+/*     about me 페이지 css     */
+/*******************************************************************/

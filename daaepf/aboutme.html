@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="keywords" content="포트폴리오, 웹사이트, 김다애, 다애, 웹, 디자이너, 디자인, 웹디자인, 퍼블리싱, UI/UX, UI, UX, webdesign, publishing, kimdaae, daae, daaekim, portfolio, portfolioweb, daae portfolio, daae web, designer, publisher, website, portfoliosite">
@@ -25,25 +25,31 @@
     <link rel="stylesheet" href="./css/default.css">
     <!--   scene_splash css   -->
     <link rel="stylesheet" href="./css/splashani.css">
+    <!--   scene_splash2 css  -->
+    <link rel="stylesheet" href="./css/splashani2.css">
 	<!--   common css -->
     <link rel="stylesheet" href="./css/common.css">
     <!--   scene0 - fix영역 css -->
     <link rel="stylesheet" href="./css/scene0.css">
-	<!--   mainGnb 메뉴오픈  영역 css -->
-	<link rel="stylesheet" href="./css/maingnb.css">
 	<!--   scene1 - 홈 1 영역 css -->
     <link rel="stylesheet" href="./css/scene1.css">
-	<!--   scene2 - 홈 2 영역 css -->
-    <link rel="stylesheet" href="./css/scene2.css">
-	<!--   scene3 - 홈 3 영역 css -->
+    <!--   scene3 - 홈 3 영역 css -->
     <link rel="stylesheet" href="./css/scene3.css">
+    <!--   pf_scene1 - 포트폴리오 1페이지 영역 css-->
+    <link rel="stylesheet" href="./css/pfscene1.css">
+	<!--   maingnb - 메뉴화면 css  -->
+	<link rel="stylesheet" href="./css/maingnb.css">
+    <!--   aboutmepage - 어바웃페이지 1페이지- 스킬부분 css  -->
+	<link rel="stylesheet" href="./css/aboutmepage.css">
    
 <!--    js 링크    -->
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	
-<!--	스플래쉬 화면 js-->
-     <script src="./js/splash.js"></script>
-  
+	<script src="./js/splash.js"></script>
+	<script src="./js/splash2.js"></script>
+	
+	<script src="./js/pageloadscript.js"></script>
+	
     <!--  버튼 인터랙션 js  -->
 <!--    <script src="./js/btnelement_interaction.js"></script>-->
     <!--  컨택버튼 기능 js  -->
@@ -59,32 +65,20 @@
     <!--  탑버튼 인터랙션 및 기능 js  -->
 <!--    <script src="./js/topbtn.js"></script>-->
    
-    
     <script src="./js/scene0.js"></script>
-    
-    
+	
+	
 </head>
 <body>
-    
-<div class="wrap">
-    
-    
-    
+ <div class="wrap">
+ 
+<!--     스플래쉬화면-->
     <section id="scene_splash" class="scene animationpage">
-        <div class="inner">
-            <div class="splashAniFrame">
-                <span class="aniSrc">
-                    <img src="./images/logo_ani_src2.png" alt="로고애니소스1" class="aniSrc">
-                    <img src="./images/logo_ani_src3.png" alt="로고애니소스2" class="aniSrc"s>
-                    <img src="./images/logo_ani_src4.png" alt="로고애니소스3" class="aniSrc">
-                </span>
-            </div>
-        </div>
-    </section>   
-    
-    
-    
-    <!--    scene0 - 픽스될영역-->
+        
+    </section>
+ 
+ 
+  <!--    scene0 - 픽스될영역-->
             
             <header id="hd" class="header">
                 <h1 class="logo">
@@ -113,6 +107,9 @@
             </div>
             
             <footer id="ft" class="footer">
+
+<!--               페이지네이션버튼-->
+               
                 <section class="sldBtnSec footerSec">
                     <ul>
                         <li class="sldBtn on">
@@ -126,18 +123,9 @@
                         </li>
                     </ul>
                 </section>
+
                 
-                <section class="scrBtnSec footerSec">
-                    <button class="scrBtn">
-                        <span class="scrTxt en_r">
-                            SCROLL
-                        </span>
-                        <span class="line">
-                        </span>
-                    </button>
-                </section>
-                
-                <section class="copyrightSec footerSec">
+                <section class="copyrightSec footerSec0">
                    <p class="copyright en_m">
                        2018 © DAAE PERSONAL WEB.
                    </p>
@@ -146,12 +134,11 @@
             
             <section class="topBtnSec">
                 <button id="toTop" class="topBtn">
-                    <span class="en_b">
+                    <span class="en_r">
                         TOP
                     </span>
                 </button>
             </section>
-            
     <!--    scene0 - 픽스될영역 끝-->
     
     
@@ -185,107 +172,137 @@
     <!--    mainGnb - 메뉴오픈시 영역 끝-->
     
     
-    <!--    scene1 - 웹홈페이지 첫번째 영역-->
-    <section id="scene1" class="scene homepage">
+    <section id="scene11" class="scene aboutme">
         <div class="scene_inner">
-            
-            <section class="sceneConSec">
-                <div class="inner">
-                    <div class="sceneCon left">
-                        <p class="conTxt conTxt1 en_m">
-                            WEB DESIGN +
-							<br>
-                            PUBLISHING &nbsp; &nbsp; 
-                        </p>
-                    </div>
-                    
-                    <div class="sceneCon center">
-                        <p class="conTxt graphic">
-                            <span class="line"></span>
-                        </p>
-                    </div>
-                    
-                    <div class="sceneCon right">
-                        <p class="conTxt conTxt2.conTxt21 ko_r">
-                            안녕하세요. <b class="ko_eb">
-                                김다애
-                            </b>
-                            입니다.<br>
-                            저는 디자인과 퍼블리싱을 하고 있습니다.
-                        </p>
-                        <p class="conTxt conTxt2 conTxt22 ko_r">
-                            이 사이트는 저의 첫번째 포트폴리오 입니다. 
-                            <br>
-                            저의 사이트에 방문해주셔서 진심으로 감사합니다.
-                        </p>
-                    </div>
-                </div>
-            </section>
+          <div class="conGroup topConSec">
+               <section class="sceneConSec">
+                   <div class="inner">
+                       <p class="sceneConTit ko_eb">
+                           "할 수 있는 건 잘 하고,<br>못하는 건 열심히 하겠습니다."
+                       </p>
+                       <div class="sceneConTxt">
+                           <div class="conTxt">
+                               <p class="ko_b">
+                                   대학교를 다니며 많은 경험을 했지만 그 경험 중 가장 큰 배움을 얻었던 것은 대학교 3학년 여름에 학교에서 디자인 회사로 하계 실습을 나갔을 때입니다. 실습이라 할지라도 첫 실무 경험이었던 저는 "회사에서 가장 필요한 사람이 되는 거야!" 회사에 다니는 선배들이 늘 명심시켜준 말을 다짐하며 출근을 했습니다. 하지만 모든 게 처음이었던 저에게 실제로 할 수 있는 일은 없었습니다. 처음에는 기가 죽고 스스로 부끄러웠지만 그래도 제가 할 수 있는 일들을 찾아 작은 일이라도 이게 내가 할 수 있는 일이라는 생각을 하며 열심히 했습니다. 그런 제게 대표님께서, "인턴은 뭔가 하는 게 중요한 게 아니라 배우는 게 중요해. 여기서 네가 지금 해야 되는 일은 실습 기간 동안 최대한 많이 배워가는 거야." 라고 말씀하셨습니다. 그때 대표님께서 하셨던 말씀은 저에게 큰 배움이 되었고 <b>모르는 것은 물어보고 항상 배우려는 태도</b>를 만들어주셨습니다. 실습 기간은 한 달이라는 짧은 기간이었지만 무엇이든 배우고 발전해나갈 수 있도록 노력하는 태도를 가지는 큰 계기가 되었습니다.
+                               </p>
+                               <br>
+                               <p class="ko_b">
+                                   이런 경험 후에 저는 모든 것을 잘하려고 하는 사람이기 보다는 모든 것에 대하여 배움의 태도를 가지는 사람이 되었습니다. 스스로 알고 있는 지식에 대하여 자만하지 않고 <b>하루하루 1%씩 더 나아지는 사람</b>이 되기 위하여 제가 할 수 있는 일은 더 잘 하고, 못하는 일은 더욱 열심히 하는 사람이 되고 싶습니다.
+                               </p>
+                           </div>
+                       </div>
+                   </div>
+               </section>
+           </div>          
+          
+           <div class="conGroup topConSec">
+               <section class="sceneConSec">
+                   <div class="inner">
+                       <p class="sceneConTit en_b">
+                           EDUCATION
+                       </p>
+                       <div class="sceneConTxt">
+                           <div class="conTxt">
+                               <p class="date ko_b">2019.08</p>
+                               <p class="date ko_b">2018.11</p>
+                               <p class="date ko_b">2013.02</p>
+                           </div>
+                           <div class="conTxt">
+                               <p class="content ko_b"><b>대전대학교 커뮤니케이션디자인</b> 졸업예정</p>
+                               <p class="content ko_b"><b>그린컴퓨터아카데미 스마트기기를위한반응형웹디자인전문가 정규과정</b> 수료</p>
+                               <p class="content ko_b"><b>대전관저고등학교</b> 졸업</p>
+                           </div>
+                       </div>
+                   </div>
+               </section>
+               
+               <section class="sceneConSec">
+                   <div class="inner">
+                       <p class="sceneConTit en_b">
+                           EXPERIENCE
+                       </p>
+                       <div class="sceneConTxt">
+                           <div class="conTxt">
+                               <p class="date ko_r">2017.06</p>
+                               <p class="date ko_r">2016.11</p>
+                               <p class="date ko_r">2015.07</p>
+                               <p class="date ko_r">2013-2016</p>
+                           </div>
+                           <div class="conTxt">
+                               <p class="content">디자인컴픽스 <b>시각디자인팀 하계 실습</b></p>
+                               <p class="content">개인 <b>김도아바이올린독주회 포스터/리플렛 디자인</b></p>
+                               <p class="content">본파트너스 <b>시각디자인팀 하계실습</b></p>
+                               <p class="content">대전대 커뮤니케이션디자인과 <b>학과 디자인팀 참여 및 전시회 참여</b></p>
+                           </div>
+                       </div>
+                   </div>
+               </section>
+           </div>
             
         </div>
     </section>
-    <!--    scene1 - 웹홈페이지 첫번째 영역 끝-->
     
     
-    <!--    scene2 - 웹홈페이지 두번째 영역-->
-    <section id="scene2" class="scene homepage">
+    
+    <section id="scene12" class="scene aboutme">
         <div class="scene_inner">
             
-            <section class="sceneConSec">
-                <div class="inner">
-                    <p class="sceneConTit ko_eb">
-                       소개
-                    </p>
-                    <div class="sceneConTxt">
-                        <div class="right">
-                            <p class="conLst name ko_r">이름</p>
-                            <p class="conLst name ko_r">출생</p>
-                            <p class="conLst name ko_r">나이</p>
-                            <p class="conLst name ko_r">하는 것</p>
-                            <p class="conLst name ko_r">학력</p>
-                            <p class="conLst name ko_r">좋아하는 색</p>
-                        </div>
-                        <div class="left">
-                            <p class="conLst content ko_eb">김다애</p>
-                            <p class="conLst content ko_eb">1994. 02. 26</p>
-                            <p class="conLst content ko_eb">25</p>
-                            <p class="conLst content ko_eb">디자인 + 퍼블리싱 + 모르는 것 배우기</p>
-                            <p class="conLst content ko_eb">대전대학교 커뮤니케이션디자인</p>
-                            <p class="conLst content ko_eb">#BLACK, #WHITE, #BLUE, #YELLOW</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="sceneConSec">
-                <section class="inner">
-                    <p class="sceneConTit ko_eb">
-                        경험,
-                    </p>
-                    <div class="sceneConTxt">
-                        <div class="right">
-                            <p class="conLst name ko_r">2018.11</p>
-                            <p class="conLst name ko_r">2017.06</p>
-                            <p class="conLst name ko_r">2016.11</p>
-                            <p class="conLst name ko_r">2015.07</p>
-                            <p class="conLst name ko_r">2016.10</p>
-                            <p class="conLst name ko_r">2016.09</p>
-                        </div>
-                        <div class="left">
-                            <p class="conLst content ko_eb">NCS 웹퍼블리싱 과정 수료</p>
-                            <p class="conLst content ko_eb">디자인컴픽스 시각디자인팀 하계 실습</p>
-                            <p class="conLst content ko_eb">김도아 바이올린 독주회 포스터/리플렛 디자인</p>
-                            <p class="conLst content ko_eb">본파트너스 시각디자인팀 하계 실습</p>
-                            <p class="conLst content ko_eb">대전대학교 커뮤니케이션디자인 졸업전시회 '트랜스포머' 참여</p>
-                            <p class="conLst content ko_eb">대전대학교 커뮤니케이션디자인 전시회 '오!대전' 참여</p>
+            <div class="conGroup bottomConSec">
+                <section class="sceneConSec">
+                    <div class="inner">
+                        <p class="sceneConTit en_b">
+                            I CAN,
+                        </p>
+                        <div class="sceneConTxt">
+                          
+                            <figure class="chart top" data-percent="70">
+                                <figcaption>Photoshop</figcaption>
+                                <p class="photoshop en_b">Ps</p>
+                                <svg width="10rem" height="10rem">
+                                  <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                                </svg>
+                            </figure>
+                            
+                            <figure class="chart top" data-percent="70">
+                                <figcaption>Illustrator</figcaption>
+                                <p class="illustrator en_b">Ai</p>
+                                <svg width="10rem" height="10rem">
+                                  <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                                </svg>
+                            </figure>
+                           
+                            <figure class="chart bottom" data-percent="75">
+                                <figcaption>HTML</figcaption>
+                                <p class="html en_b">HTML</p>
+                                <svg width="10rem" height="10rem">
+                                  <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                                </svg>
+                            </figure>
+                            
+                            <figure class="chart bottom" data-percent="78">
+                                <figcaption>CSS</figcaption>
+                                <p class="css en_b">CSS</p>
+                                <svg width="10rem" height="10rem">
+                                  <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                                </svg>
+                            </figure>
+                            
+                            <figure class="chart bottom" data-percent="54">
+                                <figcaption>JQUERY</figcaption>
+                                <p class="jquery en_b">jQuery</p>
+                                <svg width="10rem" height="10rem">
+                                  <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                                </svg>
+                            </figure>
+                            
                         </div>
                     </div>
                 </section>
-            </section>
+            </div>
             
         </div>
     </section>
-    <!--    scene2 - 웹홈페이지 두번째 영역 끝-->
+   
     
     
     <!--    scene3 - 웹홈페이지 세번째 영역-->
@@ -376,7 +393,7 @@
     <!--    scene3 - 웹홈페이지 세번째 영역 끝-->
     
     
-</div>
     
+</div>
 </body>
 </html>

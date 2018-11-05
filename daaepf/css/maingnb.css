@@ -19,7 +19,77 @@
     height: 100%;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    justify-content : center;
+    align-items:center;
 }
 #mainGnb ul {
+    width: 100%;
+    height: 50%;
     
 }
+#mainGnb .mainMenu {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mainGnb .mainMenu a {
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+#mainGnb .mainMenuImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+}
+#mainGnb .mainMenu:nth-child(1) .mainMenuImg {
+    background-image: url("../images/text_menu_home.png");
+}
+#mainGnb .mainMenu:nth-child(2) .mainMenuImg {
+    background-image: url("../images/text_menu_portfolio.png");
+}
+#mainGnb .mainMenu:nth-child(3) .mainMenuImg {
+    background-image: url("../images/text_menu_aboutme.png");
+}
+#mainGnb .mainMenu:nth-child(4) .mainMenuImg {
+    background-image: url("../images/text_menu_contact.png");
+}
+
+#mainGnb .mainMenu .mainMenuImg:before {
+    content: "";
+    display: block;
+    width: 120%;
+    height: 0.55rem;
+    background-color: #0000cc;
+    position: absolute;
+    top: calc(calc(100% - 0.6rem) / 2);
+    left: -10%;
+    
+    width: 0;
+    transition: 0.5s ease-in;
+}
+
+
+
+
+
+
+#mainGnb.open {
+    opacity: 1;
+}
+
+#mainGnb .mainMenu a.hvr .mainMenuImg:before {
+    width: 120%;
+}
+
+
+
+

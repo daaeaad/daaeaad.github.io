@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 
-
+.footer {
+    height: 6.25%;
+}
 
 #pf_scene1 {
     background-image: url("../images/img_pgbg_vstxt_portfolio1.png");
@@ -9,15 +11,48 @@
     background-repeat: no-repeat;
     background-position: center 1.5rem;
 }
+
+
+#pf_scene1 {
+    opacity: 0;
+    transition: 0.8s;
+}
+#pf_scene1.load {
+    opacity: 1;
+}
+
+
 #pf_scene1 .pfMainVsSec {
-    width: 87.5%;
+    width: 75%;
     height: 75%;
+    margin: 12.5% auto;
+    transition: 0.8s;
+}
+
+#pf_scene1.load .pfMainVsSec {
     margin: 0 auto;
 }
+
+/*
+
+#pf_scene1 .scene_inner {
+    padding-top: 12.5%;
+    box-sizing: inherit;
+    opacity: 0;
+    transition: 0.5s;
+}
+#pf_scene1.load .scene_inner {
+    padding: 1.5rem;
+    box-sizing: border-box;
+    opacity: 1;
+}
+*/
+
+
 #pf_scene1 .pfMainTxtSec {
-    width: 87.5%;
-    height: 25%;
-    margin: 0 auto;
+    width: 75%;
+    height: 12.5%;
+    margin: 2% auto;
 }
 #pf_scene1 .inner {
     width: 100%;
@@ -27,24 +62,38 @@
 #pf_scene1 .pfMainVsFrame {
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 #pf_scene1 .pfMainVsFrame ul {
-    width: 600%;
+    width: 100%;
     height: 100%;
 }
 #pf_scene1 .pfMainVsFrame .pfMainVsImg {
-    width: 16.666%;
+    width: 100%;
     height: 100%;
+    opacity: 0;
+    
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 0;
-    display: none;
+    transition: 1s;
 }
 #pf_scene1 .pfMainVsImg img {
     display: block;
     width: auto;
     height: 80%;
-    margin: 40% auto;
+    min-height: 80%;
+    margin: 10% auto;
+    
+    transition: 0.6s;
+/*    transform:scale(0.5);*/
+}
+#pf_scene1 .pfMainVsImg:nth-child(1) img {
+    height: 70%;
+    min-height: 70%;
+    margin-left: -5.25%;
+    height: 70%;
 }
 #pf_scene1 .pfSldBtnFrame {
     width: 100%;
@@ -75,6 +124,8 @@
     background-repeat: no-repeat;
     background-size: auto 30%;
     background-position: left center;
+    
+    transition: 0.4s;
 }
 #pf_scene1 .sldLrBtn.right button {
     float: right;
@@ -82,6 +133,8 @@
     background-repeat: no-repeat;
     background-size: auto 30%;
     background-position: right center;
+    
+    transition: 0.4s;
 }
 
 
@@ -93,14 +146,22 @@
     top: 0;
     left: 0;
     display: none;
+    
+    overflow: hidden;
 }
 #pf_scene1 .pfMainTxtSec li {
     width: 50%;
     height: 100%;
     float: left;
+    
+    transition: 1s;
+    margin-top: 0;
 }
 #pf_scene1 .pfMainTxtSec li.right {
     float: right;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
 }
 #pf_scene1 .pfMainTxtSec p {
     width: 100%;
@@ -112,23 +173,168 @@
 }
 #pf_scene1 .pfMainTxtSec .pfDate, #pf_scene1 .pfMainTxtSec .pfSkill, #pf_scene1 .pfMainTxtSec .wbLink {
     font-size: 1rem;
+    
+    transition: 1s;
+/*    opacity: 0;*/
 }
 #pf_scene1 .pfMainTxtSec .webLink {
     display: block;
-    width: 100%;
+    width: 25%;
     height: auto;
     text-align: right;
     position: relative;
+    color: #000;
+    cursor: pointer;
+    
+    transition: 0.6s;
 }
 #pf_scene1 .pfMainTxtSec .webLink:before {
     content: "";
     display: block;
-    width: 12.5%;
+    width: 0%;
     height: 2px;
     background-color: #000;
     position: absolute;
     top: calc(calc(100% - 2px) / 2);
-    left: calc(calc(100% - 12.5%) / 1.4);
+    left: -52%;
+    
+    transition: 0.5s;
+}
+
+#pf_scene1 .pfMainTxtSec .webLink:hover {
+    color: #0000cc;
+    text-shadow: 3px 5px 3px rgba(0, 0, 204, 0.15);
+}
+#pf_scene1 .pfMainTxtSec .webLink:hover :before {
+    background-color: #0000cc;
+}
+
+#pf_scene1 .pfMainTxtSec .sldCtrBtnSec {
+    width: 150px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: calc(calc(100% - 150px) / 2);
+    z-index: 102;
+}
+#pf_scene1 .pfMainTxtSec .sldCtrBtnSec div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#pf_scene1 .pfMainTxtSec .sldCtrBtn {
+    width: 10px;
+    height: 100%;
+    border: 1px solid #0000cc;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+
+#pf_scene1 .webPopSec {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    
+    display: none;
+}
+#pf_scene1 .webPopSec .inner {
+    width: 25rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#pf_scene1 .webPopSec .popUpWindow {
+    width: 100%;
+    height: 25rem;
+    padding: 1.5rem;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: calc(calc(100% - 25rem) / 2);
+    background-color: #fff;
+    
+    background-image: url("../images/img_popup.png");
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-position: center 30%;
+    
+    display: none;
+}
+#pf_scene1 .webPopSec .popClose {
+    width: 2.2rem;
+    height: 2.2rem;
+    float: right;
+    cursor: pointer;
+    position: relative;
+}
+#pf_scene1 .webPopSec .popClose:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    transform: rotate(45deg);
+}
+#pf_scene1 .webPopSec .popClose:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    transform: rotate(-45deg);
+}
+#pf_scene1 .webPopSec .ment {
+    width: 100%;
+    height: 20%;
+    margin-top: 62%; 
+    display: flex;
+    align-items: center;
+}
+#pf_scene1 .webPopSec .ment p {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 0.6rem;
+    word-break: keep-all;
+}
+#pf_scene1 .webPopSec .ment b {
+    background-color: #0000cc;
+    color: #fff;
+}
+#pf_scene1 .webPopSec .okLink {
+    display: block;
+    width: 50%;
+    height: 10%;
+    background-color: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 2.2;
+    margin: 1rem auto;
+}
+#pf_scene1 .webPopSec .okLink:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+#scene3 {
+    background-image: url("../images/img_pgbg_vstxt_portfolio2.png");
 }
 
 
@@ -136,6 +342,62 @@
 
 
 
-#pf_scene1 .pfMainVsFrame .pfMainVsImg.on, #pf_scene1 .pfMainTxtSec ul.on {
+
+
+
+#pf_scene1 .sldLrBtn.left button.hvr {
+    float: left;
+    background-image: url("../images/btn_arrow_left_color.png");
+    background-repeat: no-repeat;
+    background-size: auto 30%;
+    background-position: left center;
+}
+#pf_scene1 .sldLrBtn.right button.hvr {
+    float: right;
+    background-image: url("../images/btn_arrow_right_color.png");
+    background-repeat: no-repeat;
+    background-size: auto 30%;
+    background-position: right center;
+}
+
+
+#pf_scene1 .pfMainVsFrame .pfMainVsImg.on {
+    top: 0;
+    opacity: 1;
+}
+#pf_scene1 .pfMainTxtSec ul.on {
     display: block;
 }
+#pf_scene1 .pfMainVsImg.on {
+    display: flex;
+    align-items: center;
+}
+#pf_scene1 .pfMainVsImg.on img {
+    transform:none;
+    opacity: 1;
+}
+
+#pf_scene1 .pfMainTxtSec ul.on .webLink:before {
+    width: 60%;
+}
+
+
+#pf_scene1 .pfMainTxtSec .webLink.hvr {
+    color: #0000cc;
+}
+#pf_scene1 .pfMainTxtSec ul.on .webLink.hvr:before {
+    background-color: #0000cc;
+}
+
+
+#pf_scene1 .pfMainTxtSec .sldCtrBtn.clk {
+    background-color: #0000cc;
+}
+
+
+
+
+
+
+
+
