@@ -18,6 +18,15 @@
         margin-left: -1%;
     }
 
+    #pf_scene1 .pfMainTxtSec {
+        width: 75%;
+        height: 24.5%;
+        margin: 0% auto;
+    }
+    #pf_scene1 .pfMainTxtSec li.right {
+        align-items: center;
+    }
+
 }
 
 

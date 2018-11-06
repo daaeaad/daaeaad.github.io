@@ -179,7 +179,7 @@
 #pf_scene1 .pfMainTxtSec .webLink {
     display: block;
     width: 25%;
-    height: auto;
+    height: 1.7rem;
     text-align: right;
     position: relative;
     color: #000;
@@ -194,8 +194,8 @@
     height: 2px;
     background-color: #000;
     position: absolute;
-    top: calc(calc(100% - 2px) / 2);
-    left: -52%;
+    top: calc(calc(100% - 2px) / 2.4);
+    left: -10%;
     
     transition: 0.5s;
 }
