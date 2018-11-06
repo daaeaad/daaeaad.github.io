@@ -3,23 +3,40 @@
 
 
 
-
-/*미디어쿼리 모바일 567px 이하일때*/
-
-@media screen and (max-width:576px) {
+@media screen and (max-width:1600px) {
     
     body, html {
-        font-size: 10px;
+        font-size: 16px;
     }
     
+    #pf_scene1 .pfMainVsImg img {
+        height: 70%;
+        min-height: 70%;
+        margin: 10% auto;
+    }
+    #pf_scene1 .pfMainVsImg:nth-child(1) img {
+        margin-left: -1%;
+    }
+
 }
 
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1200px) {
     
     body, html {
-        font-size: 14px;
+        font-size: 16px;
+    }
+    
+    #pf_scene1 .pfMainVsImg img {
+        height: 70%;
+        min-height: 70%;
+        margin: 10% auto;
+    }
+    #pf_scene1 .pfMainVsImg:nth-child(1) img {
+        height: 60%;   
+        min-height: 60%;
+        margin-left: -7%;
     }
     
 }
@@ -32,24 +49,70 @@
         font-size: 16px;
     }
     
-}
-
-
-
-@media screen and (max-width:1200px) {
+    #pf_scene1 .pfMainVsImg img {
+        height: 70%;
+        min-height: 70%;
+        margin: 10% auto;
+    }
+    #pf_scene1 .pfMainVsImg:nth-child(1) img {
+        height: 45%;   
+        min-height: 45%;
+        margin-left: -7%;
+    }
     
-    body, html {
-        font-size: 16px;
+    
+    
+    #scene3 .conBtnSec ul {
+    width: 70%;
+    }
+    #scene3 .conFormSec {
+    margin-top: 51%;
     }
     
 }
 
 
 
-@media screen and (max-width:1600px) {
+@media screen and (max-width:768px) {
     
     body, html {
-        font-size: 16px;
+        font-size: 14px;
+    }
+    
+    #pf_scene1 .pfMainVsImg img {
+        height: 40%;
+        min-height: 40%;
+        margin: 10% auto;
+    }
+    #pf_scene1 .pfMainVsImg:nth-child(1) img {
+        height: 27%;   
+        min-height: 27%;
+        margin-left: -7%;
     }
     
 }
+
+
+
+
+@media screen and (max-width:576px) {
+    
+    body, html {
+        font-size: 10px;
+    }
+    
+    #pf_scene1 .pfMainVsImg img {
+        height: 70%;
+        min-height: 70%;
+        margin: 10% auto;
+    }
+    #pf_scene1 .pfMainVsImg:nth-child(1) img {
+        height: 35%;   
+        min-height: 35%;
+        margin-left: -7%;
+    }
+    
+}
+
+
+

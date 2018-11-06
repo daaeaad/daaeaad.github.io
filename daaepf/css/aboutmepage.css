@@ -51,8 +51,11 @@
     justify-content: space-between;
     position: relative;
 }
+#scene11 .conGroup.topConSec:nth-child(2) .sceneConSec:nth-child(1) {
+    padding-top: 25%;
+}
 
-#scene11 .conGroup.topConSec:before {
+#scene11 .conGroup.topConSec:nth-child(1):before {
     content: "";
     display: block;
     width: 100%;
