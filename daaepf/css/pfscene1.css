@@ -349,18 +349,10 @@
 
 
 #pf_scene1 .sldLrBtn.left button.hvr {
-    float: left;
     background-image: url("../images/btn_arrow_left_color.png");
-    background-repeat: no-repeat;
-    background-size: auto 30%;
-    background-position: left center;
 }
 #pf_scene1 .sldLrBtn.right button.hvr {
-    float: right;
     background-image: url("../images/btn_arrow_right_color.png");
-    background-repeat: no-repeat;
-    background-size: auto 30%;
-    background-position: right center;
 }
 
 
