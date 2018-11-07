@@ -14,10 +14,12 @@
     opacity: 1;
 }
 #scene11 .scene_inner {
+/*
     background-image: url("../images/img_pgbg_vstxt_aboutme1.png");
     background-size: 41.5% auto;
     background-repeat: no-repeat;
     background-position: center 1.5rem;
+*/
     
     width: 75%;
 }
@@ -354,9 +356,11 @@
 
 
 
+/*
 #scene3 {
     background-image: url("../images/img_pgbg_vstxt_aboutme2.png");
 }
+*/
 
 
 

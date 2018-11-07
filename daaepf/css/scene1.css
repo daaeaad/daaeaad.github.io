@@ -9,10 +9,12 @@
 
 
 #scene1 .scene_inner {
+/*
     background-image: url("../images/img_pgbg_vstxt_home1.png");
     background-size: 41.5% auto;
     background-repeat: no-repeat;
     background-position: center 1.5rem;
+*/
     
     display: flex;
     flex-direction: column;
