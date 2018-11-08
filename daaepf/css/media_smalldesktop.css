@@ -125,6 +125,19 @@
         height: 28%;
     }
     
+    .gnbBtnSec .navIco {
+        width: 100%;
+        height: 100%;
+    }
+    .gnbBtnSec .btn {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    .gnbBtnSec .line {
+        margin-top: 40%;
+    }
+    
     .footer .footerSec:nth-child(1) {
         display: none;
     }
