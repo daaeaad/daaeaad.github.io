@@ -121,6 +121,9 @@
     height: 1px;
     background-color: #000;
     transform: rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
     margin-top: 0.8rem;
     transition: 0.5s;
     box-shadow: 4px 6px 4px rgba(0, 0, 204, 0.4);
@@ -262,6 +265,9 @@
 
 .gnbBtnSec #gnbBtn.hvr .line {
     transform: rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
 }
 .gnbBtnSec .navIco {
     position: relative;
