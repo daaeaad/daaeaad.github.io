@@ -148,8 +148,8 @@ $(document).ready(function() {
             .removeClass("hvr")
             .toggleClass("clk");
         
-        $("body, html")
-            .toggleClass("rock");
+//        $("body, html")
+//            .toggleClass("rock");
         
         $("#hd .contactBtn, .footer .sldBtnSec ul, .scrBtnSec .scrBtn, .topBtnSec, #pf_scene1 .pfMainTxtSec .sldCtrBtnSec")
             .fadeToggle(400);
